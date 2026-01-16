@@ -20,4 +20,4 @@ Find me on
 
 [ログ](https://kaityo256.github.io/log/)
 
-記事中に明示されていない場合、私の記事は[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)で、記事に含まれるソースコードは[MITライセンス](https://opensource.org/licenses/MIT)で公開します。
+記事中に明示されていない場合、私の記事は[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)で、記事に含まれるソースコードは[MITライセンス](https://opensource.org/licenses/MIT)で公開します。

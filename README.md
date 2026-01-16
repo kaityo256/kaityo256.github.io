@@ -21,8 +21,8 @@ Topics include:
 ## License
 
 - Articles and text:  
-  Creative Commons Attribution 4.0 International (CC BY 4.0)  
-  https://creativecommons.org/licenses/by/4.0/
+  Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)  
+  https://creativecommons.org/licenses/by-nc/4.0/
 
 - Source code and scripts:  
   MIT License  
