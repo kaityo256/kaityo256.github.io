@@ -6,8 +6,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kaityo256
 github_username:  kaityo256
+url: https://kaityo256.github.io
+baseurl: ""
 
 # Build settings
 theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  
 plugins:
   - jekyll-feed
