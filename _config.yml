@@ -15,7 +15,10 @@ markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
-  
+
+header_pages:
+  - about.md  
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
