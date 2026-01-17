@@ -18,3 +18,7 @@ kramdown:
   
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10            # 1ページの記事数
+paginate_path: "/page:num/"
