@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gitのインデックスの中身
-tags: [zenn]
+tags: [zenn, programming, devtools]
 permalink: inside_the_index
 ---
 ## はじめに

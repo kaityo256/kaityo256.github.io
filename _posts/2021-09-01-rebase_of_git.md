@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gitのリベースの説明
-tags: [zenn]
+tags: [zenn, programming, devtools]
 permalink: rebase_of_git
 ---
 ## はじめに

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WSL2のUbuntuにpdftkをインストールするためのsnapのためにsystemdを起動する(必要はない)
-tags: [zenn]
+tags: [zenn, devtools]
 permalink: pdftk_snap_systemd
 ---
 ## TL;DR

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 指数緩和について
-tags: [zenn]
+tags: [zenn, physics]
 permalink: exp_relaxation
 ---
 ## はじめに

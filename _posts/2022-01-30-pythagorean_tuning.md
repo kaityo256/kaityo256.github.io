@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 三種類の音律を聴き比べる
-tags: [zenn]
+tags: [zenn, programming]
 permalink: pythagorean_tuning
 ---
 ## はじめに

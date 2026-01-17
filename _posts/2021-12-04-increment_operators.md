@@ -1,7 +1,7 @@
 ---
 layout: post
 title: インクリメント演算子とコンパイラの気持ち
-tags: [zenn]
+tags: [zenn, programming]
 permalink: increment_operators
 ---
 ## はじめに

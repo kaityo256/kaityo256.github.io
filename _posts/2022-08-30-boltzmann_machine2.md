@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 制限ボルツマンマシンの基礎 ～推定編～
-tags: [zenn]
+tags: [zenn, machine-learning]
 permalink: boltzmann_machine2
 ---
 ## はじめに

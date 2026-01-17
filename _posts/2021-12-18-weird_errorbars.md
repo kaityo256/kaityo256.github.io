@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 見たら「ん？」となるエラーバーのグラフ
-tags: [zenn]
+tags: [zenn, physics, math]
 permalink: weird_errorbars
 ---
 ## はじめに

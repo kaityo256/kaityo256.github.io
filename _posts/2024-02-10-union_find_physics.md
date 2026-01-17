@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Union-Findアルゴリズムと計算科学の話
-tags: [zenn]
+tags: [zenn, programming, hpc]
 permalink: union_find_physics
 ---
 ## 概要

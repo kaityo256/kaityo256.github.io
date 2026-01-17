@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 分子動力学法における温度制御の基礎
-tags: [zenn]
+tags: [zenn, physics]
 permalink: thermostat_of_md
 ---
 ## はじめに

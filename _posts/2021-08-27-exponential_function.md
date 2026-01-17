@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 虚数の虚数乗の話
-tags: [zenn]
+tags: [zenn, math]
 permalink: exponential_function
 ---
 ## はじめに

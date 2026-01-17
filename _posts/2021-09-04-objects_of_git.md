@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gitのオブジェクトの中身
-tags: [zenn]
+tags: [zenn, programming, devtools]
 permalink: objects_of_git
 ---
 ## はじめに

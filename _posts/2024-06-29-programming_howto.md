@@ -1,7 +1,7 @@
 ---
 layout: post
 title: プログラム、下から作るか？上から作るか？
-tags: [zenn]
+tags: [zenn, programming]
 permalink: programming_howto
 ---
 ## TL;DR

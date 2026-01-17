@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 色付きdiffをPDFで保存する
-tags: [zenn]
+tags: [zenn, document]
 permalink: colored_terminal_output
 ---
 ## TL;DR

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 関数の定義位置により結果が変わるコード
-tags: [zenn]
+tags: [zenn, programming]
 permalink: position_of_functions
 ---
 ## はじめに

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gitのブランチの実装
-tags: [zenn]
+tags: [zenn, programming, devtools]
 permalink: inside_the_branch
 ---
 ## はじめに

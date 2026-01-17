@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 二次方程式の話
-tags: [zenn]
+tags: [zenn, math]
 permalink: quadratic_equation
 ---
 ## はじめに

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WSL2のUbuntuでkeychain経由でssh-agentを使う
-tags: [zenn]
+tags: [zenn, linux]
 permalink: ssh_agent_on_wsl
 ---
 ## TL;DR

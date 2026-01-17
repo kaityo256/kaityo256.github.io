@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pythonで音を鳴らす
-tags: [zenn]
+tags: [zenn, programming]
 permalink: python_play_sound
 ---
 ## はじめに

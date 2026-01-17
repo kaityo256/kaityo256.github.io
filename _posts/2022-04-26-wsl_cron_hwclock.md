@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WSL上のcronで時刻を定期的に修正する
-tags: [zenn]
+tags: [zenn, linux]
 permalink: wsl_cron_hwclock
 ---
 ## はじめに

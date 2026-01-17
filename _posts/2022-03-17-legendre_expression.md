@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ルジャンドル変換の二つの表式
-tags: [zenn]
+tags: [zenn, math]
 permalink: legendre_expression
 ---
 ## はじめに

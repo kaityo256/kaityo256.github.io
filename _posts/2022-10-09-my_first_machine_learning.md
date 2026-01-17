@@ -1,7 +1,7 @@
 ---
 layout: post
 title: はじめての機械学習(自分でデータセットを作る編)
-tags: [zenn]
+tags: [zenn, machine-learning]
 permalink: my_first_machine_learning
 ---
 ## はじめに

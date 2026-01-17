@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C/C++の配列と糖衣構文
-tags: [zenn]
+tags: [zenn, programming]
 permalink: syntax_sugar_of_array
 render_with_liquid: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GCCに27958段ネストした関数を食わせると死ぬ
-tags: [zenn]
+tags: [zenn, programming]
 permalink: nesting_functions
 ---
 ## TL;DR

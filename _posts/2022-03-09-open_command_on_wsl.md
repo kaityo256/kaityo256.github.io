@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WSLでopenコマンドを用意する
-tags: [zenn]
+tags: [zenn, linux]
 permalink: open_command_on_wsl
 ---
 ## TL;DR

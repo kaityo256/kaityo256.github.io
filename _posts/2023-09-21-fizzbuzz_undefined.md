@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 未定義動作でFizzBuzz
-tags: [zenn]
+tags: [zenn, programming]
 permalink: fizzbuzz_undefined
 ---
 ## はじめに

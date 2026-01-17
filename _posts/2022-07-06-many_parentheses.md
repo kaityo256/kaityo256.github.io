@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 括弧で34087重に囲んだ関数を食わせるとg++が死ぬ
-tags: [zenn]
+tags: [zenn, programming]
 permalink: many_parentheses
 ---
 ## TL;DR

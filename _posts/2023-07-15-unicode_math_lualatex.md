@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LuaLaTeXとunicode-mathとboldsymbolの組み合わせの話
-tags: [zenn]
+tags: [zenn, document]
 permalink: unicode_math_lualatex
 ---
 ## TL;DR

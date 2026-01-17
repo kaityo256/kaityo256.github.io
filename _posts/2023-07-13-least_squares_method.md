@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最小二乗法の話
-tags: [zenn]
+tags: [zenn, math]
 permalink: least_squares_method
 ---
 ## はじめに

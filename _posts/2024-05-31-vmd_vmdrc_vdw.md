@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VMDで描画方法としてVDWをデフォルトにする
-tags: [zenn]
+tags: [zenn, devtools]
 permalink: vmd_vmdrc_vdw
 ---
 ## TL;DR

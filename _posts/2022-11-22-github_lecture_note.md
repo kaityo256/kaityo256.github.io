@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHubで講義ノートを書く
-tags: [zenn]
+tags: [zenn, document]
 permalink: github_lecture_note
 ---
 ## はじめに

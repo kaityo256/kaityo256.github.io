@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PostScript言語を触ってみる
-tags: [zenn]
+tags: [zenn, programming]
 permalink: ghostscript_sample
 ---
 ## はじめに

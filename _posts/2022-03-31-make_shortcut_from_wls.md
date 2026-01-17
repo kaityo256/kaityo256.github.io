@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WSLからWindows側にショートカットファイルを作る
-tags: [zenn]
+tags: [zenn, linux]
 permalink: make_shortcut_from_wls
 ---
 ## TL;DR

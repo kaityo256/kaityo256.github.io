@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 熱浴かサーモスタットか
-tags: [zenn]
+tags: [zenn, physics]
 permalink: heatbath_thermostat
 ---
 ## はじめに
