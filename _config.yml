@@ -16,6 +16,9 @@ kramdown:
   input: GFM
   math_engine: mathjax
 
+sass:
+  quiet_deps: true
+
 header_pages:
   - about.md  
 
