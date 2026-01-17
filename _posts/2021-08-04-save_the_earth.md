@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 技術記事を書く人を大事にしよう
-tags: [zenn]
+tags: [zenn, poem]
 permalink: save_the_earth
 ---
 ## TL;DR
