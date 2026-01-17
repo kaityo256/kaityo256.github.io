@@ -22,6 +22,11 @@ sass:
 header_pages:
   - about.md  
 
+ogp:
+  title: "A Robot's Sigh"
+  description: "ロボットのためいき"
+  image: "https://kaityo256.github.io/assets/images/robosigh.png"
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
