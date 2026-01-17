@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MPI_Comm_splitを利用した馬鹿パラスケジューラ"
-categories: C++, MPI
+tags: [programming, hpc, qiita]
 permalink: tp_scheduler
 ---
 

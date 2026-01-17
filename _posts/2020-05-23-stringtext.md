@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "分子動力学法で一瞬文字が浮かび上がるアニメーションを作る"
-categories: Ruby, 分子動力学法
+tags: [programming, physics, qiita]
 permalink: stringtext
 ---
 

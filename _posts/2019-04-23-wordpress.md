@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOS7にDockerでWordPressを入れる"
-categories: WordPress, CentOS, Docker
+tags: [web, linux, qiita]
 permalink: wordpress
 ---
 

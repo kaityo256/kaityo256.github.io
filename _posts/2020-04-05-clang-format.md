@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WindowsのVSCodeでclang-formatが効かない時の確認と対処"
-categories: C, C++, LLVM, clang-format, VSCode
+tags: [programming, devtools, qiita]
 permalink: clang-format
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "任意の確率密度を持つ乱数を作る"
-categories: Python, 数学, 乱数
+tags: [programming, math, qiita]
 permalink: rand_inversion
 ---
 

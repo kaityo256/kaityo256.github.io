@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "定数配列がからんだ定数畳み込み最適化"
-categories: C++, GCC, clang++
+tags: [programming, devtools, qiita]
 permalink: constarray
 ---
 

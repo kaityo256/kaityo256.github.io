@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MacのgnuplotでPDFの文字がおかしくなる問題"
-categories: MacOSX, gnuplot, Pango, cairo
+tags: [mac, document, qiita]
 permalink: mac_gnuplot
 ---
 
@@ -115,7 +115,6 @@ Warning: Unbrewed header files were found in /usr/local/include.
 
 削除。
 
-```sh
 ```sh
 rm -rf /usr/local/include/pango-1.0 
 sudo rm -rf /usr/local/include/pango-1.0  

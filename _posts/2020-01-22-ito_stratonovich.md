@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Multiplicativeなノイズを持つLangevin方程式とIto/Stratonovich解釈"
-categories: C++, 数値計算, 数学
+tags: [programming, physics, math, qiita]
 permalink: ito_stratonovich
 ---
 

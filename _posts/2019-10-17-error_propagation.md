@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "誤差伝播ライブラリを作った＆誤差伝播公式の導出"
-categories: C++
+tags: [programming, qiita]
 permalink: error_propagation
 ---
 

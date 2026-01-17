@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "累積分布関数をソートで求める(Python版)"
-categories: Python, 数学
+tags: [programming, math, qiita]
 permalink: cdf_python
 ---
 

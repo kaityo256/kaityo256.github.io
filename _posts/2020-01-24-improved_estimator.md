@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "スピン系のグラフ表現とImproved Estimator"
-categories: C++, 数値計算
+tags: [programming, physics, qiita]
 permalink: improved_estimator
 ---
 
@@ -68,7 +68,7 @@ $$
 
 という形の和に取り直したことに対応します。ただし、$g$は偶数$e$か奇数$o$かの事象を表し、$X_i(g)$は、偶奇が決まったあとのサイコロの出目を表します。具体的には$X_i(o) = {1,3,5}, X_i(e) = {2,4,6}$です。$w(g)$は、偶数、奇数のどちらかがでる確率で$1/2$、$w_i(g)$は、サイコロの偶奇が決まったあとの重みで$1/3$です。
 
-![image0.png](/assets/images/improved_estimator/image0.png)
+<img width="1056" alt="coin_dice.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/ae7da75c-cf4a-0085-d10f-08a9e931299c.png">
 
 
 さて、なぜかはわかりませんが、もとのサイコロでは期待値は厳密に計算できなかったけれど、こうして奇数と偶数に分けた場合はそれぞれの期待値が厳密に計算できるとしましょう。
@@ -156,7 +156,7 @@ Fortuin-Kasteleyn表現とは、スピン系の分配関数のスピン状態に
 
 Swendsen-Wangでは、グラフの更新とスピンの更新を交互に繰り返していきます。ここで、グラフというのはスピンをクラスターに分割したもので、同じクラスターに属すスピンは同じ向きのスピンでなければなりません。グラフに分割されたら、それぞれのクラスターに、上向き、下向きのスピンをランダムに与えます。
 
-![image1.png](/assets/images/improved_estimator/image1.png)
+<img width="973" alt="graph.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/a00e3769-b75f-9d76-1844-2de7b745696f.png">
 
 
 さて、いまスピン状態が$\{\sigma_i\}$で与えられており、このスピン配位が実現する確率(ボルツマン重み)が$w(\{\sigma_i\})$で与えられるとしましょう。$\sigma_i$は1か-1のいずれかの値を取るものとします。磁化$m$をスピン状態の平均
@@ -199,7 +199,7 @@ $$
 
 例えば、以下のようなクラスター配位が得られたとします。クラスターは二つです。
 
-![image2.png](/assets/images/improved_estimator/image2.png)
+<img width="922" alt="count.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/34deb0cc-3b2b-3851-e0a5-c8d8045a8fa7.png">
 
 
 クラスターの中のスピンは同じ向きでなければならないので、4通りの状態がありえます。
@@ -292,17 +292,17 @@ $$
 
 まずは磁化の二次のモーメントについて。
 
-![image3.png](/assets/images/improved_estimator/image3.png)
+![image0.png](/assets/images/improved_estimator/image0.png)
 
 値で見ると誤差はImproved Estimatorの方が小さいですが、グラフで見るとほとんど差はありません。
 
 四次のモーメントも同様です。
 
-![image4.png](/assets/images/improved_estimator/image4.png)
+![image1.png](/assets/images/improved_estimator/image1.png)
 
 しかし、その比であるビンダー比には大きな差が付きます。
 
-![image5.png](/assets/images/improved_estimator/image5.png)
+![image2.png](/assets/images/improved_estimator/image2.png)
 
 特に高温において、Improved Estimatorの分散が小さいのに対し、通常の計算方法では大きなエラーバーがついています。$m^4$も$m^2$も、高温ではゼロとなるため、ビンダー比はゼロ割るゼロを計算しなければならず、サンプリング数を相当多く取らなければいけません。それが通常の方法で計算されたビンダー比の高温側のデータがばらついている理由です。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "うんざりするほど正解パスが長い迷路の作り方"
-categories: Ruby, EPS
+tags: [programming, document, qiita]
 permalink: painful_maze
 ---
 

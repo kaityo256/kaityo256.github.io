@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fashion-MNISTのデータを仕分けしてPNGファイルで保存"
-categories: Python, 機械学習, Keras, TensorFlow
+tags: [programming, machine-learning, qiita]
 permalink: fashion_mnist_dump
 ---
 
@@ -59,11 +59,11 @@ train
 
 例えばテストデータの`Sandal`なら、
 
-![image0.png](/assets/images/fashion_mnist_dump/image0.png)
+<img width="656" alt="sandals.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/f0f630d0-1992-54dc-bdf0-3c3d48c4d258.png">
 
 `Dress`なら
 
-![image1.png](/assets/images/fashion_mnist_dump/image1.png)
+<img width="813" alt="dresses.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/47025380-945c-e7f1-b88e-8ecf8e723b12.png">
 
 みたいに仕分けされて保存されます。
 
@@ -165,16 +165,16 @@ def save_img(filename, data):
 TensorFlow/Kerasを使ってFashion-MNISTのデータを取得し、仕分けしてファイルとして保存してみました。データをぼーっと見てると面白いです。例えば
 
 「あ、Gapだ」と思ったり、
-![image2.png](/assets/images/fashion_mnist_dump/image2.png)
+![image0.png](/assets/images/fashion_mnist_dump/image0.png)
 
 人間が見てもなんだかわからないものがあったり[^1]
-![image3.png](/assets/images/fashion_mnist_dump/image3.png)
+![image1.png](/assets/images/fashion_mnist_dump/image1.png)
 
 なんかパンツのようなものと一緒に写っていたり
-![image4.png](/assets/images/fashion_mnist_dump/image4.png)
+![image2.png](/assets/images/fashion_mnist_dump/image2.png)
 
 やっぱりなんだかわからないものがあったり・・・
-![image5.png](/assets/images/fashion_mnist_dump/image5.png)
+![image3.png](/assets/images/fashion_mnist_dump/image3.png)
 
 [^1]: 正解(ラベル)はバッグだそうです。
 

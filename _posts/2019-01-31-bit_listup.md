@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "与えられたビット列のビットの組み合わせをすべて列挙"
-categories: C++, ビット演算
+tags: [programming, qiita]
 permalink: bit_listup
 ---
 

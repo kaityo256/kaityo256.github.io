@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "混ぜるな危険！ndarrayとmatrix"
-categories: Python, scipy, numpy
+tags: [programming, machine-learning, qiita]
 permalink: ndarray_matrix
 ---
 

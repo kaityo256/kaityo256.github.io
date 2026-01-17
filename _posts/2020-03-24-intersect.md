@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "線分の交差判定と交点特定"
-categories: Ruby
+tags: [programming, qiita]
 permalink: intersect
 ---
 
@@ -51,7 +51,7 @@ $$
 
 が成り立つ必要があります。
 
-![image1.png](/assets/images/intersect/image1.png)
+<img width="381" alt="fig1.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/af317d35-4862-11c1-4c28-4b546f3a17b6.png">
 
 
 同様に、線分$P_3 P_4$が作る直線の式を$f_{34}(x,y) = 0$とすると、
@@ -62,7 +62,7 @@ $$
 
 が成り立つ必要があります。もし線分が交差していない場合は、同符号になる組み合わせが出てきます。例えば以下は、線分$P_3 P_4$が作る直線は線分$P_1 P_2$と交点を持つのに対し、線分$P_1 P_2$が作る直線は線分$P_3 P_4$とは交点を持たない例です。点$P_3$と$P_4$が直線の同じ側にあるため、$f_{12}(x_3, y_3)$と$f_{12}(x_4, y_4)$が同符号になります。
 
-![image2.png](/assets/images/intersect/image2.png)
+<img width="320" alt="fig2.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/6751be5a-68e7-599f-ee42-e8cb70509d7d.png">
 
 さて、上記の判定アルゴリズムをそのままコードに落としましょう。まずは点を表す`Struct`を作るんですかね。
 
@@ -128,7 +128,7 @@ $$
 
 とも書けます。
 
-![image3.png](/assets/images/intersect/image3.png)
+<img width="270" alt="fig3.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/3369e159-9d32-cfc1-379f-7925e8b0a3e2.png">
 
 
 したがって、

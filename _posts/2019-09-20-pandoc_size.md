@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PandocでLaTeX経由でPDFを出力する際にコードブロックのフォントサイズをいじる"
-categories: LaTeX, Pandoc
+tags: [document, qiita]
 permalink: pandoc_size
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pythonでフーリエ変換"
-categories: Python, FFT, フーリエ変換
+tags: [programming, math, qiita]
 permalink: python_fft
 ---
 

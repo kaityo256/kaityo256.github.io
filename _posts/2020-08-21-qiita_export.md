@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Qiitaに投稿した記事をGitHub用にエクスポートする"
-categories: Ruby, GitHub, Markdown, QiitaAPI
+tags: [programming, web, qiita]
 permalink: qiita_export
 ---
 
@@ -166,7 +166,7 @@ Qiitaでは、コードブロックにファイル名を含めることができ
 Qiitaでは、アップロードされた画像は`amazonaws.com`に保存されますが、その際に
 
 ```md
-![sample1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/ee833403-b932-4680-aa1b-3bf37084f40b.png)
+![image1.png](/assets/images/qiita_export/image1.png)
 ```
 
 のようにMarkdown形式で保存される場合と、

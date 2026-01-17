@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "大名行列をHOOIでTucker分解してみる"
-categories: Python, 数学, GoogleColaboratory
+tags: [programming, math, machine-learning, qiita]
 permalink: daimyo_hooi
 ---
 

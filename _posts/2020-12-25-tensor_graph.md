@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "テンソルのグラフ表現"
-categories: 数学, テンソル, テンソルネットワーク
+tags: [math, machine-learning, qiita]
 permalink: tensor_graph
 ---
 

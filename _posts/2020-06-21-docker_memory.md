@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dockerファイルがビルドできなかったのでコンパイラをいじめる"
-categories: C++, SCons, Docker
+tags: [programming, devtools, qiita]
 permalink: docker_memory
 ---
 
@@ -86,13 +86,13 @@ RUN cd ${HOME} \
 ## ローカルでのチェック
 
 とりあえず、自分でもローカルマシンで試すことにしました。まずは`-j 20`のままビルドします。こけます。
-![image0.png](/assets/images/docker_memory/image0.png)
+<img width="506" alt="j20.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/54f6eeb7-8b44-1642-6c26-5886754568b1.png">
 
 internal compiler errorさんお久しぶりです。[整数を419378回インクリメント](https://qiita.com/kaityo256/items/6b5715b213e955d44f55)した時以来ですね。internal compiler error、略してICEですが、普通に生きていればあまり見かけないと思います。・・・というようなことをあるところで口走ったら、「え？ICEなんて日常的に見ますよね？」みたいな反応があったのでC++ガチ勢は怖いなと思いました。閑話休題。
 
 とりあえず4コアしかないマシンで20並列するのもアレなんで、`-j 4`でやり直してみます。
 
-![image1.png](/assets/images/docker_memory/image1.png)
+<img width="506" alt="j4.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/634c65e5-079e-4fc6-84e2-b22832e38345.png">
 
 やっぱりこけますね。
 
@@ -100,13 +100,13 @@ internal compiler errorさんお久しぶりです。[整数を419378回イン�
 
 まず、LinuxサーバでDockerfileをビルド中に`docker stats`で利用メモリを確認します。
 
-![image2.png](/assets/images/docker_memory/image2.png)
+<img width="889" alt="memory.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/9f5d9ac9-605c-c3cf-f959-eba45d8f17e5.png">
 
 おおぅ、2.9GB使ってますね。
 
 次に、ローカルのDockerのメモリ制限を見てみましょう。
 
-![image3.png](/assets/images/docker_memory/image3.png)
+<img width="780" alt="docker_memory.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/ded7d01f-70e1-0896-47a8-6079271f392e.png">
 
 Memoryが2.00GB。これですね。
 
@@ -116,7 +116,7 @@ Memoryが2.00GB。これですね。
 docker build -t kaityo256/aarch64env:memtest -m 2gb . --no-cache 
 ```
 
-![image4.png](/assets/images/docker_memory/image4.png)
+<img width="603" alt="linux_failed.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/1f9e399a-7b93-572d-5bed-01404ebe6075.png">
 
 はい、こけましたね。メモリ不足が原因と確定です。ローカルマシンでビルドに失敗した人には、DockerのSettingsのResourcesでメモリ上限を増やして再度試すようお願いし、ちゃんとビルドできることが確認できてめでたしでした。
 
@@ -193,7 +193,7 @@ scons build/ARM/gem5.opt -j 2
 
 あるところでメモリを使い切り、ビルドが進まなくなります。
 
-![image5.png](/assets/images/docker_memory/image5.png)
+<img width="936" alt="memory_full.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/ef51a69f-3dc7-221f-5051-9cca07cc3e9b.png">
 
 ここでビルドを止めます。どこで止まったか調べるため、`scons --dry-run`しましょう。
 
@@ -221,7 +221,7 @@ scons build/ARM/arch/arm/generated/inst-constrs-3.o
 もう一枚のターミナルで`docker stats`で監視すると、メモリを使い切っていることがわかります。
 
 
-![image6.png](/assets/images/docker_memory/image6.png)
+<img width="935" alt="memory_full_single.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/5174770e-9514-a259-20e3-10824e7c298e.png">
 
 メモリが十分にあればビルドできるはずなので、このファイルをビルドするのにどれくらいのメモリが必要なのか調べてみましょう。
 

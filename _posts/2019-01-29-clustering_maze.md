@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "クラスタリングによる迷路作成アルゴリズム"
-categories: Python
+tags: [programming, qiita]
 permalink: clustering_maze
 ---
 
@@ -30,7 +30,7 @@ C=E
 
 `A=B`はAさんとBさんが友達という意味です。この時、AさんグループとCさんグループの二つのグループができています。わかりやすいように色を塗りましょう。
 
-![image0.png](/assets/images/clustering_maze/image0.png)
+<img width="229" alt="group1.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/c98735c4-e967-1fa3-68b9-5a427be5fbf0.png">
 
 この後、実はBさんとEさんが友達だとわかったとしましょう。これをAさんグループと呼ぶにせよ、Cさんグループと呼ぶにせよ、とにかく二つのグループを一つにまとめなくてはなりません。しかし、新たな友人関係が見つかるたびに全部の色の塗り替えをすると大変です。このような場合に使うのがUnion-Find Algorithmです。
 
@@ -42,7 +42,7 @@ Union-Findアルゴリズムでは、まず全ての要素に背番号をつけ�
 2. 次に、AさんとCさんの背番号の若い方に、そうでない方をぶら下げます。今回のケースでは、AさんにCさんをぶら下げます。
 3. 今回の処理では、「CさんをAさんにぶら下げる」という処理しかしていませんが、自動的にDさんもEさんもAさんのグループになります。
 
-![image1.png](/assets/images/clustering_maze/image1.png)
+<img width="574" alt="group2.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/f8de2a56-e37d-d491-405a-415e52ab81c9.png">
 
 Union-Findは一次元配列によるリンクリストで実装できて、計算量はおおよそ$O(N)$です。その実装例については[Union-Find木のサンプルコード](https://qiita.com/kaityo256/items/5a3b03ff465778c23f6a)に書いたので参照してください。
 
@@ -56,19 +56,19 @@ Union-Findは一次元配列によるリンクリストで実装できて、計�
 
 まず、全ての部屋に通し番号をつけておきます。
 
-![image2.png](/assets/images/clustering_maze/image2.png)
+<img width="192" alt="maze1.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/9ce14c18-8f32-3fef-81ab-d6c0a95480be.png">
 
 ランダムに壁を壊し、クラスタリングします。
 
-![image3.png](/assets/images/clustering_maze/image3.png)
+<img width="189" alt="maze2.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/808e552f-4687-c9a9-7d4b-211af6561853.png">
 
 同じクラスタ番号の部屋を隔てる壁(図の赤い壁)は壊してはいけません(ループを作らない保証)。
 
-![image4.png](/assets/images/clustering_maze/image4.png)
+<img width="188" alt="maze3.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/c5c4d5a2-b425-121a-217e-fb45d98cdf60.png">
 
 全ての部屋が同じクラスタ番号になるまで続けます(死に領域ができない保証)。
 
-![image5.png](/assets/images/clustering_maze/image5.png)
+<img width="190" alt="maze4.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/6447c472-b837-98db-4e26-dc913509bf1b.png">
 
 というわけで迷路完成です[^1]。
 
@@ -190,7 +190,7 @@ def show_maze(maze):
 
 実行するとこんな感じになります。
 
-![image6.png](/assets/images/clustering_maze/image6.png)
+<img width="256" alt="result.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/7ba34c61-476c-cfc4-d49a-456cf31d89a7.png">
 
 
 実行するたびに変化します。
@@ -200,9 +200,9 @@ def show_maze(maze):
 クラスタリングアルゴリズムによる迷路作成方法を紹介してみました。「ループがない」すなわち「任意の要素をつなぐパスが一意に決まる」という性質を利用すると、「解くと絵が浮かび上がる迷路」を作ることができます。あらかじめ解答パスを与えてクラスタリングして置き、残りの壁を壊すだけです。例えばこんな迷路が作れます。
 
 
-![image7.png](/assets/images/clustering_maze/image7.png)
+<img width="168" alt="suneo.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/5614bca7-c05c-c97c-83b9-d5925eabf073.png">
 
-![image8.png](/assets/images/clustering_maze/image8.png)
+<img width="168" alt="suneo_a.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/dfa56b7a-8038-c6e9-7b4a-f345c0bf6dea.png">
 
 これは、大昔に作った[迷次郎](http://meijiro.osdn.jp/)というWindowsアプリケーションで作りました。作ったのは12年前とかですが、まだWindows 10で実行できるみたいですね。ただし、ヘルプファイルは開けないようです。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jackknife法とサンプル数バイアス"
-categories: Python, 統計学
+tags: [programming, math, qiita]
 permalink: jackknife
 ---
 
@@ -92,7 +92,7 @@ for n in samples:
 
 また、以下のリンクからコードをGoogle Colabで開くことができます。
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaityo256/jackknife/blob/main/Jackknife.ipynb)
+![image1.svg](/assets/images/jackknife/image1.svg)
 
 ## サンプル数によるバイアス
 
@@ -119,7 +119,7 @@ plt.show()
 
 結果は以下の通りです。
 
-![image1.png](/assets/images/jackknife/image1.png)
+![image2.png](/assets/images/jackknife/image2.png)
 
 きれいに$1/N$の依存性が見えます。これがどこから来ているか調べるため、2次のモーメント$\left< x^2 \right>_N$と4次のモーメント$\left< x^4 \right>_N$の$N$依存性を見てみましょう。2次のモーメントは1、4次のモーメントは3になるはずです。
 
@@ -355,7 +355,7 @@ $$
 
 $M$個のブロック全てを使った推定値を$\theta(M)$とし、$i$番目のブロックを使わずに作った推定値を$\theta_i(M-1)$とします。
 
-![image2.png](/assets/images/jackknife/image2.png)
+![image3.png](/assets/images/jackknife/image3.png)
 
 そして、
 

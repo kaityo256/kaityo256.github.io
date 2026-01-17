@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "大名行列をTucker分解してみる"
-categories: Python, 数学, GoogleColaboratory
+tags: [programming, math, machine-learning, qiita]
 permalink: daimyo_tucker
 ---
 
@@ -268,7 +268,7 @@ Tucker分解とは、テンソルを「コアテンソル」と呼ばれる小�
 
 Tucker分解を得る簡単な方法の一つが、本稿で述べたHOSVD (Higher-order SVD)という手法です。HOSVDは高階テンソルを分解するための手法ですが、まずは行列に適用してみましょう。
 
-まず、m行n列の行列$X$をSVDで分解すると、$X=U\Sigma V^\dagger$を得ます。$U\Sigma=L$とすると、$X=LV^\dagger$と分解できたことになります。さて、特異値分解の定義から$V$はユニタリ行列なので$V^\dagger V = I$です。したがって、$X=LV^\dagger$の両辺に左から$V$をかけると、$L=XV$を得ます。
+まず、m行n列の行列$X$をSVDで分解すると、$X=U\Sigma V^\dagger$を得ます。$U\Sigma=L$とすると、$X=LV^\dagger$と分解できたことになります。さて、特異値分解の定義から$V$はユニタリ行列なので$V^\dagger V = I$です。したがって、$X=LV^\dagger$の両辺に右から$V$をかけると、$L=XV$を得ます。
 
 ![image11.png](/assets/images/daimyo_tucker/image11.png)
 

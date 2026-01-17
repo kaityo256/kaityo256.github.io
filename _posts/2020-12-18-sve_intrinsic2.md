@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ARM SVEの組み込み関数を使う（その２）"
-categories: C++, ARM, aarch64, SVE
+tags: [programming, qiita]
 permalink: sve_intrinsic2
 ---
 

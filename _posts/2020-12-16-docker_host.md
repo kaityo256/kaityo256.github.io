@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WSL2でDOCKER_HOSTが指定されているとDockerが動かない"
-categories: Docker, WSL2
+tags: [linux, qiita]
 permalink: docker_host
 ---
 

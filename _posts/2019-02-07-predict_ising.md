@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "無茶振りされた機械の気持ち　〜　イジング模型の相をロジスティック回帰で判定する　〜"
-categories: Python, 機械学習
+tags: [programming, machine-learning, qiita]
 permalink: predict_ising
 ---
 
