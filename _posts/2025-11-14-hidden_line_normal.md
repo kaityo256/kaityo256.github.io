@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 隠線処理の話
-tags: [zenn]
+tags: [zenn, math, programming]
 permalink: hidden_line_normal
 ---
 

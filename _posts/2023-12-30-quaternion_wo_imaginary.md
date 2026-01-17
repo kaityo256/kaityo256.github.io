@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 絶対虚数単位を使いたくない人のための四元数表現
-tags: [zenn]
+tags: [zenn, math]
 permalink: quaternion_wo_imaginary
 ---
 

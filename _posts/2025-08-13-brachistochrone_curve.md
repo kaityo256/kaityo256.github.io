@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最速降下曲線の話
-tags: [zenn]
+tags: [zenn, physics]
 permalink: brachistochrone_curve
 ---
 

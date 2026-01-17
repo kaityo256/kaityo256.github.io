@@ -1,7 +1,7 @@
 ---
 layout: post
 title: クリップボードを監視して康煕部首を変換するスクリプト
-tags: [zenn]
+tags: [zenn, programming]
 permalink: convert_kangxi_radicals
 ---
 

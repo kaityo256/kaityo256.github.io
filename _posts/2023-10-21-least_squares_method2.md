@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最小二乗法の幾何学的な意味
-tags: [zenn]
+tags: [math, zenn]
 permalink: least_squares_method2
 ---
 

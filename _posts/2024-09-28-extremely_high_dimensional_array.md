@@ -1,7 +1,7 @@
 ---
 layout: post
 title: clang++に30740次元の配列を食わせると死ぬ
-tags: [zenn]
+tags: [zenn, programming]
 permalink: extremely_high_dimensional_array
 ---
 

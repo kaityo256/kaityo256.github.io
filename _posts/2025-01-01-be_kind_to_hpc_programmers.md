@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HPCプログラマの書くコードってなんで古臭いの？
-tags: [zenn]
+tags: [zenn, hpc, programming]
 permalink: be_kind_to_hpc_programmers
 ---
 
