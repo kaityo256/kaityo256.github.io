@@ -2,7 +2,7 @@ name: Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]   # main への push でデプロイ（必要なら master に変更）
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -18,23 +18,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      # GitHub Pages互換のJekyllビルド（Gemfileなしでも動く）
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          source: .
-          destination: ./_site
+          ruby-version: "3.3"
+          bundler-cache: true
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build -d _site
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: _site
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,7 +41,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
 
