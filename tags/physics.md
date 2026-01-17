@@ -1,0 +1,15 @@
+---
+layout: default
+title: physics
+tag: physics
+permalink: /tags/physics/
+---
+
+<h1>{{ page.tag }}</h1>
+
+<ul>
+{% for post in site.tags[page.tag] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+
