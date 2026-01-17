@@ -1,12 +1,9 @@
 ---
 layout: post
 title: 続：未定義動作でFizzBuzz
-tags: [programming, zenn]
+tags: [zenn]
 permalink: fizzbuzz_undefined2
 ---
-
-# 続：未定義動作でFizzBuzz
-
 ## はじめに
 
 たまにFizzBuzzが話題になりますね。いろんな解法があると思いますが、ここではC/C++言語の未定義動作を使ってFizzBuzzしてみましょうか。[未定義動作でFizzBuzz](https://zenn.dev/kaityo256/articles/fizzbuzz_undefined)ではclang++にfizzを、g++にbuzzを表示してもらいましたが、今回はどちらもコンパイルはgccに任せつつ、環境で結果が変わるコードを書いてみます。とりあえずx86ならfizzを、ARMならbuzzを表示してもらうことにしましょう。

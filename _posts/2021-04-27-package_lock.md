@@ -4,9 +4,6 @@ title: Zenn-CLIを使っててpackage-lock.jsonがコンフリクトした時の
 tags: [zenn]
 permalink: package_lock
 ---
-
-# Zenn-CLIを使っててpackage-lock.jsonがコンフリクトした時の対処
-
 ## TL;DR
 
 Zenn-CLIを使って、かつGitHubリポジトリで連携している時、マージしようとして`package-lock.json`がコンフリクトした場合は、

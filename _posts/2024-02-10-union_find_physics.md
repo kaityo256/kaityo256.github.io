@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Union-Findアルゴリズムと計算科学の話
-tags: [zenn, math, programming]
+tags: [zenn]
 permalink: union_find_physics
 ---
-
-# Union-Findアルゴリズムと計算科学の話
-
 ## 概要
 
 Union-Findアルゴリズムは、グラフ系でよく使われるアルゴリズムですが、物性物理においても重要な役割を果たします。その実装と使われ方について少しメモしておきます。

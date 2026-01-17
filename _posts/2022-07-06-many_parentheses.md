@@ -4,9 +4,6 @@ title: 括弧で34087重に囲んだ関数を食わせるとg++が死ぬ
 tags: [zenn]
 permalink: many_parentheses
 ---
-
-# 括弧で34087重に囲んだ関数を食わせるとg++が死ぬ
-
 ## TL;DR
 
 `((((printf("Hello World\n")))))`みたいに関数をたくさんの括弧で囲むとコンパイラが死ぬので気をつけましょう。

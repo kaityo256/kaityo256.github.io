@@ -4,9 +4,6 @@ title: QRコードをQR分解する
 tags: [zenn]
 permalink: qr_decomposition
 ---
-
-# QRコードをQR分解する
-
 ## 概要
 
 QRコードをQR分解します。

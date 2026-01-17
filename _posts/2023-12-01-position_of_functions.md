@@ -1,12 +1,9 @@
 ---
 layout: post
 title: 関数の定義位置により結果が変わるコード
-tags: [zenn, programming]
+tags: [zenn]
 permalink: position_of_functions
 ---
-
-# 関数の定義位置により結果が変わるコード
-
 ## はじめに
 
 少し前、こんなポストをしました。

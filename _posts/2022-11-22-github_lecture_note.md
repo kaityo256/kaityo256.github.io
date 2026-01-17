@@ -4,9 +4,6 @@ title: GitHubで講義ノートを書く
 tags: [zenn]
 permalink: github_lecture_note
 ---
-
-# GitHubで講義ノートを書く
-
 ## はじめに
 
 大学の講義ノートをいくつかGitHubで公開しています。

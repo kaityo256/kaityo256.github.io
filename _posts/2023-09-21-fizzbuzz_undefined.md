@@ -1,12 +1,9 @@
 ---
 layout: post
 title: 未定義動作でFizzBuzz
-tags: [programming, zenn]
+tags: [zenn]
 permalink: fizzbuzz_undefined
 ---
-
-# 未定義動作でFizzBuzz
-
 ## はじめに
 
 たまにFizzBuzzが話題になりますね。いろんな解法があると思いますが、ここではC/C++言語の未定義動作を使ってFizzBuzzしてみましょうか。clang++にfizzを、g++にbuzzを表示してもらいます。

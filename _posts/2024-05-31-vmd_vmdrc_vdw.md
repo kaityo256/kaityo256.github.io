@@ -1,12 +1,9 @@
 ---
 layout: post
 title: VMDで描画方法としてVDWをデフォルトにする
-tags: [zenn, devtools]
+tags: [zenn]
 permalink: vmd_vmdrc_vdw
 ---
-
-# VMDで描画方法としてVDWをデフォルトにする
-
 ## TL;DR
 
 VMDの可視化方法でVDW(van der Waals)をデフォルトにしたい場合は、ホームディレクトリに以下の内容の`.vmdrc`を作成すれば良い。

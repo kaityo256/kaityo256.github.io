@@ -4,9 +4,6 @@ title: 制限ボルツマンマシンの基礎 ～推定編～
 tags: [zenn]
 permalink: boltzmann_machine2
 ---
-
-# 制限ボルツマンマシンの基礎 ～推定編～
-
 ## はじめに
 
 機械学習で用いられるボルツマンマシン、特に制限ボルツマンマシン(Restricted Boltzmann Machine, RBM)の解説その2です。[その1](https://zenn.dev/kaityo256/articles/bolzmann_machine)の続きなので、そちらを見てから読んでください。

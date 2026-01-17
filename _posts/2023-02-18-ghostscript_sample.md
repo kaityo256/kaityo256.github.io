@@ -4,9 +4,6 @@ title: PostScript言語を触ってみる
 tags: [zenn]
 permalink: ghostscript_sample
 ---
-
-# PostScript言語を触ってみる
-
 ## はじめに
 
 EPSというファイルを見かけたことがあるかもしれません。一昔前のLaTeXなどではEPSが標準のグラフィックファイルでした。なので、EPSを画像フォーマットだと思っている人がいるかもしれませんが、EPSはEncapsulated PostScriptと呼ばれるPostScript言語に付加情報をつけたもので、PostScriptとは、Adobeが開発しているプログラミング言語です。プログラミング言語なので、テキストファイルで編集したり、何か計算したりできます。

@@ -4,9 +4,6 @@ title: WSL2のUbuntuでkeychain経由でssh-agentを使う
 tags: [zenn]
 permalink: ssh_agent_on_wsl
 ---
-
-# WSL2のUbuntuでkeychain経由でssh-agentを使う
-
 ## TL;DR
 
 WSL2のUbuntuで`ssh-agent`を使うには、`keychain`を使って、`.zshrc`に

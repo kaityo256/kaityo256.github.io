@@ -4,9 +4,6 @@ title: Gitのリベースの説明
 tags: [zenn]
 permalink: rebase_of_git
 ---
-
-# Gitのリベースの説明
-
 ## はじめに
 
 Gitのrebaseは、(特にSubversionから入ってきた人にとって)理解が難しいものです。rebaseの説明はネットに多数落ちており(例えば[Pro Git](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9))、わかってから読み返すと「なるほど」と思うのですが、理解があやふやな時にrebaseでトラブルが起きるとどうして良いかわからなくなりがちです。

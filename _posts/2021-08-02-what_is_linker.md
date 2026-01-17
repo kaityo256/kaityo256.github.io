@@ -4,9 +4,6 @@ title: リンカのお仕事
 tags: [zenn]
 permalink: what_is_linker
 ---
-
-# リンカのお仕事
-
 ## はじめに
 
 突然ですが、こんなC++プログラムをコンパイルしてみましょう.

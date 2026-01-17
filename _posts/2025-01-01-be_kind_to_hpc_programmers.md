@@ -1,12 +1,9 @@
 ---
 layout: post
 title: HPCプログラマの書くコードってなんで古臭いの？
-tags: [zenn, hpc, programming]
+tags: [zenn]
 permalink: be_kind_to_hpc_programmers
 ---
-
-# HPCプログラマの書くコードってなんで古臭いの？
-
 ## TL;DR
 
 Q: HPCプログラマの書くコードってなんで古臭いの？

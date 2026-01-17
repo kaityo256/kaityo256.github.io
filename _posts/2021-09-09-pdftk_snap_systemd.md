@@ -4,9 +4,6 @@ title: WSL2のUbuntuにpdftkをインストールするためのsnapのために
 tags: [zenn]
 permalink: pdftk_snap_systemd
 ---
-
-# WSL2のUbuntuにpdftkをインストールするためのsnapのためにsystemdを起動する(必要はない)
-
 ## TL;DR
 
 WSL2のUbuntu (18.10以降)でPDFtkを使うためには、以下のようにすれば良い。

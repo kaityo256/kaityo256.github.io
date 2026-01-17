@@ -4,9 +4,6 @@ title: Gitのオブジェクトの中身
 tags: [zenn]
 permalink: objects_of_git
 ---
-
-# Gitのオブジェクトの中身
-
 ## はじめに
 
 [Gitのインデックスの中身](https://zenn.dev/kaityo256/articles/inside_the_index)、[Gitのブランチの実装](https://zenn.dev/kaityo256/articles/inside_the_branch)に続く、Gitの中身を見てみようシリーズです。Gitが管理するオブジェクトの種類や中身について見てみます。基本的にはPro Gitの[10. Gitの内側](https://git-scm.com/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89)をまとめなおしたものです。

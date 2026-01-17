@@ -1,12 +1,9 @@
 ---
 layout: post
 title: クリップボードを監視して康煕部首を変換するスクリプト
-tags: [zenn, programming]
+tags: [zenn]
 permalink: convert_kangxi_radicals
 ---
-
-# クリップボードを監視して康煕部首を変換するスクリプト
-
 ## 概要
 
 実行するとクリップボードを監視し、康煕部首が混ざったテキストがクリップボードにコピーされるとCJK漢字に変換してコピーしなおすPythonスクリプトを作りました。以下がリポジトリです。

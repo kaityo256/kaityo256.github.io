@@ -4,9 +4,6 @@ title: WSL上のcronで時刻を定期的に修正する
 tags: [zenn]
 permalink: wsl_cron_hwclock
 ---
-
-# WSL上のcronで時刻を定期的に修正する
-
 ## はじめに
 
 WSLはなぜか時計(システムクロック)がよく狂います。修正するためには、

@@ -1,12 +1,9 @@
 ---
 layout: post
 title: プログラム、下から作るか？上から作るか？
-tags: [zenn, programming]
+tags: [zenn]
 permalink: programming_howto
 ---
-
-# プログラム、下から作るか？上から作るか？
-
 ## TL;DR
 
 * プログラムは「下から組む方法」と「上から組む方法」がある

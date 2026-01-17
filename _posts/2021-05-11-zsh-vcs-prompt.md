@@ -4,9 +4,6 @@ title: ZshでプロンプトにGitリポジトリの情報を表示する
 tags: [zenn]
 permalink: zsh-vcs-prompt
 ---
-
-# ZshでプロンプトにGitリポジトリの情報を表示する
-
 ## 概要
 
 ZshでGitリポジトリの状態を表示するZshスクリプトを作ります。具体的には

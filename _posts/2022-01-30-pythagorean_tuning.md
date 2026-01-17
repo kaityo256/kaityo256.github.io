@@ -4,9 +4,6 @@ title: 三種類の音律を聴き比べる
 tags: [zenn]
 permalink: pythagorean_tuning
 ---
-
-# 三種類の音律を聴き比べる
-
 ## はじめに
 
 [Pythonで音を鳴らす](https://zenn.dev/kaityo256/articles/python_play_sound)という記事で、平均律とピタゴラス音律について触れました。音律とは、いわゆる「ドレミファソラシド」を、どのような周波数比とするかの決まりです。

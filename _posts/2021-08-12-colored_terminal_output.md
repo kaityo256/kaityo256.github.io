@@ -4,9 +4,6 @@ title: 色付きdiffをPDFで保存する
 tags: [zenn]
 permalink: colored_terminal_output
 ---
-
-# 色付きdiffをPDFで保存する
-
 ## TL;DR
 
 ターミナルの色付きの出力(例えば色付きdiff等)をPDFとして保存するには、Wordに貼り付けるか、一度ahaでHTMLにしてからブラウザでPDFにすると良い。

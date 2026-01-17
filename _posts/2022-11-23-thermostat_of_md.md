@@ -4,9 +4,6 @@ title: 分子動力学法における温度制御の基礎
 tags: [zenn]
 permalink: thermostat_of_md
 ---
-
-# 分子動力学法における温度制御の基礎
-
 ## はじめに
 
 分子動力学法(Molecular Dynamics method, MD)における温度制御の基礎の話を書きます。簡単のため、かなり雑な議論をします。細かい式の導出などは、[2019年の金沢大学における集中講義のノート](https://kaityo256.github.io/md2019/)などを参照してください。

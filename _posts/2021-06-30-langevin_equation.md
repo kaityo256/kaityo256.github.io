@@ -4,9 +4,6 @@ title: Langevin方程式と確率微分方程式
 tags: [zenn]
 permalink: langevin_equation
 ---
-
-# Langevin方程式と確率微分方程式
-
 ## はじめに
 
 Langevin方程式という方程式があります。例えばこんなのです。

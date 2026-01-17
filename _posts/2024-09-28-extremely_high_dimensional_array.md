@@ -1,12 +1,9 @@
 ---
 layout: post
 title: clang++に30740次元の配列を食わせると死ぬ
-tags: [zenn, programming]
+tags: [zenn]
 permalink: extremely_high_dimensional_array
 ---
-
-# clang++に30740次元の配列を食わせると死ぬ
-
 ## はじめに
 
 以前、[C/C++の配列と糖衣構文](https://zenn.dev/kaityo256/articles/syntax_sugar_of_array)という記事を書きました。C/C++では、多次元配列は、その次元やサイズに応じた型が作られます。

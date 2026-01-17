@@ -1,12 +1,9 @@
 ---
 layout: post
 title: コードを書いてから論文が出版されるまで
-tags: [zenn, physics]
+tags: [zenn]
 permalink: from_code_to_paper
 ---
-
-# コードを書いてから論文が出版されるまで
-
 ## 概要
 
 最近、我々の論文が出版されました。

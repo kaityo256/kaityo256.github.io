@@ -4,9 +4,6 @@ title: Gitのブランチの実装
 tags: [zenn]
 permalink: inside_the_branch
 ---
-
-# Gitのブランチの実装
-
 ## はじめに
 
 Gitのブランチがどう実装されているか見てみましょう、という記事です。実装は今後変更される可能性があります。とりあえず以下はWSL2のUbuntuのGit 2.25.1で動作確認したものです。

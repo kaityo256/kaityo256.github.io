@@ -1,12 +1,9 @@
 ---
 layout: post
 title: 制限ボルツマンマシンの基礎 ～コスト関数編～
-tags: [zenn, machine-learning]
+tags: [zenn]
 permalink: boltzmann_machine3
 ---
-
-# 制限ボルツマンマシンの基礎 ～コスト関数編～
-
 ## はじめに
 
 機械学習で用いられるボルツマンマシン、特に制限ボルツマンマシン(Restricted Boltzmann Machine, RBM)の解説その3です。[その2](https://zenn.dev/kaityo256/articles/boltzmann_machine2)の続きなので、そちらを見てから読んでください。

@@ -4,9 +4,6 @@ title: WSLでopenコマンドを用意する
 tags: [zenn]
 permalink: open_command_on_wsl
 ---
-
-# WSLでopenコマンドを用意する
-
 ## TL;DR
 
 WSLでMacのopenコマンドみたいなのが欲しければ、以下を`.zshrc`に書く。

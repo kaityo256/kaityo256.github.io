@@ -1,12 +1,9 @@
 ---
 layout: post
 title: 最速降下曲線の話
-tags: [zenn, physics]
+tags: [zenn]
 permalink: brachistochrone_curve
 ---
-
-# 最速降下曲線の話
-
 ## TL;DR
 
 Q: なぜ最速降下曲線問題の解に角度が出てくるんですか？

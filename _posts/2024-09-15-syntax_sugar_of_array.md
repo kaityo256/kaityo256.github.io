@@ -1,13 +1,10 @@
 ---
 layout: post
 title: C/C++の配列と糖衣構文
-tags: [zenn, programming]
+tags: [zenn]
 permalink: syntax_sugar_of_array
 render_with_liquid: false
 ---
-
-# C/C++の配列と糖衣構文
-
 ## はじめに
 
 関数の引数として多次元配列を受け取る時、以下の2つの違いを説明します。

@@ -1,12 +1,9 @@
 ---
 layout: post
 title: 隠線処理の話
-tags: [zenn, math, programming]
+tags: [zenn]
 permalink: hidden_line_normal
 ---
-
-# 隠線処理の話
-
 ## 概要
 
 分子動力学シミュレーションの結果を可視化する際に、隠線処理をする必要がありました。隠線処理とは、こんな感じに3次元の立体を2次元に描画するときに線が隠れるようにする処理のことです。

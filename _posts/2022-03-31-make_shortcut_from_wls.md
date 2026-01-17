@@ -4,9 +4,6 @@ title: WSLからWindows側にショートカットファイルを作る
 tags: [zenn]
 permalink: make_shortcut_from_wls
 ---
-
-# WSLからWindows側にショートカットファイルを作る
-
 ## TL;DR
 
 WSLのUbuntu側でファイルを指定して、Windowsのデスクトップにショートカットファイルを作るシェルスクリプト関数`wln`を作った。`wln filename`として実行すると、そのファイルのショートカットがWindowsデスクトップに作成される。

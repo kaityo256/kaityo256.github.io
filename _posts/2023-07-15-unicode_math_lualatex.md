@@ -1,12 +1,9 @@
 ---
 layout: post
 title: LuaLaTeXとunicode-mathとboldsymbolの組み合わせの話
-tags: [document, zenn]
+tags: [zenn]
 permalink: unicode_math_lualatex
 ---
-
-# LuaLaTeXとunicode-mathとboldsymbolの組み合わせの話
-
 ## TL;DR
 
 * `unicode-math`とLuaLaTeXと`\boldsymbol`を組み合わせると、PDFで太字にならない
