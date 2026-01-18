@@ -3,6 +3,7 @@ layout: post
 title: さらばいいねの世界
 date: 2026-01-18 09:32 +0900
 tags: [poem]
+permalink: farewell-to-likes
 ---
 
 ## はじめに
