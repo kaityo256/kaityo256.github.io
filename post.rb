@@ -1,0 +1,104 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "optparse"
+require "date"
+require "fileutils"
+
+def die(msg, code = 1)
+  warn "Error: #{msg}"
+  exit code
+end
+
+options = {
+  date: Date.today,
+  tags: [],
+  force: false,
+  image: false
+}
+
+parser = OptionParser.new do |opts|
+  opts.banner = "Usage: ruby post.rb slug [options]"
+
+  opts.on("-dDATE", "--date=DATE", "Post date (YYYY-MM-DD)") do |v|
+    begin
+      options[:date] = Date.iso8601(v)
+    rescue ArgumentError
+      die "Invalid date: #{v} (expected YYYY-MM-DD)"
+    end
+  end
+
+  opts.on("-tTAGS", "--tags=TAGS", "Comma-separated tags (no spaces), e.g. a,b,c") do |v|
+    if v.nil? || v.empty?
+      options[:tags] = []
+    else
+      options[:tags] = v.split(",")
+      if options[:tags].any? { |s| s.strip != s || s.empty? }
+        die "Invalid tags: '#{v}' (use comma-separated, no spaces)"
+      end
+    end
+  end
+
+  opts.on("-f", "--force", "Overwrite existing post file") do
+    options[:force] = true
+  end
+
+  opts.on("-i", "--image", "Create assets/images/slug directory (do not overwrite post)") do
+    options[:image] = true
+  end
+
+  opts.on("-h", "--help", "Show this help") do
+    puts opts
+    exit 0
+  end
+end
+
+begin
+  parser.parse!
+rescue OptionParser::ParseError => e
+  die e.message
+end
+
+slug = ARGV.shift
+die "Missing required argument: slug\n\n#{parser}" if slug.nil? || slug.empty?
+die "Too many arguments\n\n#{parser}" unless ARGV.empty?
+
+date_str = options[:date].strftime("%Y-%m-%d")
+posts_dir = "_posts"
+post_path = File.join(posts_dir, "#{date_str}-#{slug}.md")
+
+# Image-only mode behavior:
+# - If post exists: do not overwrite post
+# - If image dir missing: create it
+if options[:image]
+  img_dir = File.join("assets", "images", slug)
+  if Dir.exist?(img_dir)
+    # already exists: nothing to do
+  else
+    FileUtils.mkdir_p(img_dir)
+    puts "image dir created"
+  end
+  exit 0
+end
+
+# Normal mode: create post (or overwrite if --force)
+FileUtils.mkdir_p(posts_dir)
+
+front_matter = +"---\n"
+front_matter << "layout: post\n"
+front_matter << "title: #{slug}\n"
+front_matter << "tags: [#{options[:tags].join(', ')}]\n"
+front_matter << "permalink: #{slug}\n"
+front_matter << "---\n"
+
+if File.exist?(post_path)
+  if options[:force]
+    File.write(post_path, front_matter)
+    puts "overwritten"
+  else
+    die "File already exists: #{post_path} (use -f/--force to overwrite)"
+  end
+else
+  File.write(post_path, front_matter)
+  puts "created"
+end
