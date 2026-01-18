@@ -33,3 +33,9 @@ plugins:
 
 paginate: 20            # 1ページの記事数
 paginate_path: "/page:num/"
+
+jekyll_compose:
+  default_front_matter:
+    posts:
+      tags:
+      permlink:
