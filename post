@@ -5,6 +5,9 @@ require "optparse"
 require "date"
 require "fileutils"
 
+RED = "\e[31m"
+RESET = "\e[0m"
+
 def die(msg, code = 1)
   warn "Error: #{msg}"
   exit code
@@ -94,11 +97,11 @@ front_matter << "---\n"
 if File.exist?(post_path)
   if options[:force]
     File.write(post_path, front_matter)
-    puts "overwritten"
+    puts "#{RED}Post overwritten at #{post_path}#{RESET}"
   else
     die "File already exists: #{post_path} (use -f/--force to overwrite)"
   end
 else
   File.write(post_path, front_matter)
-  puts "created"
+  puts "New post created at #{post_path}"
 end
