@@ -3,6 +3,11 @@
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {}
   },
+  "[scss]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {}
+  },
+
   "editor.formatOnSave": true
 }
 

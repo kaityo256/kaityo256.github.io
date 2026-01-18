@@ -17,6 +17,8 @@ Find me on
 * [SpeakerDeck](https://www.speakerdeck.com/kaityo256)
 * [Zenn](https://zenn.dev/kaityo256)
 * [Qiita](https://qiita.com/kaityo256)
+* [𝕏](https://x.com/kaityo256)
+* [Bluesky](https://bsky.app/profile/kaityo256.bsky.social)
 
 [ログ](https://kaityo256.github.io/log/)
 
