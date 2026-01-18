@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 研究者として生きていくコツ
-tags: [poem]
+tags: [poem, academia]
 permalink: how_to_survive
 ---
 
