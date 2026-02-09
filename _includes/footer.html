@@ -1,8 +1,7 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
 
   <div class="wrapper">
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -13,11 +12,18 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        <a href="{{ "/" | relative_url }}" class="home-link" aria-label="Home">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3l9-8z"/>
-          </svg>
-        </a>
+          <a href="{{ "/" | relative_url }}" class="footer-icon" aria-label="Home">
+            <i class="fa-solid fa-house" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="footer-icon" aria-label="Share on X">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>          
+          <a href="#" class="footer-icon" aria-label="Share on Bluesky">
+            <i class="fa-brands fa-bluesky" aria-hidden="true"></i>
+          </a>          
+          <a href="#" class="footer-icon" aria-label="Share on Facebook">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
       </div>
     </div>
   </div>
