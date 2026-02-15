@@ -21,6 +21,12 @@ lammpstrj::for_each_frame(filename, callback_function);
 
 以下では、その使い方を簡単に紹介します。
 
+完成するサンプルは
+
+[kaityo256/lammpstrj-parser-sample](https://github.com/kaityo256/lammpstrj-parser-sample)
+
+に置いておきます。
+
 ## クローンとコンパイル
 
 シングルヘッダーライブラリですが、git submoduleとして使うのが楽です。なので、まずそれを使うためのリポジトリを作りましょう。ディレクトリ名はなんでも良いですが、`lammpstrj-parser-sample`としておきます。
