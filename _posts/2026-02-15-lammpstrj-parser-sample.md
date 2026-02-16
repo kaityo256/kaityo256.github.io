@@ -382,6 +382,78 @@ int main() {
 
 ビルド、実行すると先程と同じ結果が得られます。
 
+### ファイルへの出力
+
+いま、温度を標準出力に吐いていましたが、出力するものが増えてくるとファイルに吐いたほうが便利になります。なので、温度を`temperature.dat`に出力するようにしましょう。コールバック関数で毎回ファイルに追記する必要があるため、クラスのコンストラクタでファイルを開いておく必要があります。
+
+まず、メンバ変数として`std::ofstream ofs_;`を追加します。
+
+```cpp
+class TemperatureCalculator {
+private:
+  const std::string filename_;
+  int frame_;
+  std::ofstream ofs_; // ここを追加。
+```
+そして、コンストラクタでファイルを開きます。
+
+```cpp
+  TemperatureCalculator(const std::string filename) : filename_(filename) {
+    frame_ = 0;
+    ofs_.open("temperature.dat"); //ここを追加
+  }
+```
+
+あとは、標準出力に出していたのを`ofs_`に変えるだけです。
+
+```cpp
+  void calc_temperature(const std::unique_ptr<lammpstrj::SystemInfo> &si, const std::vector<lammpstrj::Atom> &atoms) {
+    static int frame_ = 0;
+    double e = 0.0;
+    for (auto &a : atoms) {
+      e += a.vx * a.vx + a.vy * a.vy + a.vz * a.vz;
+    }
+    e /= static_cast<double>(si->atoms);
+    e /= 3.0;
+    // printf("%d %f\n", frame_ * 500, e);
+    ofs_ << frame_ * 500 << " " << e << std::endl; // ここを追加
+    std::cerr << frame_ * 500 << std::endl; //ここも
+    frame_++;
+  }
+```
+
+ついでに標準エラーに進捗を吐いておくと便利です。これで実行すると進捗としてフレーム数が表示されつつ、温度が`temperature.dat`に出力されるようになります。
+
+```sh
+$ ./lammpstrj-sample
+(LX, LY, LZ) = (40.000000, 40.000000, 40.000000)
+N = 32000
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+
+$ cat temperature.dat
+0 0.999969
+500 1.05081
+1000 1.06063
+1500 1.05045
+2000 1.03256
+2500 1.0051
+3000 0.983592
+3500 0.961304
+4000 0.932886
+4500 0.918467
+5000 0.888542
+```
+
 ## 密度の取得とVTKファイルの出力
 
 ### メッシュサイズの計算
