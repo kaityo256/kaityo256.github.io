@@ -16,7 +16,14 @@ layout: default
       {%- endif -%}
     </p>
   </header>
-
+{% if page.tags %}
+<div class="post-tags">
+  {% for tag in page.tags %}
+  {% assign tag_class = tag | downcase | replace: "tag.", "" | replace: ".", "-" | replace: " ", "-" %}
+  <a class="tag {{ tag_class }}" href="/tags/{{ tag_class | uri_escape }}/">[{{ tag }}]</a>
+  {% endfor %}
+</div>
+{% endif %}
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
