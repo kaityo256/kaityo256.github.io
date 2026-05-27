@@ -12,6 +12,8 @@ QRコードが欲しいことがあるのだが、適当な「QRコード無料�
 * [QRコード生成](https://kaityo256.github.io/qr-code-generator/)
 * [リポジトリ(github.com/kaityo256/qr-code-generator)](https://github.com/kaityo256/qr-code-generator)
 
+![Web image](/assets/images/qr-generator-with-ai-agent/qrcode_web.png)
+
 で、このサイトを作る時にChatGPTとCodexを使ったので、どのように使ったのかを残しておく。このリポジトリにはCodexに食わせた`PLANS.md`があるので参照されたい。
 
 ## 方針
