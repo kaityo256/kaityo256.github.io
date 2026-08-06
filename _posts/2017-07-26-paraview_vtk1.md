@@ -5,182 +5,214 @@ tags: [programming, physics, qiita]
 permalink: paraview_vtk1
 ---
 
-# ParaViewでVTKレガシーフォーマットを使う その2
-
+# ParaViewでVTKレガシーフォーマットを使う その1
 
 ## はじめに
 
-[前回の記事](http://qiita.com/kaityo256/items/661833e9e2bfbac31d4b)では、単純な構造格子とスカラー場を用いたボリュームレンダリングを試した。今回は構造格子、非構造格子におけるベクトル場の可視化をしてみる。
+ParaViewはオープンソースかつマルチプラットフォームな可視化ソフトウェアである。このParaViewで読むことができるVTKファイルフォーマットについてまとめる。
 
 ソースは
 https://github.com/kaityo256/paraview-sample
 においてある。
 
+## ParaView
 
-## 構造格子におけるベクトル場
+Windows/MacともにParaViewのインストールで苦労したことは無いので、すぐに入ると思う。公式サイト
 
-構造格子におけるベクトル場の表現は簡単で、スカラーと同じように単純にデータを3つずつ並べれば良い。データフォーマットはこんな感じになる。
+http://www.paraview.org/
+
+から落としてインストールすればよい。
+
+## VTKフォーマット
+
+### ファイルの構造
+
+VTK(Visualization Toolkit)ファイルフォーマットParaViewで読み込めるファイルフォーマットである。単純な形式であるレガシーフォーマット(Simple Legacy Format)と、XML形式の二種類あるが、ここでは単純なレガシーフォーマットのみ扱う。基本的には以下のPDFを読めば全部書いてある。
+
+http://www.vtk.org/VTK/img/file-formats.pdf
+
+VTKレガシーファイルフォーマットは、こんな形式になっている。
 
 ```
-VECTORS velocity float
-x1 y1 z1
-x2 y2 z2
-x3 y3 z3
-...
-```
+# vtk DataFile Version 1.0
+simple
+ASCII
+DATASET STRUCTURED_POINTS
+DIMENSIONS 21 21 21
+ORIGIN 0.0 0.0 0.0
+SPACING 1.0 1.0 1.0
 
-このデータをベクトル場だと思って可視化するのだが、単純に矢印だけ表示しても(特に3Dでは)非常に見づらい。そこで、各格子点にスカラー量も定義しておくと良い。スカラー場とベクトル場は単純に並べてかける。
-
-```
-VECTORS nameofvector float
-x1 y1 z1
-x2 y2 z2
-x3 y3 z3
-...
-
-
-SCALARS nameofscalar float
+POINT_DATA 9261
+SCALARS intensity float
 LOOKUP_TABLE default
-s1
-s2
-s3
-...
+... (以下データ)
 ```
 
-前の記事で書き忘れたけれど、スカラー場の場合にはルックアップテーブルを指定しなければならない。使わない場合には「default」を指定する。
+1. 最初の行はファイルのバージョン情報。大文字小文字は区別し、バージョンをあらわす数字x.x以外の場所はこの通りに記述する必要がある。
+2. 次がファイルの名前。最大256文字。適当に書けばよいと思うが、個人的にはファイル名をここに記述している。
+3. 次がファイルフォーマット。ASCIIかBINARYを記述する。本稿ではASCIIフォーマットのみ説明する。
+4. 次がデータセットの構造。いくつか種類があるが、本稿では構造格子(Structured Grid)と非構造格子(Unstructured Grid)のみ扱う。
+5. 最後がデータセット。点データ(POINT_DATA)とセルデータ(CELL_DATA)があるが、本稿では主に点データを扱う。
 
-これもサンプルを見たほうが早いと思う。こんなスクリプトを用意する。
+### データ構造
 
-https://github.com/kaityo256/paraview-sample/tree/master/glyph
+ファイルの四行目からはデータセットの構造を与える。一番単純な構造は構造格子(Structured Grid)で、以下のようなフォーマットを与える。
 
+```shell-session
+DATASET STRUCTURED_POINTS
+DIMENSIONS 21 21 21
+ORIGIN 0.0 0.0 0.0
+SPACING 1.0 1.0 1.0
+```
+
+1. 最初の行がデータセット(DATASET)の構造を指定する。ここでは構造格子(STRUCTURED_POINTS)を指定している。
+2. 次の行は、三次元直方体の三辺の点の数を与える。ここでは21×21×21の立方体構造を与えている。
+3. ORIGINは、原点の座標を指定する。
+4. SPACINGは、ひとつのグリッド(直方体形状)のサイズ。いわゆるアスペクト比で、昔はASPECT_RATIOと書いたが、今は非推奨。
+
+これで三次元空間上に21×21×21=9261点の格子点が定義された。
+
+### データ点
+
+格子が定義されたら、それぞれの格子上に定義される物理量を指定する。フォーマットはこんな感じになる。
+
+```
+POINT_DATA 9261
+
+SCALARS intensity float
+LOOKUP_TABLE default
+0
+0
+0
+0
+....
+```
+
+1. 最初に、これは点上に定義されたデータだと宣言する(POINT_DATA)
+2. 次からデータセット。いくつか種類があるが、本稿では主にスカラー量(SCALARS)とベクトル量(VECTORS)を扱う。
+3. データセットは、「種類 名前 型」を指定する。最初の大文字の「SCALARS」は種類。次の「intensity」はデータの名前。自分でわかりやすいような名前をつければよい。最後が型。ここでは浮動小数点数「float」を指定している。
+4. 最後にデータの数だけデータをずらずら並べればよい。
+
+
+## サンプル1 単純球
+
+フォーマットを理解するには、適当なVTKを吐くスクリプトを書いてみるのが早い。以下は、球の内部で、中心が1、表面が0となるような強度を持つようなスカラーデータを吐くスクリプト。
+
+https://github.com/kaityo256/paraview-sample/tree/master/simple
 
 ```rb
-grid = 21
-c = grid.to_f/2
-points = grid**3
-
-VectorField = Struct.new(:x, :y, :z)
-vf = Array.new(points) do |i|
-  ix = i % grid
-  iy = (i/grid) % grid
-  iz = i/grid/grid
-  x = (ix.to_f/grid+0.25)*2.0*Math::PI
-  y = (iy.to_f/grid+0.25)*2.0*Math::PI
-  z = (iz.to_f/grid+0.25)*2.0*Math::PI
-  vx = Math::cos(x) * Math::sin(y) * Math::cos(z)
-  vy = -Math::sin(x) * Math::cos(y) * Math::cos(z)
-  vz = 0.0
-  VectorField.new(vx,vy,vz)
-end
+grid = 10
+dim = grid*2+1
+points = dim**3
+r = 0.8
 
 puts <<"EOS"
-## vtk DataFile Version 2.0
+# vtk DataFile Version 1.0
 test
 ASCII
 DATASET STRUCTURED_POINTS
-DIMENSIONS #{grid} #{grid} #{grid}
+DIMENSIONS #{dim} #{dim} #{dim}
 ORIGIN 0.0 0.0 0.0
 SPACING 1.0 1.0 1.0
 
 POINT_DATA #{points}
-VECTORS velocity float"
+
+SCALARS intensity float
+LOOKUP_TABLE default
 EOS
-vf.each do |v|
-  puts "#{v.x} #{v.y} #{v.z}"
+
+(-grid..grid).each do |iz|
+  (-grid..grid).each do |iy|
+    (-grid..grid).each do |ix|
+    x = ix.to_f/grid
+    y = iy.to_f/grid
+    z = iz.to_f/grid
+    v = r*r - (x*x + y*y + z*z)
+    v = 0 if v < 0
+    puts v.to_s
+    end
+  end
 end
-
-puts "SCALARS angle float"
-puts "LOOKUP_TABLE default"
-
-vf.each do |v|
-  puts "#{Math.atan2(v.y, v.x)}"
-end
 ```
 
-これは、三次元のテイラーグリーン渦(Taylor–Green vortex)と呼ばれる流れである。詳細は[Wikipedia](https://en.wikipedia.org/wiki/Taylor%E2%80%93Green_vortex)を参照。最初に「velocity」という名前でベクトル場を吐いているが、次に「angle」という名前のスカラー場も出力している。
+これをParaViewで読み込んで、Applyボタンを押した後、Representationを「Outline」から「Volume」にすると、以下のような表示なる。
 
-このスクリプトの出力結果を`tgv.vtk`という名前で保存して、ParaViewで読み込む。Applyしてから、Filtersから「Glyph」を選ぶか、上の方にある
+![simple.png](/assets/images/paraview_vtk1/image0.png)
 
-![image0.png](/assets/images/paraview_vtk1/image0.png)
+ただし、色はColor Map Editorでこんな感じに指定している。
 
-アイコンを押す。そして、
+![colormapeditor.png](/assets/images/paraview_vtk1/image1.png)
 
-* Active Attributesの、Scalarsがangleに、Vectorsがvelocityに
-* ScalingのScale Modeをvectorに
+## サンプル2 波動関数
 
-なっていることを確認してからApplyを押す。
+単純な球ではつまらないので、波動関数(要するに球面調和関数)を表示してみよう。ソースはこんな感じ。
 
-![image1.png](/assets/images/paraview_vtk1/image1.png)
-
-するとこんな絵になるはず。
-
-![image2.png](/assets/images/paraview_vtk1/image2.png)
-
-マウスでぐりぐりしてみるとちょっと楽しい。
-
-## 非構造格子におけるベクトル場
-
-構造格子の場合は「直方体の三辺の要素数」及び「単位直方体のサイズ(SPACING)」を指定すればそれで格子点が定義できた。しかし、分子動力学法の結果の可視化や、物体表面の可視化など、非構造格子を使いたい場合もあるだろう。その場合は非構造格子(Unstructured grid)を用いる。
-
-非構造格子の定義は以下のようにする。
-
-```
-DATASET UNSTRUCTURED_GRID
-POINTS NumberOfPoints
-x1 y1 z1
-x2 y2 z2
-x3 y3 z3
-...
-```
-
-データセットは非構造格子(UNSTRUCTURED_GRID)であり、何点あるかを指定した後は、ベクトル場と同様に(x,y,z)座標をずらずら並べるだけで良い。
-
-データの与え方は同じで、格子点を定義した順番にその値が割り当てられていく。
-
-簡単な例として、球表面に回転するようなベクトル場を描いてみる。単純なベクトル場だけだとつまらないので、z座標で色をつけることにしよう。スクリプトはこんな感じ。
-
-https://github.com/kaityo256/paraview-sample/tree/master/unstructured
-
+https://github.com/kaityo256/paraview-sample/tree/master/wavefunction
 
 ```rb
-Point = Struct.new(:x, :y, :z)
-
-vp = Array.new(10000) do 
-  z = rand()*2-1.0
-  s = rand()*2.0*Math::PI
-  x = (1-z**2)**0.5*Math::cos(s)
-  y = (1-z**2)**0.5*Math::sin(s)
-  Point.new(x,y,z)
+def export_vtk(filename,p)
+  puts filename
+  grid = 10
+  dim = grid*2+1
+  points = dim**3
+  open(filename,"w") do |f|
+    f.puts <<"EOS"
+# vtk DataFile Version 1.0"
+Wavefunction
+ASCII
+DATASET STRUCTURED_POINTS
+DIMENSIONS #{dim} #{dim} #{dim}
+ORIGIN 0.0 0.0 0.0
+SPACING 1.0 1.0 1.0
+POINT_DATA #{points}
+SCALARS scalars float
+LOOKUP_TABLE default
+EOS
+    for iz in -grid..grid
+      for iy in -grid..grid
+        for ix in -grid..grid
+          x = ix.to_f/grid
+          y = iy.to_f/grid
+          z = iz.to_f/grid
+          r = (x*x + y*y + z*z)**0.5
+          f.puts p.call(x,y,z,r)
+        end
+      end
+    end
+  end
 end
 
-puts "# vtk DataFile Version 2.0"
-puts "test"
-puts "ASCII"
-puts "DATASET UNSTRUCTURED_GRID"
-puts "POINTS #{vp.size} float"
-vp.each do |v|
-  puts "#{v.x} #{v.y} #{v.z}"
-end
+p_2pz = lambda{|x,y,z,r| Math.exp(-r*3.0)*(z)}
+p_3dz2 = lambda{|x,y,z,r| Math.exp(-r*4.0)*(3*z**2 - r**2)}
+p_3dzx = lambda{|x,y,z,r| Math.exp(-r*4.0)*(z*x)}
 
-puts "POINT_DATA #{vp.size}"
-puts "VECTORS vector float"
-vp.each do |v|
-  puts "#{v.y} #{-v.x} #{0}"
-end
-
-puts "SCALARS z float"
-puts "LOOKUP_TABLE defalut"
-vp.each do |v|
-  puts "#{v.z}"
-end
+export_vtk("2pz.vtk",p_2pz)
+export_vtk("3dz2.vtk",p_3dz2)
+export_vtk("3dzx.vtk",p_3dzx)
 ```
 
-ランダムに球表面に点をばらまいて、z軸を中心に球が回転しているような速度場を与え、後で色つけ用にスカラー場としてz座標を保存してある。これを先程と同様な方法で可視化するとこんな感じになる。
+それぞれ2pz, 3dz2, 3dzx軌道を表示する。表示のためのColormapにちょっと工夫が必要だが、たとえば2pzなら、以下のような設定にすればよい。
 
-![image3.png](/assets/images/paraview_vtk1/image3.png)
+![colormap.png](/assets/images/paraview_vtk1/image2.png)
 
-すごく短いスクリプトで作ったわりにはまぁまぁな感じですね。
+値がゼロ付近は表示しないようにして、かつ波動関数の位相の正負を色で表現している。結果はこんな感じ。
+
+![2pz.png](/assets/images/paraview_vtk1/image3.png)
+
+同様に、3d$z^2$、3d$zx$軌道はこんな感じになる。
+
+* 3d$z^2$
+
+![3dz2.png](/assets/images/paraview_vtk1/image4.png)
+
+* 3dzx
+
+![3dzx.png](/assets/images/paraview_vtk1/image5.png)
+
+個人的には3d$z^2$軌道が面白くて好き[^color]。
 
 ## まとめ
 
-構造格子、非構造格子におけるベクトル場の可視化をしてみた。VTKレガシーフォーマットは理解しちゃうと簡単なんだけど、フォーマットの仕様だけ読んでもわかりづらい。こうやってVTKファイルを吐くスクリプトを見たほうが理解しやすいと思う。
+VTKレガシーフォーマットを出力し、ParaViewで表示してみた。ここではフォーマットとしてはもっとも単純な構造格子を用い、可視化としてももっとも単純なVolumeを利用したが、他にもさまざまなことができる。特に連番のVTKファイルを与えてムービーを作る機能が便利なので、いろいろ試されたい。
+
+[^color]: 本当はもうちょっとxy平面の軌道は中心付近に局在してるんだけど、色のつけ方によって中心に穴を開けて見せている。
