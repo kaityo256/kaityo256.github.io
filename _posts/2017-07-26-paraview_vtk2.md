@@ -7,15 +7,13 @@ permalink: paraview_vtk2
 
 # ParaViewでVTKレガシーフォーマットを使う その2
 
-
 ## はじめに
 
 [前回の記事](https://kaityo256.github.io/paraview_vtk1)では、単純な構造格子とスカラー場を用いたボリュームレンダリングを試した。今回は構造格子、非構造格子におけるベクトル場の可視化をしてみる。
 
 ソースは
-https://github.com/kaityo256/paraview-sample
+[https://github.com/kaityo256/paraview-sample](https://github.com/kaityo256/paraview-sample)
 においてある。
-
 
 ## 構造格子におけるベクトル場
 
@@ -52,7 +50,6 @@ s3
 これもサンプルを見たほうが早いと思う。こんなスクリプトを用意する。
 
 https://github.com/kaityo256/paraview-sample/tree/master/glyph
-
 
 ```rb
 grid = 21
@@ -105,8 +102,8 @@ end
 
 アイコンを押す。そして、
 
-* Active Attributesの、Scalarsがangleに、Vectorsがvelocityに
-* ScalingのScale Modeをvectorに
+- Active Attributesの、Scalarsがangleに、Vectorsがvelocityに
+- ScalingのScale Modeをvectorに
 
 なっていることを確認してからApplyを押す。
 
@@ -141,11 +138,10 @@ x3 y3 z3
 
 https://github.com/kaityo256/paraview-sample/tree/master/unstructured
 
-
 ```rb
 Point = Struct.new(:x, :y, :z)
 
-vp = Array.new(10000) do 
+vp = Array.new(10000) do
   z = rand()*2-1.0
   s = rand()*2.0*Math::PI
   x = (1-z**2)**0.5*Math::cos(s)

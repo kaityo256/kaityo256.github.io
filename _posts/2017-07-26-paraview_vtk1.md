@@ -12,14 +12,14 @@ permalink: paraview_vtk1
 ParaViewはオープンソースかつマルチプラットフォームな可視化ソフトウェアである。このParaViewで読むことができるVTKファイルフォーマットについてまとめる。
 
 ソースは
-https://github.com/kaityo256/paraview-sample
+[https://github.com/kaityo256/paraview-sample](https://github.com/kaityo256/paraview-sample)
 においてある。
 
 ## ParaView
 
 Windows/MacともにParaViewのインストールで苦労したことは無いので、すぐに入ると思う。公式サイト
 
-http://www.paraview.org/
+[http://www.paraview.org/](http://www.paraview.org/)
 
 から落としてインストールすればよい。
 
@@ -29,7 +29,7 @@ http://www.paraview.org/
 
 VTK(Visualization Toolkit)ファイルフォーマットParaViewで読み込めるファイルフォーマットである。単純な形式であるレガシーフォーマット(Simple Legacy Format)と、XML形式の二種類あるが、ここでは単純なレガシーフォーマットのみ扱う。基本的には以下のPDFを読めば全部書いてある。
 
-http://www.vtk.org/VTK/img/file-formats.pdf
+[http://www.vtk.org/VTK/img/file-formats.pdf](http://www.vtk.org/VTK/img/file-formats.pdf)
 
 VTKレガシーファイルフォーマットは、こんな形式になっている。
 
@@ -92,7 +92,6 @@ LOOKUP_TABLE default
 2. 次からデータセット。いくつか種類があるが、本稿では主にスカラー量(SCALARS)とベクトル量(VECTORS)を扱う。
 3. データセットは、「種類 名前 型」を指定する。最初の大文字の「SCALARS」は種類。次の「intensity」はデータの名前。自分でわかりやすいような名前をつければよい。最後が型。ここでは浮動小数点数「float」を指定している。
 4. 最後にデータの数だけデータをずらずら並べればよい。
-
 
 ## サンプル1 単純球
 
@@ -201,11 +200,11 @@ export_vtk("3dzx.vtk",p_3dzx)
 
 同様に、3d$z^2$、3d$zx$軌道はこんな感じになる。
 
-* 3d$z^2$
+- 3d$z^2$
 
 ![3dz2.png](/assets/images/paraview_vtk1/image4.png)
 
-* 3dzx
+- 3dzx
 
 ![3dzx.png](/assets/images/paraview_vtk1/image5.png)
 
