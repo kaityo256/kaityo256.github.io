@@ -9,7 +9,7 @@ permalink: mpi_system
 
 ## はじめに
 
-これは[MPI Advent Calendar 2017](https://adventar.org/calendars/2548)の7日目の記事です。「[この辺でもう遠慮しようと思います](https://qiita.com/kaityo256/items/59a12abc48883bfefd62)」とか書いた気がしますがあれは嘘です。
+これは[MPI Advent Calendar 2017](https://adventar.org/calendars/2548)の7日目の記事です。「[この辺でもう遠慮しようと思います](https://kaityo256.github.io/mpi_scope)」とか書いた気がしますがあれは嘘です。
 
 並列コードを書くまでもない自明並列、いわゆる「バカパラ」をしたいときが結構あります。例えば大量のデータを処理したい、多数のフレームのレンダリングをしたい、などです。こんな要望に例えば「バルクジョブ」という形でシステム側で対応してくれているサイトもありますが、単純並列の場合は、MPIのラッパーを書いて、実行したいプログラムを`std::system`で呼び出す、ということをよくやります。
 

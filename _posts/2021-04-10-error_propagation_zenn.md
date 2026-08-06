@@ -170,4 +170,4 @@ $$
 
 ## 関連記事
 
-* [誤差伝播ライブラリを作った＆誤差伝播公式の導出 @ Qiita](https://qiita.com/kaityo256/items/a9cb57cc2c53eb8c5218)
+* [誤差伝播ライブラリを作った＆誤差伝播公式の導出 @ Qiita](https://kaityo256.github.io/error_propagation)

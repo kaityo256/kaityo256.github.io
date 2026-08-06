@@ -188,4 +188,4 @@ PRMLの3.1.2節に最小二乗法の幾何学的な意味の解説がありま�
 
 ## 参考
 
-* [最小二乗法の話](https://zenn.dev/kaityo256/articles/least_squares_method)
+* [最小二乗法の話](https://kaityo256.github.io/least_squares_method)

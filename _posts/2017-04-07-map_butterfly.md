@@ -16,7 +16,7 @@ permalink: map_butterfly
 * 受け取ったデータを自分の`std::map`にマージする
 * 以上をバタフライ型の通信で全ノード分集める
 
-ということをすれば良い。すでに[シリアライズ可能なstd::map](http://qiita.com/kaityo256/items/59643743633221d028d5)は書いたので、あとは通信部分を書くだけ。
+ということをすれば良い。すでに[シリアライズ可能なstd::map](https://kaityo256.github.io/map_serialize)は書いたので、あとは通信部分を書くだけ。
 
 ソースは
 

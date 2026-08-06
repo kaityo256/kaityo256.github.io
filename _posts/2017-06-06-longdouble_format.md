@@ -9,7 +9,7 @@ permalink: longdouble_format
 
 ## はじめに
 
-x86系では、long doubleが内部80bit精度の[拡張倍精度浮動小数点数フォーマット](https://ja.wikipedia.org/wiki/%E6%8B%A1%E5%BC%B5%E5%80%8D%E7%B2%BE%E5%BA%A6%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0)が採用されている。おそらく[x87系命令](http://qiita.com/kaityo256/items/1b59222e538335904b1c)の内部精度が80bitなのと合わせてあるのだと思われる。それをざっと確認しておく。
+x86系では、long doubleが内部80bit精度の[拡張倍精度浮動小数点数フォーマット](https://ja.wikipedia.org/wiki/%E6%8B%A1%E5%BC%B5%E5%80%8D%E7%B2%BE%E5%BA%A6%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0)が採用されている。おそらく[x87系命令](https://kaityo256.github.io/x87)の内部精度が80bitなのと合わせてあるのだと思われる。それをざっと確認しておく。
 
 ## 拡張倍精度浮動小数点数フォーマットとは
 

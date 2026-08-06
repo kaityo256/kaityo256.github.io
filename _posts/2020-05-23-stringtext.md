@@ -28,7 +28,7 @@ Diffusion版
 
 ## 方針
 
-とりあえず文字を描きます。RubyならCairoを使うのが楽でしょう。やり方は「[スパコンの落とし方](https://qiita.com/kaityo256/items/5f2a05e07a13d8d067a8)」と同じです。もしCairoが入ってなければいれます。
+とりあえず文字を描きます。RubyならCairoを使うのが楽でしょう。やり方は「[スパコンの落とし方](https://kaityo256.github.io/how_to_fall)」と同じです。もしCairoが入ってなければいれます。
 
 ```sh
  sudo gem install cairo

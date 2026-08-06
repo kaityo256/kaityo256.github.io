@@ -143,6 +143,6 @@ QRコードを行列だと思ってQR分解してみました。本稿がQRコ�
 ## 関連記事
 
 * [大名行列を特異値分解してみる
-](https://qiita.com/kaityo256/items/78b16c58228e131f8144)
-* [大名行列をTucker分解してみる](https://qiita.com/kaityo256/items/2e3f45377a6b9760f3e0)
-* [大名行列をHOOIでTucker分解してみる](https://qiita.com/kaityo256/items/ab9555ada7b07a65bc12)
+](https://kaityo256.github.io/daimyo_svd)
+* [大名行列をTucker分解してみる](https://kaityo256.github.io/daimyo_tucker)
+* [大名行列をHOOIでTucker分解してみる](https://kaityo256.github.io/daimyo_hooi)

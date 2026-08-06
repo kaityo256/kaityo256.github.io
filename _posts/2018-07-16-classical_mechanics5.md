@@ -14,10 +14,10 @@ permalink: classical_mechanics5
 
 これまでの記事は以下の通りです。
 
-* [解析力学の幾何学的側面](https://qiita.com/kaityo256/items/e9adf792210e8c022010)
-* [解析力学の幾何学的側面II](https://qiita.com/kaityo256/items/805243f7c4740a7937de)
-* [解析力学の幾何学的側面 III](https://qiita.com/kaityo256/items/c7dfa0776a465932a56c)
-* [解析力学の幾何学的側面 IV](https://qiita.com/kaityo256/items/5e5e6e08404cb91cf672)
+* [解析力学の幾何学的側面](https://kaityo256.github.io/classical_mechanics1)
+* [解析力学の幾何学的側面II](https://kaityo256.github.io/classical_mechanics42)
+* [解析力学の幾何学的側面 III](https://kaityo256.github.io/classical_mechanics3)
+* [解析力学の幾何学的側面 IV](https://kaityo256.github.io/classical_mechanics)
 
 ## はじめに
 

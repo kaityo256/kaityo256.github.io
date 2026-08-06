@@ -57,7 +57,7 @@ $$
 \exp(h (X+Y)) = \left( \exp(hX/n) \exp(hY/n)  \right)^n + O(h^2/n)
 $$
 
-については[以前の記事](http://qiita.com/kaityo256/items/b7e0568cad8b86c5c8ea)を参照のこと。
+については[以前の記事](https://kaityo256.github.io/lie_trotter_error)を参照のこと。
 
 さて、トロッター分解の最低次は$n=1$の場合、すなわち、
 
@@ -142,7 +142,7 @@ $$
 
 以上を適当な系でちゃんと確認してみよう、というのが本稿の趣旨である(前置き超長かった)。
 
-シンプレクティック積分については[以前の記事](http://qiita.com/kaityo256/items/fd5a6ff3fcf0eb7bc860)も参照のこと。
+シンプレクティック積分については[以前の記事](https://kaityo256.github.io/velocity_verlet)も参照のこと。
 
 ## 確認
 

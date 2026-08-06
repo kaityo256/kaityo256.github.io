@@ -11,9 +11,9 @@ permalink: classical_mechanics
 
 これまで、以下のような記事を書いてきました。
 
-* [解析力学の幾何学的側面](https://qiita.com/kaityo256/items/e9adf792210e8c022010)
-* [解析力学の幾何学的側面II](https://qiita.com/kaityo256/items/805243f7c4740a7937de)
-* [解析力学の幾何学的側面 III](https://qiita.com/kaityo256/items/c7dfa0776a465932a56c)
+* [解析力学の幾何学的側面](https://kaityo256.github.io/classical_mechanics1)
+* [解析力学の幾何学的側面II](https://kaityo256.github.io/classical_mechanics42)
+* [解析力学の幾何学的側面 III](https://kaityo256.github.io/classical_mechanics3)
 
 
 このうち、「II」で簡単触れた、微分形式を用いた運動方程式についてもう少し詳しく見ていこうと思います。
@@ -226,7 +226,7 @@ $$
 
 と表現されます。左辺はただのベクトル場の定義ですから、右辺がその実体を与えていることになります。この関数$H$をハミルトニアンと呼び、この関数により作られたベクトル場$iL$をハミルトニアンベクトル場と呼びます。
 
-[解析力学の幾何学的側面II](https://qiita.com/kaityo256/items/805243f7c4740a7937de)では、運動方程式を、ハミルトニアンの勾配$\nabla H$を回転行列で回転させたものとして表現しました。このうち、勾配は全微分$dH$で、回転行列(反対称行列)をかける操作は、微分二形式の反対称性$dx\wedge dy = - dy\wedge dx$で表現されています。
+[解析力学の幾何学的側面II](https://kaityo256.github.io/classical_mechanics42)では、運動方程式を、ハミルトニアンの勾配$\nabla H$を回転行列で回転させたものとして表現しました。このうち、勾配は全微分$dH$で、回転行列(反対称行列)をかける操作は、微分二形式の反対称性$dx\wedge dy = - dy\wedge dx$で表現されています。
 
 ## 拡大空間
 

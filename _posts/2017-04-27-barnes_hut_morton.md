@@ -9,7 +9,7 @@ permalink: barnes_hut_morton
 
 ## はじめに
 
-わけあって、[重力多体系の計算で使われるBarnes-Hut treeを構築することになったので覚書](http://qiita.com/kaityo256/items/4b49b62c30976ff5c0bc)の[続き](http://qiita.com/kaityo256/items/b6e99ac180373e0ed200)の続き。
+わけあって、[重力多体系の計算で使われるBarnes-Hut treeを構築することになったので覚書](https://kaityo256.github.io/barnes_hut)の[続き](https://kaityo256.github.io/barnes_hut_countsort)の続き。
 
 コードは
 https://github.com/kaityo256/barnes-hut
@@ -32,7 +32,7 @@ https://github.com/kaityo256/barnes-hut
 
 モートン順序については[このページ](http://marupeke296.com/COL_2D_No8_QuadTree.html)がわかりやすかったので、そちらを参照。特にこのページの図を見ながらの方が理解しやすいと思う。
 
-基本的には最初に書いた[insertion版](http://qiita.com/kaityo256/items/4b49b62c30976ff5c0bc)のアルゴリズムを、モートンキーとハッシュで実装するだけ。
+基本的には最初に書いた[insertion版](https://kaityo256.github.io/barnes_hut)のアルゴリズムを、モートンキーとハッシュで実装するだけ。
 
 ノードに関しては前の記事と同じだが、再掲しておく。
 
@@ -117,7 +117,7 @@ end
 * `mkey` 粒子番号とモートンキーの対応を表す配列
 * `q` 粒子座標
 
-となっている。後は、ハッシュの値によって三通りの処理にわけるのは[前の記事](http://qiita.com/kaityo256/items/4b49b62c30976ff5c0bc)と同じ。中身はこんな感じになるだろう。
+となっている。後は、ハッシュの値によって三通りの処理にわけるのは[前の記事](https://kaityo256.github.io/barnes_hut)と同じ。中身はこんな感じになるだろう。
 
 ```rb
   def add(key, i, mkey, q)

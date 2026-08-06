@@ -64,7 +64,7 @@ v = 3.0 * v - int(3.0*v)
 
 ## データの準備
 
-Chainerの最初の関門(ってほどでもないけど)はデータの準備だと思う。詳細は[別記事](http://qiita.com/kaityo256/items/172ae0a3ecb07751cbc8)を参照してほしいが、要するに
+Chainerの最初の関門(ってほどでもないけど)はデータの準備だと思う。詳細は[別記事](https://kaityo256.github.io/chainer_logic)を参照してほしいが、要するに
 
 * 入力をNumpyの配列(`numpy.float32`)の配列で与える(Numpyオブジェクトの配列となる)。
 * 出力(ラベル)を、Numpyの整数配列(`numpy.int32`)で与える(Numpyオブジェクトひとつを与える)
@@ -301,7 +301,7 @@ Success/Fail 913 / 87
 
 ## エクスポート＋C++へのインポート
 
-エクスポートとC++へのインポートについては[別記事](http://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09)参照。エクスポートはラッパークラスに任せてあるので、簡単にできる。
+エクスポートとC++へのインポートについては[別記事](https://kaityo256.github.io/chainer_cpp_load)参照。エクスポートはラッパークラスに任せてあるので、簡単にできる。
 
 ```py
 from model import Model
@@ -515,6 +515,6 @@ Chainerを使って、パイこね変換によって得られた数列と、標�
 
 自分が書いた記事で恐縮だけど。
 
-* [非root環境にChainerをインストールする](http://qiita.com/kaityo256/items/9aca2ce4afdaa139aa2a)
-* [Chainer1.16.0での論理演算学習サンプル](http://qiita.com/kaityo256/items/172ae0a3ecb07751cbc8)
-* [Chainerで学習したモデルをC++で読み込む](http://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09)
+* [非root環境にChainerをインストールする](https://kaityo256.github.io/chainer_nonroot)
+* [Chainer1.16.0での論理演算学習サンプル](https://kaityo256.github.io/chainer_logic)
+* [Chainerで学習したモデルをC++で読み込む](https://kaityo256.github.io/chainer_cpp_load)

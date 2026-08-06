@@ -9,7 +9,7 @@ permalink: lj_simd_intrinsic
 
 ## はじめに
 
-[LJの力計算を組み込み関数で書いてみる](http://qiita.com/kaityo256/items/0d3094de324f0e63d1f4)の続き。組み込み関数で書いたところを4倍にループアンロールして馬鹿SIMD化してみる。
+[LJの力計算を組み込み関数で書いてみる](https://kaityo256.github.io/lj_intrinsic)の続き。組み込み関数で書いたところを4倍にループアンロールして馬鹿SIMD化してみる。
 
 ## 思想
 

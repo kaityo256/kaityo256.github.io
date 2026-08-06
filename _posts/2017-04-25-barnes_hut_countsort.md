@@ -9,7 +9,7 @@ permalink: barnes_hut_countsort
 
 ## はじめに
 
-[わけあって、重力多体系の計算で使われるBarnes-Hut treeを構築することになったので覚書](http://qiita.com/kaityo256/items/4b49b62c30976ff5c0bc)の続き。前回はinsertion版だが、今回は分布数えソート(counting sort)版。
+[わけあって、重力多体系の計算で使われるBarnes-Hut treeを構築することになったので覚書](https://kaityo256.github.io/barnes_hut)の続き。前回はinsertion版だが、今回は分布数えソート(counting sort)版。
 
 コードは
 https://github.com/kaityo256/barnes-hut
@@ -17,7 +17,7 @@ https://github.com/kaityo256/barnes-hut
 
 ## Barnes-Hut treeとは
 
-空間を再帰的に分割していって、各領域にたかだか一個までしか粒子が入らないようにしたい。[(以下略)](http://qiita.com/kaityo256/items/4b49b62c30976ff5c0bc)
+空間を再帰的に分割していって、各領域にたかだか一個までしか粒子が入らないようにしたい。[(以下略)](https://kaityo256.github.io/barnes_hut)
 
 要するにこういう入力にたいして、
 
@@ -29,7 +29,7 @@ https://github.com/kaityo256/barnes-hut
 
 ## アルゴリズム
 
-[前回](http://qiita.com/kaityo256/items/4b49b62c30976ff5c0bc)は、粒子をルートノードに追加依頼すると、適当な子ノードを作成しつつ、よしなに空間を分割してくれる方法を考えた。今度は一度にノードに粒子のインデックスを渡し、それを各子ノードにまとめて分配していく方法を採用する。[^iiwake]
+[前回](https://kaityo256.github.io/barnes_hut)は、粒子をルートノードに追加依頼すると、適当な子ノードを作成しつつ、よしなに空間を分割してくれる方法を考えた。今度は一度にノードに粒子のインデックスを渡し、それを各子ノードにまとめて分配していく方法を採用する。[^iiwake]
 
 [^iiwake]: (繰り返しになるが)これはC++のコード開発のためのプロトタイピングなので、すごくC++っぽいプログラムを組んでいるがご容赦。
 

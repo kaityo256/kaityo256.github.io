@@ -246,6 +246,6 @@ $ icpc -O1 array2.cpp; ./a.out
 ## 参考
 
 * [本の虫：とても賢いコンパイラーの逆襲](https://cpplover.blogspot.jp/2015/12/blog-post_21.html)
-* [GCCの最適化がインテルコンパイラより賢くて驚いた話](https://qiita.com/kaityo256/items/72c1bf93a210e450308c)
+* [GCCの最適化がインテルコンパイラより賢くて驚いた話](https://kaityo256.github.io/gcc_vs_intel_compiler)
 * [C言語分かってなかった (I Do Not Know C)](https://qiita.com/yohhoy/items/960ee7a7b502e5c764b4)
 * [What Every C Programmer Should Know About Undefined Behavior #1/3](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html), [#2/3](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html), [#3/3](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_21.html)

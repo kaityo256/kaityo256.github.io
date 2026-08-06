@@ -9,7 +9,7 @@ permalink: sigsegv_sigill
 
 ## はじめに
 
-[この記事](https://qiita.com/kaityo256/items/ae0e1247844570cf0265)で、なぜかメモリの不正アクセスをするとSIGILLが出るコードを見つけたのだけれど、その後、調査を進めて、
+[この記事](https://kaityo256.github.io/mac_sigill)で、なぜかメモリの不正アクセスをするとSIGILLが出るコードを見つけたのだけれど、その後、調査を進めて、
 
 ```test.cpp
 int main(void) {
@@ -123,4 +123,4 @@ Macで不正なmovl命令を出すことでSIGILLを出す現象を調べてみ�
 
 ## 関連記事
 
-* [x86でbus errorを起こす](https://qiita.com/kaityo256/items/fadffae00e517efbc8aa)
+* [x86でbus errorを起こす](https://kaityo256.github.io/x86_bus_error)

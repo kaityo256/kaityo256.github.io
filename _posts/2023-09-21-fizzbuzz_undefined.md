@@ -117,4 +117,4 @@ g++でコンパイルすると、5の倍数の時だけbuzzと言います。
 
 何が起きているかは、以下の記事を参照してください。
 
-* [インクリメント演算子とコンパイラの気持ち](https://zenn.dev/kaityo256/articles/increment_operators)
+* [インクリメント演算子とコンパイラの気持ち](https://kaityo256.github.io/increment_operators)

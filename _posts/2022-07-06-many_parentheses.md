@@ -10,7 +10,7 @@ permalink: many_parentheses
 
 ## はじめに
 
-以前、[printfに4285個アスタリスクをつけるとclang++が死ぬ](https://qiita.com/kaityo256/items/84d8ba352009e3a0fe42)という記事や、[GCCに27958段ネストした関数を食わせると死ぬ](https://zenn.dev/kaityo256/articles/nesting_functions)という記事を書きました。
+以前、[printfに4285個アスタリスクをつけるとclang++が死ぬ](https://kaityo256.github.io/printf)という記事や、[GCCに27958段ネストした関数を食わせると死ぬ](https://kaityo256.github.io/nesting_functions)という記事を書きました。
 
 特に、`printf`にアスタリスクをたくさんつける記事では、`clang++`がわりとすぐ死んだのに対して、`g++`は5万個とかつけても大丈夫でした。一般に、コンパイラが死ぬ系のコンパイラいじめは、再帰でスタックを使い切るタイプのものが多く、LLVMよりもGCCの方が頑健という印象です。
 
@@ -260,20 +260,20 @@ $ ruby check.rb
 ## 補足のトリビア
 
 * たくさん括弧で囲むと`g++`も`clang++`もコンパイルにすごく時間がかかるが、`icpc`はあっという間に死んでくれるので検証が楽。
-* [アスタリスクをたくさん付けた場合](https://qiita.com/kaityo256/items/84d8ba352009e3a0fe42)、`clang++`は`Parser::ParseCastExpression`という関数の再帰呼び出しのし過ぎでスタック枯渇で死んでいたが、括弧で囲みすぎた場合は`Parser::ParseParenExpression`という関数の再帰のし過ぎで死ぬ。
+* [アスタリスクをたくさん付けた場合](https://kaityo256.github.io/printf)、`clang++`は`Parser::ParseCastExpression`という関数の再帰呼び出しのし過ぎでスタック枯渇で死んでいたが、括弧で囲みすぎた場合は`Parser::ParseParenExpression`という関数の再帰のし過ぎで死ぬ。
 * 死ぬ括弧の深さはメモリに依存する(スタック枯渇だから)ので、環境によって異なる。
 
 ## これまでのコンパイラいじめの記録
 
-* [GCCに27958段ネストした関数を食わせると死ぬ](https://zenn.dev/kaityo256/articles/nesting_functions)
-* [printfに4285個アスタリスクをつけるとclang++が死ぬ](https://qiita.com/kaityo256/items/84d8ba352009e3a0fe42)
-* [定数配列がからんだ定数畳み込み最適化](https://qiita.com/kaityo256/items/bf9712559c9cd2ce4e2c)
-* [C++でアスタリスクをつけすぎると端末が落ちる](https://qiita.com/kaityo256/items/d54439246edc1cc58121)
-* [整数を419378回インクリメントするとMacのg++が死ぬ](https://qiita.com/kaityo256/items/6b5715b213e955d44f55)
-* [コンパイラは関数のインライン展開を☓☓段で力尽きる](https://qiita.com/kaityo256/items/b4dc66c92338c0b92552)
-* [関数ポインタと関数オブジェクトのインライン展開](https://qiita.com/kaityo256/items/5911d50c274465e19cf6)
-* [インテルコンパイラのアセンブル時最適化](https://qiita.com/kaityo256/items/e7b05eb9c2bfbbd434a7)
-* [GCCの最適化がインテルコンパイラより賢くて驚いた話](https://qiita.com/kaityo256/items/72c1bf93a210e450308c)
+* [GCCに27958段ネストした関数を食わせると死ぬ](https://kaityo256.github.io/nesting_functions)
+* [printfに4285個アスタリスクをつけるとclang++が死ぬ](https://kaityo256.github.io/printf)
+* [定数配列がからんだ定数畳み込み最適化](https://kaityo256.github.io/constarray)
+* [C++でアスタリスクをつけすぎると端末が落ちる](https://kaityo256.github.io/cpp_asterisk_terminal)
+* [整数を419378回インクリメントするとMacのg++が死ぬ](https://kaityo256.github.io/mac_gpp_crash)
+* [コンパイラは関数のインライン展開を☓☓段で力尽きる](https://kaityo256.github.io/inline_limit)
+* [関数ポインタと関数オブジェクトのインライン展開](https://kaityo256.github.io/inline_function)
+* [インテルコンパイラのアセンブル時最適化](https://kaityo256.github.io/icc_asm_opt)
+* [GCCの最適化がインテルコンパイラより賢くて驚いた話](https://kaityo256.github.io/gcc_vs_intel_compiler)
 
 動画もあります。
 

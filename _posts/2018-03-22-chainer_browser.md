@@ -24,7 +24,7 @@ https://kaityo256.github.io/mnist_check/
 
 (2018年9月19日追記)以下で認識精度が悪いのは、前処理を行っていなかったからでした。前処理付きバージョンの解説を以下に書きましたので、そちらも合わせてご参照ください。
 ↓
-[ブラウザで手描き数字認識 (前処理付き版)](https://qiita.com/kaityo256/items/4ac935547afc8ba97f66)
+[ブラウザで手描き数字認識 (前処理付き版)](https://kaityo256.github.io/browser_mnist)
 
 ## 使い方
 
@@ -92,15 +92,15 @@ Exported to test.dat
 
 ## 簡単な説明
 
-MNISTのデータ構造については、[MNISTのデータを仕分けしてPNGファイルで保存](https://qiita.com/kaityo256/items/77bc0b40e3bb70d36f3d)を参考にしてください。入力データは28*28の0から1までの浮動小数点データ、ラベルは0から9までの整数値です。
+MNISTのデータ構造については、[MNISTのデータを仕分けしてPNGファイルで保存](https://kaityo256.github.io/mnist_dump)を参考にしてください。入力データは28*28の0から1までの浮動小数点データ、ラベルは0から9までの整数値です。
 
-これを適当なモデルで学習させます。今回は入力28*28ユニット、中間層も28*28ユニット、出力は10ユニットの三層のニューラルネットにしてみました。これを簡単にラップした`model.py`を使って学習させた後、データを保存します。詳細は[Re:ゼロから始めるChainer生活](https://qiita.com/kaityo256/items/eeac271bbfaa5c1763de)を参照してください。
+これを適当なモデルで学習させます。今回は入力28*28ユニット、中間層も28*28ユニット、出力は10ユニットの三層のニューラルネットにしてみました。これを簡単にラップした`model.py`を使って学習させた後、データを保存します。詳細は[Re:ゼロから始めるChainer生活](https://kaityo256.github.io/chainer_zero)を参照してください。
 
-学習結果をC++向けにエキスポートします。詳細は[Chainerで学習したモデルをC++で読み込む](https://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09)を参照してください。リポジトリにある`model.js`は、ほぼこれの`model.hpp`をそのままJavaScriptに移植したものです(なのですごくC++っぽく書いてある)。
+学習結果をC++向けにエキスポートします。詳細は[Chainerで学習したモデルをC++で読み込む](https://kaityo256.github.io/chainer_cpp_load)を参照してください。リポジトリにある`model.js`は、ほぼこれの`model.hpp`をそのままJavaScriptに移植したものです(なのですごくC++っぽく書いてある)。
 
 さて、ここまでで、C/C++で言うところの`float`型、JavaScriptで言うところの`float32`型[^1]がずらずらならんだバイナリファイル`test.dat`ができたはずなので、これをブラウザで読み込みます。
 
-ブラウザでJavaScriptを使ってローカルにある単精度浮動小数点数型データ(float32)のバイナリデータを読みこむ方法は[JavaScriptでfloat32のバイナリファイルを読み込む](https://qiita.com/kaityo256/items/bdc29384ec7955d087fa)に書いたとおりです。
+ブラウザでJavaScriptを使ってローカルにある単精度浮動小数点数型データ(float32)のバイナリデータを読みこむ方法は[JavaScriptでfloat32のバイナリファイルを読み込む](https://kaityo256.github.io/js_float32)に書いたとおりです。
 
 とりあえず`model.js`ではデータを一括で読み込んで、それをスライスして各行列やらバイアスやらに振り分けています。そのためにデータを簡単にラップした`Float32Stream`クラスを作りました。
 
@@ -209,9 +209,9 @@ ChainerでMNISTを学習させたモデルを適当にコンバートし、JavaS
 ## 参考文献
 
 * [Chainer v3 ビギナー向けチュートリアル](https://qiita.com/mitmul/items/1e35fba085eb07a92560) Chainer初心者はまずこれを読むと良いかも。
-* [MNISTのデータを仕分けしてPNGファイルで保存](https://qiita.com/kaityo256/items/77bc0b40e3bb70d36f3d)
-* [Re:ゼロから始めるChainer生活](https://qiita.com/kaityo256/items/eeac271bbfaa5c1763de)
-* [Chainerで学習したモデルをC++で読み込む](https://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09)
-* [JavaScriptでfloat32のバイナリファイルを読み込む](https://qiita.com/kaityo256/items/bdc29384ec7955d087fa)
+* [MNISTのデータを仕分けしてPNGファイルで保存](https://kaityo256.github.io/mnist_dump)
+* [Re:ゼロから始めるChainer生活](https://kaityo256.github.io/chainer_zero)
+* [Chainerで学習したモデルをC++で読み込む](https://kaityo256.github.io/chainer_cpp_load)
+* [JavaScriptでfloat32のバイナリファイルを読み込む](https://kaityo256.github.io/js_float32)
 
 [^1]: 実際にそういう呼び方をするのかは知りません。

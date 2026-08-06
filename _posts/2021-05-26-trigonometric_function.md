@@ -220,4 +220,4 @@ $$
 ## 参考文献
 
 * [三角関数は何に使えるのか 〜 サイン・コサイン・タンジェントの活躍 〜](https://qiita.com/drken/items/41b4ec6bde794cbcd0f6)
-* [線形代数を学ぶ理由](https://qiita.com/kaityo256/items/872a2b2fdf977c0e3fbb)
+* [線形代数を学ぶ理由](https://kaityo256.github.io/linalg)

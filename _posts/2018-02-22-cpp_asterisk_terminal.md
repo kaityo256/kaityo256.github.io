@@ -154,4 +154,4 @@ $ brew install gnu-time
 
 ## 関連記事
 
-* [コンパイラは関数のインライン展開を☓☓段で力尽きる](https://qiita.com/kaityo256/items/b4dc66c92338c0b92552)
+* [コンパイラは関数のインライン展開を☓☓段で力尽きる](https://kaityo256.github.io/inline_limit)

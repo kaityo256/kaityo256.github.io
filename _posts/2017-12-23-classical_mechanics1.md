@@ -467,12 +467,12 @@ end
 
 というわけで解析力学の幾何学的側面と、シンプレクティック積分についてまとめてみました。もうちょっと多様体とかそのあたりまで説明したかったのですが、時間的にここまでにしておきます。
 
-追記：　多様体というか、そっち方面について続きを書きました→ [解析力学の幾何学的側面II](https://qiita.com/kaityo256/items/805243f7c4740a7937de)
+追記：　多様体というか、そっち方面について続きを書きました→ [解析力学の幾何学的側面II](https://kaityo256.github.io/classical_mechanics42)
 
 ## 参考
 
-* [Velocity Verlet法とシンプレクティック積分](http://qiita.com/kaityo256/items/fd5a6ff3fcf0eb7bc860) Velocity Verlet法がシンプレクティック積分になることの確認等
-* [Lie-Trotter公式の打切り誤差を調べる](http://qiita.com/kaityo256/items/b7e0568cad8b86c5c8ea) シンプレクティック積分の構築に使われるLie-Trotter公式の打切り誤差を確認
-* [時間反転対称性とシンプレクティック積分](http://qiita.com/kaityo256/items/a4968a8de7ed636a2e79) 
-* [Lie-Trotter公式における二次の対称分解](http://qiita.com/kaityo256/items/1af80746913f1f17006d) 分子動力学法で、おそらく最も使われている二次のシンプレクティック積分(二次の対称分解)の精度の確認
-* [シンプレクティック変換と運動方程式の関係について](http://qiita.com/kaityo256/items/0d3af05b19d3f472ca98) 時間発展がシンプレクティックであることと、運動方程式が満たすべき条件の関係について
+* [Velocity Verlet法とシンプレクティック積分](https://kaityo256.github.io/velocity_verlet) Velocity Verlet法がシンプレクティック積分になることの確認等
+* [Lie-Trotter公式の打切り誤差を調べる](https://kaityo256.github.io/lie_trotter_error) シンプレクティック積分の構築に使われるLie-Trotter公式の打切り誤差を確認
+* [時間反転対称性とシンプレクティック積分](https://kaityo256.github.io/time_reversal_symplectic) 
+* [Lie-Trotter公式における二次の対称分解](https://kaityo256.github.io/lie_trotter_sym2) 分子動力学法で、おそらく最も使われている二次のシンプレクティック積分(二次の対称分解)の精度の確認
+* [シンプレクティック変換と運動方程式の関係について](https://kaityo256.github.io/symplectic_transform) 時間発展がシンプレクティックであることと、運動方程式が満たすべき条件の関係について

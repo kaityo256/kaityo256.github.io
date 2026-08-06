@@ -5,7 +5,7 @@ tags: [poem, hpc]
 permalink: what-is-hpl
 ---
 
-これは以前[Twitterに連投したもの](http://twilog.org/kaityo256/date-171230/allasc)と、[Qiitaに書いたもの](https://qiita.com/kaityo256/items/ae9df8f0a12abe3c6943)をまとめて加筆修正したものです。
+これは以前[Twitterに連投したもの](http://twilog.org/kaityo256/date-171230/allasc)と、[Qiitaに書いたもの](https://kaityo256.github.io/what-is-hpl)をまとめて加筆修正したものです。
 
 # はじめに
 

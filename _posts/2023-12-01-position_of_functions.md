@@ -284,5 +284,5 @@ func2(2, 1.0);
 
 ## 合わせて読みたい
 
-* [未定義動作により最適化レベルで結果が変わるコード](https://qiita.com/kaityo256/items/d2677e178be0180482e8)
-* [ファイルのタイムスタンプに依存してコンパイル結果が変わるコード](https://qiita.com/kaityo256/items/4e5a3791e23d081383c5)
+* [未定義動作により最適化レベルで結果が変わるコード](https://kaityo256.github.io/undefined_behavior_opt)
+* [ファイルのタイムスタンプに依存してコンパイル結果が変わるコード](https://kaityo256.github.io/timestamp_build)

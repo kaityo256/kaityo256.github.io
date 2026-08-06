@@ -9,7 +9,7 @@ permalink: word_tired_script
 
 ## はじめに
 
-[Wordさんは今日もおつかれです](http://qiita.com/kaityo256/items/c15889dbb7acb2632c6e)を書くのに使ったスクリプトを
+[Wordさんは今日もおつかれです](https://kaityo256.github.io/word_tired)を書くのに使ったスクリプトを
 
 https://github.com/kaityo256/wordlookstired
 

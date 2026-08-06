@@ -88,7 +88,7 @@ RUN cd ${HOME} \
 とりあえず、自分でもローカルマシンで試すことにしました。まずは`-j 20`のままビルドします。こけます。
 <img width="506" alt="j20.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/79744/54f6eeb7-8b44-1642-6c26-5886754568b1.png">
 
-internal compiler errorさんお久しぶりです。[整数を419378回インクリメント](https://qiita.com/kaityo256/items/6b5715b213e955d44f55)した時以来ですね。internal compiler error、略してICEですが、普通に生きていればあまり見かけないと思います。・・・というようなことをあるところで口走ったら、「え？ICEなんて日常的に見ますよね？」みたいな反応があったのでC++ガチ勢は怖いなと思いました。閑話休題。
+internal compiler errorさんお久しぶりです。[整数を419378回インクリメント](https://kaityo256.github.io/mac_gpp_crash)した時以来ですね。internal compiler error、略してICEですが、普通に生きていればあまり見かけないと思います。・・・というようなことをあるところで口走ったら、「え？ICEなんて日常的に見ますよね？」みたいな反応があったのでC++ガチ勢は怖いなと思いました。閑話休題。
 
 とりあえず4コアしかないマシンで20並列するのもアレなんで、`-j 4`でやり直してみます。
 

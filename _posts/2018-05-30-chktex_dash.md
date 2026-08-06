@@ -110,7 +110,7 @@ $ chktex -q -n 8 test.tex
 let g:ale_tex_chktex_options = "-n 8"
 ```
 
-と追加します。もし、LaTeXソースごとにこのオプションの有無を指示したい場合は、[Vimでプロジェクト固有の設定を適用する](https://qiita.com/unosk/items/43989b61eff48e0665f3)や[Vimの非同期文法チェッカALEにプロジェクト固有の情報を教える](https://qiita.com/kaityo256/items/cb76c3f73753fe921e7b)を参考に、`.vimrc.local`をプロジェクトごとに置いて、そこに`chktex`のオプションを指示すると良いでしょう。
+と追加します。もし、LaTeXソースごとにこのオプションの有無を指示したい場合は、[Vimでプロジェクト固有の設定を適用する](https://qiita.com/unosk/items/43989b61eff48e0665f3)や[Vimの非同期文法チェッカALEにプロジェクト固有の情報を教える](https://kaityo256.github.io/vim_ale_project)を参考に、`.vimrc.local`をプロジェクトごとに置いて、そこに`chktex`のオプションを指示すると良いでしょう。
 
 ## まとめ
 

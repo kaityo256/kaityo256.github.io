@@ -206,7 +206,7 @@ $$
 
 ## 関連
 
-* [線形代数を学ぶ理由](https://qiita.com/kaityo256/items/872a2b2fdf977c0e3fbb)
-* [三角関数の話](https://zenn.dev/kaityo256/articles/trigonometric_function)
+* [線形代数を学ぶ理由](https://kaityo256.github.io/linalg)
+* [三角関数の話](https://kaityo256.github.io/trigonometric_function)
 
 

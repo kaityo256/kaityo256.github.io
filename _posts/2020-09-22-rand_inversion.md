@@ -356,4 +356,4 @@ $$
 
 球面に一様に分布する点を発生させる時、$z=\cos{\theta}$を一様乱数として作る方法はよく紹介されていますが、「なぜそれで良いか」の証明があまり見当たらなかったので書いてみました。「任意の確率変数を、その累積分布関数で変換すると0から1までの一様乱数になる」というのが本質です。
 
-なお、確率変数が連続ではなく離散の場合は、[Walker's Alias法](https://qiita.com/kaityo256/items/1656597198cbfeb7328c)を使うのが簡単です。C++なら、`std::discrete_distribution`が(多分)Walker's Alias法で実装されているので、それを使うのが楽だと思います。
+なお、確率変数が連続ではなく離散の場合は、[Walker's Alias法](https://kaityo256.github.io/walker_alias)を使うのが簡単です。C++なら、`std::discrete_distribution`が(多分)Walker's Alias法で実装されているので、それを使うのが楽だと思います。

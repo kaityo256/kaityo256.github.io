@@ -31,7 +31,7 @@ $$
 
 ここから「ある要素$x$と$y$は同じグループか？」「最大のグループのサイズはどれくらいか？」などが知りたいとします。このときに使われるアルゴリズムがUnion-Findアルゴリズムです。
 
-Union-Findアルゴリズムの実装はいくつかありますが、もっとも簡単なのは一次元配列を使った実装です。以下には概略のみ示しますが、実装のイメージについては例えば[Union-Find木のサンプルコード](https://qiita.com/kaityo256/items/5a3b03ff465778c23f6a)を参照してください。
+Union-Findアルゴリズムの実装はいくつかありますが、もっとも簡単なのは一次元配列を使った実装です。以下には概略のみ示しますが、実装のイメージについては例えば[Union-Find木のサンプルコード](https://kaityo256.github.io/union_find)を参照してください。
 
 全要素数が`N`である場合、`cluster[i] = i`であるようなサイズ`N`の配列を用意します。
 
@@ -94,7 +94,7 @@ Union-Findアルゴリズムはグラフ操作でよく現れるアルゴリズ�
 
 * [C.M.Fortuin, P.W.Kasteleyn, "On the random-cluster model: I. Introduction and relation to other models", Physica, vol. 57, pp 536 (1972).](https://doi.org/10.1016/0031-8914(72)90045-6)
 
-その基礎アルゴリズムにUnion-Findアルゴリズムが使われます。詳細は[Swendsen-Wangアルゴリズムのサンプルコード](https://qiita.com/kaityo256/items/6539261993e282edc5aa)などを参照してください。
+その基礎アルゴリズムにUnion-Findアルゴリズムが使われます。詳細は[Swendsen-Wangアルゴリズムのサンプルコード](https://kaityo256.github.io/swendsen_wang)などを参照してください。
 
 Swendsen-Wangアルゴリズムは、簡単に書くと
 

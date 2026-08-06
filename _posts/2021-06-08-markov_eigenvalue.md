@@ -536,9 +536,9 @@ print(Pinv@a)
 
 ## 参考文献
 
-* [線形代数を学ぶ理由](https://qiita.com/kaityo256/items/872a2b2fdf977c0e3fbb)
+* [線形代数を学ぶ理由](https://kaityo256.github.io/linalg)
   * 主に数値計算で離散化により現れる線形代数について
 * [線形代数というものの見方](https://speakerdeck.com/kaityo256/view-from-linear-algebra)
   * 線形代数の幾何学的な意味、特に回転について
-* [a/(b+c)+b/(c+a)+c/(a+b)=4の自然数解(a,b,c)を求める](https://qiita.com/kaityo256/items/c8b703ee04088ef64983)
+* [a/(b+c)+b/(c+a)+c/(a+b)=4の自然数解(a,b,c)を求める](https://kaityo256.github.io/diophantus)
   * スクリプトを書いて数学を遊ぶ例

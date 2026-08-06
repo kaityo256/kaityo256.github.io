@@ -231,7 +231,7 @@ $ ./a.out | sort -u
 0xb40008b0
 ```
 
-24回mallocが呼ばれたはずですが、確保されたメモリアドレスの種類は9個しかありません(実行のたびに変わります)。ちなみに、`0xb00008b0`みたいに明らかに異質なアドレスは、ヒープではなくmmapで確保されたものです。詳しくは[mallocの動作を追いかける(マルチスレッド編)](https://qiita.com/kaityo256/items/bf6563361c502bbf062e)を参照してください。
+24回mallocが呼ばれたはずですが、確保されたメモリアドレスの種類は9個しかありません(実行のたびに変わります)。ちなみに、`0xb00008b0`みたいに明らかに異質なアドレスは、ヒープではなくmmapで確保されたものです。詳しくは[mallocの動作を追いかける(マルチスレッド編)](https://kaityo256.github.io/malloc5)を参照してください。
 
 これは、一度mallocで確保された領域がfreeにより解放され、次にmallocで呼ばれた時に再利用されるからです。24スレッドがいっきにmallocとfreeをしにいきますが、タイミングによっては先行したスレッドのfreeが終わっており、別のスレッドがmallocしようとした時にその解放された領域がリサイクルされます。
 
@@ -387,8 +387,8 @@ test5.cpp:5:2: error: '__thread' variables must have global storage
 
 mallocについては、僕が書いた一連のmalloc記事も参考にしてみてください。
 
-* [mallocの動作を追いかける(mmap編)](https://qiita.com/kaityo256/items/9e78b507940b2292bf79)
-* [mallocの動作を追いかける(prev_size編)](https://qiita.com/kaityo256/items/2e9a368a5b627daa2ff6)
-* [mallocの動作を追いかける(main_arenaとsbrk編)](https://qiita.com/kaityo256/items/94a84dbe922eb5996a27)
-* [mallocの動作を追いかける(fastbins編)](https://qiita.com/kaityo256/items/ca54b1b921d8ab96cb82)
-* [mallocの動作を追いかける(マルチスレッド編)](https://qiita.com/kaityo256/items/bf6563361c502bbf062e)
+* [mallocの動作を追いかける(mmap編)](https://kaityo256.github.io/malloc1)
+* [mallocの動作を追いかける(prev_size編)](https://kaityo256.github.io/malloc2)
+* [mallocの動作を追いかける(main_arenaとsbrk編)](https://kaityo256.github.io/malloc3)
+* [mallocの動作を追いかける(fastbins編)](https://kaityo256.github.io/malloc4)
+* [mallocの動作を追いかける(マルチスレッド編)](https://kaityo256.github.io/malloc5)

@@ -387,4 +387,4 @@ plt.show()
 ## 参考
 
 * [Stack Overflow: Computing mean square displacement using python and FFT](https://stackoverflow.com/questions/34222272/computing-mean-square-displacement-using-python-and-fft)
-* [Pythonでフーリエ変換](https://qiita.com/kaityo256/items/64a54bb2e2c477cc6fa1)
+* [Pythonでフーリエ変換](https://kaityo256.github.io/python_fft)

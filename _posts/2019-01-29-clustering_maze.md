@@ -44,7 +44,7 @@ Union-Findアルゴリズムでは、まず全ての要素に背番号をつけ�
 
 <img width="574" alt="group2.png" src="https://qiita-image-store.s3.amazonaws.com/0/79744/f8de2a56-e37d-d491-405a-415e52ab81c9.png">
 
-Union-Findは一次元配列によるリンクリストで実装できて、計算量はおおよそ$O(N)$です。その実装例については[Union-Find木のサンプルコード](https://qiita.com/kaityo256/items/5a3b03ff465778c23f6a)に書いたので参照してください。
+Union-Findは一次元配列によるリンクリストで実装できて、計算量はおおよそ$O(N)$です。その実装例については[Union-Find木のサンプルコード](https://kaityo256.github.io/union_find)に書いたので参照してください。
 
 こうして、「つながった要素別々のグループに分ける」ことができるようになりました。以下、「自分の所属するグループの、代表要素の背番号」を「クラスタ番号(cluster index)」と呼びます。
 

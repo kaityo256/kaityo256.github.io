@@ -7,7 +7,7 @@ permalink: ppt_pdf_heavy_reply
 
 # Re: PowerPoint for Macが吐くPDFが重いんです
 
-[PowerPoint for Macが吐くPDFが重いんです](https://qiita.com/kaityo256/items/0dfa85af3ae172bfb14a)の続きです。
+[PowerPoint for Macが吐くPDFが重いんです](https://kaityo256.github.io/ppt_pdf_heavy)の続きです。
 
 ## TL;DR
 
@@ -24,7 +24,7 @@ permalink: ppt_pdf_heavy_reply
 
 ## はじめに
 
-「[PowerPoint for Macが吐くPDFが重いんです](https://qiita.com/kaityo256/items/0dfa85af3ae172bfb14a)」で、PowerPoint for Macが吐くPDFのサイズがやたら大きく、同じファイルWindowsのPowerPointでエクスポートしたら相当小さいPDFが出力されることを書いた。
+「[PowerPoint for Macが吐くPDFが重いんです](https://kaityo256.github.io/ppt_pdf_heavy)」で、PowerPoint for Macが吐くPDFのサイズがやたら大きく、同じファイルWindowsのPowerPointでエクスポートしたら相当小さいPDFが出力されることを書いた。
 
 前の記事では同じ画像ファイルを含むスライドを複数枚コピーしたものなので、
 
@@ -222,7 +222,7 @@ endobj
 
 ## 追記(2018年8月22日)
 
-[この記事](https://qiita.com/kaityo256/items/0dfa85af3ae172bfb14a)に対する編集リクエストとして、
+[この記事](https://kaityo256.github.io/ppt_pdf_heavy)に対する編集リクエストとして、
 
 > 「環境設定>一般>印刷品質(用紙/PDF）」において 「低」を選択すると解決する
 

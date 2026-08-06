@@ -13,7 +13,7 @@ permalink: browser_mnist
 
 ## はじめに
 
-「そうだ、機械学習をしよう」と思って、とりあえず始めるのはMNISTを使った手書き数字認識だと思う。例えばChainerのサンプルとか動かして、ロスが減って「なんか学習できてるっぽいなぁ」と思うところまで行ったとする。次に「ちゃんと学習できてるか、学習させたモデルに自分の手書き文字を認識させてみよう」と思って[やってみると全然認識できなかったり](https://qiita.com/kaityo256/items/8c7c9a32bd4ae5c0b500)して驚くわけですね。
+「そうだ、機械学習をしよう」と思って、とりあえず始めるのはMNISTを使った手書き数字認識だと思う。例えばChainerのサンプルとか動かして、ロスが減って「なんか学習できてるっぽいなぁ」と思うところまで行ったとする。次に「ちゃんと学習できてるか、学習させたモデルに自分の手書き文字を認識させてみよう」と思って[やってみると全然認識できなかったり](https://kaityo256.github.io/chainer_browser)して驚くわけですね。
 
 この話を機械学習に詳しい人にしたら「ちゃんと前処理した？」と言われて、「いやしてないけど、こんな簡単な認識、前処理の有無でそうそう変わらないでしょ・・・」と思って放置してたのですが、[自分の手書きデータをTensorFlowで予測する](https://qiita.com/takus69/items/dd904dfc62372310c46f)という記事を見て、「あぁ、やっぱり前処理って大事なんだ」と思って、ちゃんと前処理しました。
 
@@ -63,7 +63,7 @@ https://kaityo256.github.io/mnist_check/
 
 > MNISTは20×20ピクセルに変換された画像（ただしアスペクト比は保ったまま）の重心を、28×28ピクセルの画像の中心に合わせた画像となってます。
 
-実は僕はそれを知っていたのですが、「どうせたいして変わらんだろ」とそのままデータを28x28ピクセルに粗視化してモデルに食わせていました。しかし、前処理が大事そうだったので、入力イメージを20x20ピクセルに粗視化して、重心を移動したものを食わせるようにしましょう。ついでにオンラインデモのJavaScriptが何をやってるか簡単に説明します。学習済みモデルのJavaScriptでの読み込みについては[前の記事](https://qiita.com/kaityo256/items/8c7c9a32bd4ae5c0b500)を参照してください。
+実は僕はそれを知っていたのですが、「どうせたいして変わらんだろ」とそのままデータを28x28ピクセルに粗視化してモデルに食わせていました。しかし、前処理が大事そうだったので、入力イメージを20x20ピクセルに粗視化して、重心を移動したものを食わせるようにしましょう。ついでにオンラインデモのJavaScriptが何をやってるか簡単に説明します。学習済みモデルのJavaScriptでの読み込みについては[前の記事](https://kaityo256.github.io/chainer_browser)を参照してください。
 
 まず、入力データを28x28、もしくは20x20に粗視化したデータが欲しくなります。なのでCanvasのサイズを28と20の公倍数である420にしておきましょう。キャンバスに描かれたデータを、指定のサイズで粗視化した`Float32Array`の配列で取得する関数はこんな感じにかけます。
 
@@ -137,10 +137,10 @@ var i = model.recognize(data28);
 ## 参考
 
 * [Chainer v3 ビギナー向けチュートリアル](https://qiita.com/mitmul/items/1e35fba085eb07a92560) Chainer初心者はまずこれを読むと良いと思う。
-* [ChainerでMNISTを学習させた結果を使ってブラウザで手描き数字認識](https://qiita.com/kaityo256/items/8c7c9a32bd4ae5c0b500)
+* [ChainerでMNISTを学習させた結果を使ってブラウザで手描き数字認識](https://kaityo256.github.io/chainer_browser)
 * [自分の手書きデータをTensorFlowで予測する](https://qiita.com/takus69/items/dd904dfc62372310c46f)
-* [MNISTを学習させたモデルの気持ちを調べる](https://qiita.com/kaityo256/items/438ee87a0ef1346071b9)
-* [MNISTのデータを仕分けしてPNGファイルで保存](https://qiita.com/kaityo256/items/77bc0b40e3bb70d36f3d)
-* [Re:ゼロから始めるChainer生活](https://qiita.com/kaityo256/items/eeac271bbfaa5c1763de)
-* [Chainerで学習したモデルをC++で読み込む](https://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09)
-* [JavaScriptでfloat32のバイナリファイルを読み込む](https://qiita.com/kaityo256/items/bdc29384ec7955d087fa)
+* [MNISTを学習させたモデルの気持ちを調べる](https://kaityo256.github.io/mnist_interpret)
+* [MNISTのデータを仕分けしてPNGファイルで保存](https://kaityo256.github.io/mnist_dump)
+* [Re:ゼロから始めるChainer生活](https://kaityo256.github.io/chainer_zero)
+* [Chainerで学習したモデルをC++で読み込む](https://kaityo256.github.io/chainer_cpp_load)
+* [JavaScriptでfloat32のバイナリファイルを読み込む](https://kaityo256.github.io/js_float32)

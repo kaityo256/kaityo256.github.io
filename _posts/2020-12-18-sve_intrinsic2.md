@@ -12,10 +12,10 @@ permalink: sve_intrinsic2
 
 ARM SVEの組み込み関数の使い方の解説を続けます。
 
-* [その１：プレディケートレジスタ](https://qiita.com/kaityo256/items/71d4d3f6b2b77fd04cbb)
-* [その２：レジスタへのロード](https://qiita.com/kaityo256/items/ac1e84f1c79fdf478630)←イマココ
-* [その３：gather/scatter](https://qiita.com/kaityo256/items/7ced2749875e2bab89e6)
-* [その４：水平演算](https://qiita.com/kaityo256/items/3d9767ed41fa450a4fe8)
+* [その１：プレディケートレジスタ](https://kaityo256.github.io/sve_intrinsic1)
+* [その２：レジスタへのロード](https://kaityo256.github.io/sve_intrinsic2)←イマココ
+* [その３：gather/scatter](https://kaityo256.github.io/sve_intrinsic3)
+* [その４：水平演算](https://kaityo256.github.io/sve_intrinsic4)
 
 コードを以下に置いておきます。まだ開発中なので、記事を書きながら修正していくと思います。
 
@@ -220,7 +220,7 @@ vb =
 
 SVEをつかった最も単純なunextended loadとマスク処理、特に`whilelt`を使ったループの端数処理について説明しました。個人的にはプレディケータの接尾辞を間違えると、エラーは出ないけれど処理がおかしくなるのが分かりにくかったです。
 
-[つづく](https://qiita.com/kaityo256/items/7ced2749875e2bab89e6)
+[つづく](https://kaityo256.github.io/sve_intrinsic3)
 
 ## 参考文献
 

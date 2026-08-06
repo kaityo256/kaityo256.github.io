@@ -6,7 +6,7 @@ permalink: boltzmann_machine2
 ---
 ## はじめに
 
-機械学習で用いられるボルツマンマシン、特に制限ボルツマンマシン(Restricted Boltzmann Machine, RBM)の解説その2です。[その1](https://zenn.dev/kaityo256/articles/bolzmann_machine)の続きなので、そちらを見てから読んでください。
+機械学習で用いられるボルツマンマシン、特に制限ボルツマンマシン(Restricted Boltzmann Machine, RBM)の解説その2です。[その1](https://kaityo256.github.io/boltzmann_machine)の続きなので、そちらを見てから読んでください。
 
 ## 前回までのあらすじ
 
@@ -125,7 +125,7 @@ $$
 H(v_a, v_b) = - b_a v_a - b_b v_b - W_{ab} v_a v_b
 $$
 
-と定義します。ここで$b_a$、$b_b$は[前の記事](https://zenn.dev/kaityo256/articles/bolzmann_machine)で定義したバイアス、$W_{ab}$は相互作用です。負符号をつけているのは、「パラメータの値が大きいほど、変数が$1$を取りやすい」ことを表現するためです。
+と定義します。ここで$b_a$、$b_b$は[前の記事](https://kaityo256.github.io/boltzmann_machine)で定義したバイアス、$W_{ab}$は相互作用です。負符号をつけているのは、「パラメータの値が大きいほど、変数が$1$を取りやすい」ことを表現するためです。
 
 ある状態$(v_a, v_b)$の出現確率$P(v_a, v_b)$は
 
@@ -543,4 +543,4 @@ Daveから見える(visible)変数はAliceとBobだけなので、「AliceとBob
 
 ここでは、観測事実からモデルのパラメータを手で最尤推定しました。ボルツマンマシンとは、要するに「注目する要素以外の全ての条件を固定した場合、注目する事象が起きるか起きないかが二項分布に従う」というモデルです。そして、二項分布のパラメータ(成功確率)$p$が、他の条件に依存しています。従って、原理的には事象を固定して、「不公平なコイン」の確率を最尤推定する問題としてモデルパラメータを決定することができます。このあたりは次回の「制限ボルツマンマシンの基礎 〜コスト関数〜」にまとめます。
 
-[制限ボルツマンマシンの基礎 ～コスト関数編～](https://zenn.dev/kaityo256/articles/boltzmann_machine3)へ続く。
+[制限ボルツマンマシンの基礎 ～コスト関数編～](https://kaityo256.github.io/boltzmann_machine3)へ続く。

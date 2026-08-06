@@ -7,7 +7,7 @@ permalink: classical_mechanics42
 
 # 解析力学の幾何学的側面II
 
-これは[U-TOKYO AP Advent Calendar 2017](https://qiita.com/advent-calendar/2017/ut_ap)の24日目の記事です。いま見たらまだ空いてたので、[23日の記事](https://qiita.com/kaityo256/items/e9adf792210e8c022010)の続きを書いてみましょう。
+これは[U-TOKYO AP Advent Calendar 2017](https://qiita.com/advent-calendar/2017/ut_ap)の24日目の記事です。いま見たらまだ空いてたので、[23日の記事](https://kaityo256.github.io/classical_mechanics1)の続きを書いてみましょう。
 
 ## 空間について
 

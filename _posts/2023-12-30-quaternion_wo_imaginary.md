@@ -544,5 +544,5 @@ $$
 
 ## 合わせて読みたい
 
-* [二次方程式の話](https://zenn.dev/kaityo256/articles/quadratic_equation)
-* [三角関数の話](https://zenn.dev/kaityo256/articles/trigonometric_function)
+* [二次方程式の話](https://kaityo256.github.io/quadratic_equation)
+* [三角関数の話](https://kaityo256.github.io/trigonometric_function)

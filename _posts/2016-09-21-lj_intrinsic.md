@@ -9,7 +9,7 @@ permalink: lj_intrinsic
 
 #はじめに
 
-[LJの力計算をフルアセンブラで書いてみる](http://qiita.com/kaityo256/items/03e0240af4e9a6469bcb)の続き。
+[LJの力計算をフルアセンブラで書いてみる](https://kaityo256.github.io/lj_asm)の続き。
 
 ## 思想
 

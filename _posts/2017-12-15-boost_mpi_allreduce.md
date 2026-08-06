@@ -11,7 +11,7 @@ permalink: boost_mpi_allreduce
 
 ## はじめに
 
-14日目の記事、[MPIでstd::vectorをやりとりする](https://qiita.com/kaityo256/items/90f1b3c879e1ec123740)で、「C++っぽくMPIを使うとしたらどうするべきか？」みたいなことを書きました。Boost MPI Libraryはその一つの答えになっています。本稿では、Boost MPI Libraryを使ってstd::vectorをallreduceしてみます。
+14日目の記事、[MPIでstd::vectorをやりとりする](https://kaityo256.github.io/mpi_vector)で、「C++っぽくMPIを使うとしたらどうするべきか？」みたいなことを書きました。Boost MPI Libraryはその一つの答えになっています。本稿では、Boost MPI Libraryを使ってstd::vectorをallreduceしてみます。
 
 ## Boost::MPIのインストール
 

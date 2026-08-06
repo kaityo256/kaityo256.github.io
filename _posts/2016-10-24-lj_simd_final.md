@@ -11,9 +11,9 @@ permalink: lj_simd_final
 
 これまでのあらすじ。
 
-* [LJの力計算をフルアセンブラで書いてみる](http://qiita.com/kaityo256/items/03e0240af4e9a6469bcb)
-* [LJの力計算を組み込み関数で書いてみる](http://qiita.com/kaityo256/items/0d3094de324f0e63d1f4#_reference-bb9db355c8eb79f6c96f)
-* [LJの力計算を組み込み関数で書いて馬鹿SIMD化](http://qiita.com/kaityo256/items/bf10fdb0f90809e3d2bf#_reference-1a416859bca0af6833d1)
+* [LJの力計算をフルアセンブラで書いてみる](https://kaityo256.github.io/lj_asm)
+* [LJの力計算を組み込み関数で書いてみる](https://kaityo256.github.io/lj_intrinsic)
+* [LJの力計算を組み込み関数で書いて馬鹿SIMD化](https://kaityo256.github.io/lj_simd_intrinsic)
 
 とりあえずO(N^2)ループでインテルコンパイラより早そうなコードが書けた。しかし、
 
@@ -52,7 +52,7 @@ permalink: lj_simd_final
 
 ## SIMD化の方針
 
-相互作用相手でソートした状態で、外側をi粒子、内側をj粒子と呼ぶと、j粒子のループを4倍にアンロールして馬鹿SIMD化する。ただし、データをAoSで持っておき、xyz座標を_mm256_load_pdで一度にYMMにロードする(1要素無駄になる)。その後シャッフル命令とか使ってなんとなく4ペアの力を同時に計算する。カットオフがあるため、カットオフ距離以上にいる奴は力をゼロクリアしないといけない。そのため、[前回](http://qiita.com/kaityo256/items/bf10fdb0f90809e3d2bf#_reference-1a416859bca0af6833d1)のコードに
+相互作用相手でソートした状態で、外側をi粒子、内側をj粒子と呼ぶと、j粒子のループを4倍にアンロールして馬鹿SIMD化する。ただし、データをAoSで持っておき、xyz座標を_mm256_load_pdで一度にYMMにロードする(1要素無駄になる)。その後シャッフル命令とか使ってなんとなく4ペアの力を同時に計算する。カットオフがあるため、カットオフ距離以上にいる奴は力をゼロクリアしないといけない。そのため、[前回](https://kaityo256.github.io/lj_simd_intrinsic)のコードに
 
 * (カットオフ距離 - 粒子間距離)でマスクを作る 
 * 距離が負の時、カットオフ距離よりも粒子間距離の方が長いため、マスクを使って_mm256_blendv_pdで、力をゼロクリアする

@@ -472,9 +472,9 @@ clang++は、定数関数を含むループの定数畳み込みを、224回転�
 
 ## 他のコンパイラいじめ関連記事
 
-* [C++でアスタリスクをつけすぎると端末が落ちる](https://qiita.com/kaityo256/items/d54439246edc1cc58121)
-* [整数を419378回インクリメントするとMacのg++が死ぬ](https://qiita.com/kaityo256/items/6b5715b213e955d44f55)
-* [コンパイラは関数のインライン展開を☓☓段で力尽きる](https://qiita.com/kaityo256/items/b4dc66c92338c0b92552)
-* [関数ポインタと関数オブジェクトのインライン展開](https://qiita.com/kaityo256/items/5911d50c274465e19cf6)
-* [インテルコンパイラのアセンブル時最適化](https://qiita.com/kaityo256/items/e7b05eb9c2bfbbd434a7)
-* [GCCの最適化がインテルコンパイラより賢くて驚いた話](https://qiita.com/kaityo256/items/72c1bf93a210e450308c)
+* [C++でアスタリスクをつけすぎると端末が落ちる](https://kaityo256.github.io/cpp_asterisk_terminal)
+* [整数を419378回インクリメントするとMacのg++が死ぬ](https://kaityo256.github.io/mac_gpp_crash)
+* [コンパイラは関数のインライン展開を☓☓段で力尽きる](https://kaityo256.github.io/inline_limit)
+* [関数ポインタと関数オブジェクトのインライン展開](https://kaityo256.github.io/inline_function)
+* [インテルコンパイラのアセンブル時最適化](https://kaityo256.github.io/icc_asm_opt)
+* [GCCの最適化がインテルコンパイラより賢くて驚いた話](https://kaityo256.github.io/gcc_vs_intel_compiler)

@@ -9,7 +9,7 @@ permalink: wavelet_intro2
 
 ## はじめに
 
-[前回](http://qiita.com/kaityo256/items/70dc20658ef98d229de9)では、ハールウェーブレット(Haar Wavelet)による一次元の変換をしたので、今回は二次元の変換をやってみる。
+[前回](https://kaityo256.github.io/wavelet_intro)では、ハールウェーブレット(Haar Wavelet)による一次元の変換をしたので、今回は二次元の変換をやってみる。
 
 一次元では、レベル$m$のスケーリング関数は、レベル$m-1$のスケーリング関数とウェーブレット関数に分解されるのだが、二次元以上の場合はスケーリング関数とウェーブレット関数の積に分解されるところがちょっとややこしい。
 
@@ -17,7 +17,7 @@ permalink: wavelet_intro2
 
 https://github.com/kaityo256/haar2d
 
-に置いてある。ウェーブレットを全く知らない人は先に[一次元](http://qiita.com/kaityo256/items/70dc20658ef98d229de9)の記事を読んでおいた方が理解しやすいかも。
+に置いてある。ウェーブレットを全く知らない人は先に[一次元](https://kaityo256.github.io/wavelet_intro)の記事を読んでおいた方が理解しやすいかも。
 
 ## 原理
 

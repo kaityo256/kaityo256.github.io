@@ -7,7 +7,7 @@ permalink: mnist_interpret
 
 # MNISTを学習させたモデルの気持ちを調べる
 
-この記事は「[ChainerでMNISTを学習させた結果を使ってブラウザで手描き数字認識](https://qiita.com/kaityo256/items/8c7c9a32bd4ae5c0b500)」の続きです。
+この記事は「[ChainerでMNISTを学習させた結果を使ってブラウザで手描き数字認識](https://kaityo256.github.io/chainer_browser)」の続きです。
 
 あと、この記事は機械学習のド素人が書いたものなので、そのつもりで読んでください。
 
@@ -232,6 +232,6 @@ MNISTを学習させたモデルについて、「そのモデルの数字のイ
 
 ## 参考
 
-* [ChainerでMNISTを学習させた結果を使ってブラウザで手描き数字認識](https://qiita.com/kaityo256/items/8c7c9a32bd4ae5c0b500) 
-* [MNISTのデータを仕分けしてPNGファイルで保存](https://qiita.com/kaityo256/items/77bc0b40e3bb70d36f3d) MNISTのデータ構造と可視化
-* [Chainerで学習したモデルをC++で読み込む](https://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09) 本文で出てきた`Model`クラスの説明とか
+* [ChainerでMNISTを学習させた結果を使ってブラウザで手描き数字認識](https://kaityo256.github.io/chainer_browser) 
+* [MNISTのデータを仕分けしてPNGファイルで保存](https://kaityo256.github.io/mnist_dump) MNISTのデータ構造と可視化
+* [Chainerで学習したモデルをC++で読み込む](https://kaityo256.github.io/chainer_cpp_load) 本文で出てきた`Model`クラスの説明とか

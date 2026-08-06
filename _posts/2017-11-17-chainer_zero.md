@@ -712,4 +712,4 @@ Chainerを使って、二値分類をやってみました。Chainerのサンプ
 
 * [MacでのChainerインストールに必要なものの説明とまとめ](https://qiita.com/yuyayyy/items/6313e73df6fcc9bcf600)
 * [人工知能（Chainer/TensorFlow/CSLAIER）のためのpython環境構築](https://qiita.com/yuyayyy/items/3633f2cb4780494b4db9)
-* [Chainerで学習したモデルをC++で読み込む](https://qiita.com/kaityo256/items/f1e2c8e38cbf8ffd8c09)
+* [Chainerで学習したモデルをC++で読み込む](https://kaityo256.github.io/chainer_cpp_load)

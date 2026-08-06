@@ -499,8 +499,8 @@ MDにおけるSWPのやり方をまとめた。そもそもこういう細かい
 
 ## 参考
 
-* [分子動力学法ステップ・バイ・ステップ](https://qiita.com/kaityo256/items/2356fff922938ae3c87c)
-* [LJの力計算のSIMD化ステップ・バイ・ステップ](https://qiita.com/kaityo256/items/5be3ce71a6ff9522a0e6)
+* [分子動力学法ステップ・バイ・ステップ](https://kaityo256.github.io/mdstep1)
+* [LJの力計算のSIMD化ステップ・バイ・ステップ](https://kaityo256.github.io/lj_simd0)
 * [AVX2/AVX-512を用いたLennard-Jones系 ポテンシャルの力計算のSIMD化](https://speakerdeck.com/kaityo256/avx-512woyong-italennard-jonesxi-potensiyarufalseli-ji-suan-falsesimdhua)
 
 [^1]: なんとなくイースの半キャラずらしを思い出す(←おっさん)。

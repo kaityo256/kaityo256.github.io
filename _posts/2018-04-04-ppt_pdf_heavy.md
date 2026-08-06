@@ -11,7 +11,7 @@ permalink: ppt_pdf_heavy
 
 * PowerPoint for Mac でpptxからpdfにエクスポートするとファイルサイズが異様に大きくなることがある
 * 全く同じpptxファイルをWindowsのPowerPoint 2016でpdfにするとファイルサイズは小さくなる
-* この違いの原因は続編の[Re: PowerPoint for Macが吐くPDFが重いんです](https://qiita.com/kaityo256/items/439f18343f4ef87dfdfa)を参照
+* この違いの原因は続編の[Re: PowerPoint for Macが吐くPDFが重いんです](https://kaityo256.github.io/ppt_pdf_heavy_reply)を参照
 
 ## はじめに
 
@@ -165,8 +165,8 @@ $ ls -lh | awk '{print $5 " " $9}'
    * MacでPDF化すると14MBに
 
 
-なんか[Wordさんは今日もお疲れです](https://qiita.com/kaityo256/items/c15889dbb7acb2632c6e)でもMac版のWordがかなりアホなことをしてたし、Office for Macはかなりアレだ、ということでFA？
+なんか[Wordさんは今日もお疲れです](https://kaityo256.github.io/word_tired)でもMac版のWordがかなりアホなことをしてたし、Office for Macはかなりアレだ、ということでFA？
 
 ## 追記 (2018年8月22日)
 
-Powerpointのメニューで、環境設定>一般>印刷品質(用紙/PDF）の 「低」を選択するとファイルサイズがかなり小さくなる。詳細については[Re: PowerPoint for Macが吐くPDFが重いんです](https://qiita.com/kaityo256/items/439f18343f4ef87dfdfa)の2018年8月22日の追記部分を参照のこと。
+Powerpointのメニューで、環境設定>一般>印刷品質(用紙/PDF）の 「低」を選択するとファイルサイズがかなり小さくなる。詳細については[Re: PowerPoint for Macが吐くPDFが重いんです](https://kaityo256.github.io/ppt_pdf_heavy_reply)の2018年8月22日の追記部分を参照のこと。

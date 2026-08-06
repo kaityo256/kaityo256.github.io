@@ -6,7 +6,7 @@ permalink: link_order_dependent
 ---
 ## はじめに
 
-以前[リンカのお仕事](https://zenn.dev/kaityo256/articles/what_is_linker)という記事を書きました。関数やグローバル変数のアドレスは、コンパイル時にはとりあえずラベルとして定義され、そのアドレスはリンク時にリンカが決めます。その際、リンクの順番によりアドレスが変わります。その結果、リンクの順番により実行結果が変わるようなコードが書けます。それについてちょっとだけ説明しようと思います。
+以前[リンカのお仕事](https://kaityo256.github.io/what_is_linker)という記事を書きました。関数やグローバル変数のアドレスは、コンパイル時にはとりあえずラベルとして定義され、そのアドレスはリンク時にリンカが決めます。その際、リンクの順番によりアドレスが変わります。その結果、リンクの順番により実行結果が変わるようなコードが書けます。それについてちょっとだけ説明しようと思います。
 
 ## グローバル変数
 
@@ -403,5 +403,5 @@ zsh: segmentation fault  ./a.out
 
 ## 参考文献
 
-* [リンカのお仕事](https://zenn.dev/kaityo256/articles/what_is_linker)
+* [リンカのお仕事](https://kaityo256.github.io/what_is_linker)
 * [実践的低レイヤプログラミング](https://tanakamura.github.io/pllp/docs/)の[リンカの章](https://tanakamura.github.io/pllp/docs/linker.html) リンカが何をしているか詳しく書いてあるのでざっと読んでおくと良いことがあるかも。

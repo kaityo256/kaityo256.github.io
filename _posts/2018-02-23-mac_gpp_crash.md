@@ -9,7 +9,7 @@ permalink: mac_gpp_crash
 
 ## はじめに
 
-[C++でアスタリスクをつけすぎると端末が落ちる](https://qiita.com/kaityo256/items/d54439246edc1cc58121)という記事を書いたら、[@tanakh](https://twitter.com/tanakh)さんから
+[C++でアスタリスクをつけすぎると端末が落ちる](https://kaityo256.github.io/cpp_asterisk_terminal)という記事を書いたら、[@tanakh](https://twitter.com/tanakh)さんから
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ソースコードのサイズには線形なんじゃなかろうか / 他5コメント <a href="https://t.co/Rm9c0ceWpa">https://t.co/Rm9c0ceWpa</a> “C++でアスタリスクをつけすぎると端末が落ちる - Qiita” <a href="https://t.co/JrrLZu8WT8">https://t.co/JrrLZu8WT8</a></p>&mdash; Hideyuki Tanaka (@tanakh) <a href="https://twitter.com/tanakh/status/966958426231197696?ref_src=twsrc%5Etfw">2018年2月23日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

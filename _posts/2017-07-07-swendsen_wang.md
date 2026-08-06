@@ -162,7 +162,7 @@ activeなボンドで繋がったスピンたちを、独立に、かつ一度�
 
 では実際にSwendsen-Wangを実装してみましょう。
 
-スピンをつなぐ操作(Union)と、スピンがどのクラスタに属しているか調べる操作(Find)については、[Union-Find木のサンプルコード](http://qiita.com/kaityo256/items/5a3b03ff465778c23f6a)を参照してください。
+スピンをつなぐ操作(Union)と、スピンがどのクラスタに属しているか調べる操作(Find)については、[Union-Find木のサンプルコード](https://kaityo256.github.io/union_find)を参照してください。
 
 C++で書くと、Union-Find木の配列を`cluster`として、Findは
 

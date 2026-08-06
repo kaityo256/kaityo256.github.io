@@ -462,4 +462,4 @@ Wordファイルは、編集を続けるとドキュメント内部はどんど�
 
 ## 関連記事
 
-この記事に興味を持った人は[Windowsメモ帳の「右端で折り返す」で入る謎の改行コード](http://qiita.com/kaityo256/items/4b97a025a528fea3583d)も読んでみると面白いかも。
+この記事に興味を持った人は[Windowsメモ帳の「右端で折り返す」で入る謎の改行コード](https://kaityo256.github.io/notepad_wrap_crlf)も読んでみると面白いかも。

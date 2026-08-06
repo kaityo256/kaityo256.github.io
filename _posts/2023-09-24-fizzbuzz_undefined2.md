@@ -6,7 +6,7 @@ permalink: fizzbuzz_undefined2
 ---
 ## はじめに
 
-たまにFizzBuzzが話題になりますね。いろんな解法があると思いますが、ここではC/C++言語の未定義動作を使ってFizzBuzzしてみましょうか。[未定義動作でFizzBuzz](https://zenn.dev/kaityo256/articles/fizzbuzz_undefined)ではclang++にfizzを、g++にbuzzを表示してもらいましたが、今回はどちらもコンパイルはgccに任せつつ、環境で結果が変わるコードを書いてみます。とりあえずx86ならfizzを、ARMならbuzzを表示してもらうことにしましょう。
+たまにFizzBuzzが話題になりますね。いろんな解法があると思いますが、ここではC/C++言語の未定義動作を使ってFizzBuzzしてみましょうか。[未定義動作でFizzBuzz](https://kaityo256.github.io/fizzbuzz_undefined)ではclang++にfizzを、g++にbuzzを表示してもらいましたが、今回はどちらもコンパイルはgccに任せつつ、環境で結果が変わるコードを書いてみます。とりあえずx86ならfizzを、ARMならbuzzを表示してもらうことにしましょう。
 
 ## コード
 
@@ -188,4 +188,4 @@ buzz
 
 ## 参考
 
-* [未定義動作でFizzBuzz](https://zenn.dev/kaityo256/articles/fizzbuzz_undefined)
+* [未定義動作でFizzBuzz](https://kaityo256.github.io/fizzbuzz_undefined)

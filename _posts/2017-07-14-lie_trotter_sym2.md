@@ -31,7 +31,7 @@ https://github.com/kaityo256/lie-trotter-sample
 
 ## ソースの解説
 
-やってることは[前の記事](http://qiita.com/kaityo256/items/b7e0568cad8b86c5c8ea)と同じなのでそちらを参照。一次の分解の場合は
+やってることは[前の記事](https://kaityo256.github.io/lie_trotter_error)と同じなのでそちらを参照。一次の分解の場合は
 
 ```py
 def trotter(X,Y,Z,h,n):

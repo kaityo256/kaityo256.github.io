@@ -9,7 +9,7 @@ permalink: classical_mechanics3
 
 ## はじめに
 
-これまでの[解析力学の幾何学的側面](https://qiita.com/kaityo256/items/e9adf792210e8c022010)、[解析力学の幾何学的側面II](https://qiita.com/kaityo256/items/805243f7c4740a7937de)という記事では、ハミルトン系を考えていました。ハミルトン系の性質として
+これまでの[解析力学の幾何学的側面](https://kaityo256.github.io/classical_mechanics1)、[解析力学の幾何学的側面II](https://kaityo256.github.io/classical_mechanics42)という記事では、ハミルトン系を考えていました。ハミルトン系の性質として
 
 * 運動方程式に付随するリュービル演算子がエルミートになる
 * エルミートなリュービル演算子は位相空間に非圧縮流れを引き起こす
@@ -124,7 +124,7 @@ $$
 
 この式を見ると、通常の調和振動子が、指数関数的にエネルギーを失っていく様子を表すことがわかります。
 
-もともと、[以前の記事](https://qiita.com/kaityo256/items/805243f7c4740a7937de)に書いたように、ハミルトン系における運動方程式は、ハミルトニアンの勾配(gradient)に直行する速度場を与えていました。
+もともと、[以前の記事](https://kaityo256.github.io/classical_mechanics42)に書いたように、ハミルトン系における運動方程式は、ハミルトニアンの勾配(gradient)に直行する速度場を与えていました。
 
 雑な言い方をするならば、ハミルトンの運動方程式とは位相空間にある種の「回転」を引き起こし、ハミルトニアン(エネルギー)とはその回転半径のようなものです。単なる回転なので世界は大きくも小さくもなりません。
 
@@ -151,10 +151,10 @@ $$
 ## 参考
 
 1. [解析力学1, 2 (中村孔一、山本義隆著, 朝倉物理学大系)](https://www.amazon.co.jp/dp/4254136714)　
-2. [解析力学の幾何学的側面](https://qiita.com/kaityo256/items/e9adf792210e8c022010) シンプレクティック変換について
-3. [解析力学の幾何学的側面II](https://qiita.com/kaityo256/items/805243f7c4740a7937de) 多様体と流れ場について
-2.  [Velocity Verlet法とシンプレクティック積分](http://qiita.com/kaityo256/items/fd5a6ff3fcf0eb7bc860) Velocity Verlet法がシンプレクティック積分になることの確認等
-3. [Lie-Trotter公式の打切り誤差を調べる](http://qiita.com/kaityo256/items/b7e0568cad8b86c5c8ea) シンプレクティック積分の構築に使われるLie-Trotter公式の打切り誤差を確認
-4. [時間反転対称性とシンプレクティック積分](http://qiita.com/kaityo256/items/a4968a8de7ed636a2e79) 
-5. [Lie-Trotter公式における二次の対称分解](http://qiita.com/kaityo256/items/1af80746913f1f17006d) 分子動力学法で、おそらく最も使われている二次のシンプレクティック積分(二次の対称分解)の精度の確認
-6. [シンプレクティック変換と運動方程式の関係について](http://qiita.com/kaityo256/items/0d3af05b19d3f472ca98) 時間発展がシンプレクティックであることと、運動方程式が満たすべき条件の関係について
+2. [解析力学の幾何学的側面](https://kaityo256.github.io/classical_mechanics1) シンプレクティック変換について
+3. [解析力学の幾何学的側面II](https://kaityo256.github.io/classical_mechanics42) 多様体と流れ場について
+2.  [Velocity Verlet法とシンプレクティック積分](https://kaityo256.github.io/velocity_verlet) Velocity Verlet法がシンプレクティック積分になることの確認等
+3. [Lie-Trotter公式の打切り誤差を調べる](https://kaityo256.github.io/lie_trotter_error) シンプレクティック積分の構築に使われるLie-Trotter公式の打切り誤差を確認
+4. [時間反転対称性とシンプレクティック積分](https://kaityo256.github.io/time_reversal_symplectic) 
+5. [Lie-Trotter公式における二次の対称分解](https://kaityo256.github.io/lie_trotter_sym2) 分子動力学法で、おそらく最も使われている二次のシンプレクティック積分(二次の対称分解)の精度の確認
+6. [シンプレクティック変換と運動方程式の関係について](https://kaityo256.github.io/symplectic_transform) 時間発展がシンプレクティックであることと、運動方程式が満たすべき条件の関係について

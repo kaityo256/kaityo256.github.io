@@ -55,7 +55,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ## はじめに
 
-Windowsを使っていて、ほぼ全ての作業をWSLのUbuntuで行っている人は多いのではないかと思う。特に、Ubuntu上のGitでファイルを管理していると、必要なファイルが全てWSL側にあることになる。そのファイルをWindows側で開きたい時、例えば[openコマンドを用意](https://zenn.dev/kaityo256/articles/open_command_on_wsl)して開いても良いが、たまにショートカットファイルをデスクトップに作りたい時がある(例えばウェブ会議していて、複数のPDFファイルを順番に共有したいときとか)。というわけで、そんなコマンド`wln`を作りたい。
+Windowsを使っていて、ほぼ全ての作業をWSLのUbuntuで行っている人は多いのではないかと思う。特に、Ubuntu上のGitでファイルを管理していると、必要なファイルが全てWSL側にあることになる。そのファイルをWindows側で開きたい時、例えば[openコマンドを用意](https://kaityo256.github.io/open_command_on_wsl)して開いても良いが、たまにショートカットファイルをデスクトップに作りたい時がある(例えばウェブ会議していて、複数のPDFファイルを順番に共有したいときとか)。というわけで、そんなコマンド`wln`を作りたい。
 
 ## ショートカットの作成
 

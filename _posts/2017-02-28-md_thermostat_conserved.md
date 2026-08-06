@@ -191,7 +191,7 @@ https://github.com/kaityo256/thermostats
 
 ## 参考
 
-* [調和振動子に作用させた熱浴のエルゴード性](http://qiita.com/kaityo256/items/2b14d7093c43eb5f77d7)
+* [調和振動子に作用させた熱浴のエルゴード性](https://kaityo256.github.io/thermostat_ergodicity)
 
 [^1]: もしかしたらあるのかもしれないが、僕はまだちゃんと考えたことがないので知らない。
 [^2]: デバッグのため、全て異なる値にしただけで、値に深い意味はない。

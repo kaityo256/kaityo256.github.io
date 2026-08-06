@@ -7,7 +7,7 @@ permalink: cdf_python
 
 # 累積分布関数をソートで求める(Python版)
 
-この記事はRubyで書いた[累積分布関数をソートで求める](https://qiita.com/kaityo256/items/690a463b6b865da80de6)をPythonで書き直して加筆したものです。
+この記事はRubyで書いた[累積分布関数をソートで求める](https://kaityo256.github.io/cdf_sort)をPythonで書き直して加筆したものです。
 
 ## はじめに
 

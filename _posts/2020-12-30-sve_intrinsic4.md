@@ -12,16 +12,16 @@ permalink: sve_intrinsic4
 
 ARM SVEの組み込み関数の使い方の解説を続けます。
 
-* [その１：プレディケートレジスタ](https://qiita.com/kaityo256/items/71d4d3f6b2b77fd04cbb)
-* [その２：レジスタへのロード](https://qiita.com/kaityo256/items/ac1e84f1c79fdf478630)
-* [その３：gather/scatter](https://qiita.com/kaityo256/items/7ced2749875e2bab89e6)
-* [その４：水平演算](https://qiita.com/kaityo256/items/3d9767ed41fa450a4fe8)←イマココ
+* [その１：プレディケートレジスタ](https://kaityo256.github.io/sve_intrinsic1)
+* [その２：レジスタへのロード](https://kaityo256.github.io/sve_intrinsic2)
+* [その３：gather/scatter](https://kaityo256.github.io/sve_intrinsic3)
+* [その４：水平演算](https://kaityo256.github.io/sve_intrinsic4)←イマココ
 
 コードを以下に置いておきます。まだ開発中なので、記事を書きながら修正していくと思います。
 
 [https://github.com/kaityo256/sve_intrinsic_samples](https://github.com/kaityo256/sve_intrinsic_samples)
 
-コンパイル、実行方法については「[その１](https://qiita.com/kaityo256/items/71d4d3f6b2b77fd04cbb)」を見てください。
+コンパイル、実行方法については「[その１](https://kaityo256.github.io/sve_intrinsic1)」を見てください。
 
 ## 水平演算について
 

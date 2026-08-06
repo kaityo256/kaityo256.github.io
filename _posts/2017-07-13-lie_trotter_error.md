@@ -24,7 +24,7 @@ https://github.com/kaityo256/lie-trotter-sample
 においてある。
 
 2017年7月14日追記：
-二次の対称分解も試せるようにするため、ソースを少し改変しています。詳細は次の記事[Lie-Trotter公式における二次の対称分解](http://qiita.com/kaityo256/items/1af80746913f1f17006d)を参照してください。
+二次の対称分解も試せるようにするため、ソースを少し改変しています。詳細は次の記事[Lie-Trotter公式における二次の対称分解](https://kaityo256.github.io/lie_trotter_sym2)を参照してください。
 
 ## スクリプトがやってることの解説
 

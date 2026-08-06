@@ -17,57 +17,57 @@ Qiitaに書いてきた分子動力学法(Molecular Dynamics method, MD)関連�
 
 分子動力学法をスクラッチから書いてみようというもの。
 
-* [その1](http://qiita.com/kaityo256/items/2356fff922938ae3c87c)　 $O(N^2)$のルーチンまで
-* [その2](http://qiita.com/kaityo256/items/cfacbf6f1136de63bd97)　 ペアリストの構築とBookkeeping法
-* [その3](http://qiita.com/kaityo256/items/4bbad9ecbfa32aff8ed6)　 メッシュ探索
-* [その4](http://qiita.com/kaityo256/items/b3f612867ddbaa85c43c) 　少しだけ高速化
-* [その5](http://qiita.com/kaityo256/items/0b5579104761f8ea9410) 　温度制御法を三種類実装してみる
-* [その6](http://qiita.com/kaityo256/items/38796751bcf23931bd2f) 　圧力測定ルーチンの実装
+* [その1](https://kaityo256.github.io/mdstep1)　 $O(N^2)$のルーチンまで
+* [その2](https://kaityo256.github.io/mdstep2)　 ペアリストの構築とBookkeeping法
+* [その3](https://kaityo256.github.io/mdstep3)　 メッシュ探索
+* [その4](https://kaityo256.github.io/mdstep4) 　少しだけ高速化
+* [その5](https://kaityo256.github.io/mdstep5) 　温度制御法を三種類実装してみる
+* [その6](https://kaityo256.github.io/mdstep6) 　圧力測定ルーチンの実装
 
 ## SIMD化関連
 
-* [LJの力計算をフルアセンブラで書いてみる](http://qiita.com/kaityo256/items/03e0240af4e9a6469bcb) 　AVX2命令を使ってフルアセンブラでLennard-Jonse系の力計算を書いてみた。
-* [LJの力計算を組み込み関数で書いてみる](http://qiita.com/kaityo256/items/0d3094de324f0e63d1f4) 　上記を組み込み関数で書き直した。
-* [LJの力計算を組み込み関数で書いて馬鹿SIMD化](http://qiita.com/kaityo256/items/bf10fdb0f90809e3d2bf)　 組み込み関数で書いたところを4倍にループアンロールして馬鹿SIMD化してみた。
-* [LJの力計算のSIMD化(たぶん完結編)](http://qiita.com/kaityo256/items/caf4b8458a6bc292b4cc) 　ペアリストを使った計算。ちなみにちっとも完結していない。
+* [LJの力計算をフルアセンブラで書いてみる](https://kaityo256.github.io/lj_asm) 　AVX2命令を使ってフルアセンブラでLennard-Jonse系の力計算を書いてみた。
+* [LJの力計算を組み込み関数で書いてみる](https://kaityo256.github.io/lj_intrinsic) 　上記を組み込み関数で書き直した。
+* [LJの力計算を組み込み関数で書いて馬鹿SIMD化](https://kaityo256.github.io/lj_simd_intrinsic)　 組み込み関数で書いたところを4倍にループアンロールして馬鹿SIMD化してみた。
+* [LJの力計算のSIMD化(たぶん完結編)](https://kaityo256.github.io/lj_simd_final) 　ペアリストを使った計算。ちなみにちっとも完結していない。
 
 ## LJの力計算のSIMD化ステップ・バイ・ステップ
 
 SIMD化しようと苦闘する過程を晒そうという試み。
 
-* [その0](http://qiita.com/kaityo256/items/5be3ce71a6ff9522a0e6)　 SIMD化の方針について
-* [その1](http://qiita.com/kaityo256/items/4d34bf144122b78fcf49) 　ペアのループのソフトウェアパイプライニング
-* [その2](http://qiita.com/kaityo256/items/e6c41b94c5cc5189c5cc) 　ソフトウェアパイプライニングの改良
-* [その3](http://qiita.com/kaityo256/items/7f16ab7f2281bb03e83e) 　ループの4倍展開
-* [その3.5](http://qiita.com/kaityo256/items/b145b2d83becccd0aa53) 　展開したループのSIMD化の途中経過。デバッグ方法など
-* [その4](http://qiita.com/kaityo256/items/636c5a407f5a6c61bb21) 　実測(遅かった・・・○|￣|＿)
-* [その5](http://qiita.com/kaityo256/items/dacbe5a16abbc83eb107) 　i粒子でソートしたものをソフトウェアパイプライニングしたものをSIMD化
-* [その6](http://qiita.com/kaityo256/items/34c371c6d040be1bdc30) 　ベクトルの転置を先にしたら早くなった話
+* [その0](https://kaityo256.github.io/lj_simd0)　 SIMD化の方針について
+* [その1](https://kaityo256.github.io/lj_simd1) 　ペアのループのソフトウェアパイプライニング
+* [その2](https://kaityo256.github.io/lj_simd2) 　ソフトウェアパイプライニングの改良
+* [その3](https://kaityo256.github.io/lj_simd3) 　ループの4倍展開
+* [その3.5](https://kaityo256.github.io/lj_simd3_5) 　展開したループのSIMD化の途中経過。デバッグ方法など
+* [その4](https://kaityo256.github.io/lj_simd4) 　実測(遅かった・・・○|￣|＿)
+* [その5](https://kaityo256.github.io/lj_simd5) 　i粒子でソートしたものをソフトウェアパイプライニングしたものをSIMD化
+* [その6](https://kaityo256.github.io/lj_simd6) 　ベクトルの転置を先にしたら早くなった話
 
 
 ## 数値積分法についての話題
 
-* [Velocity Verlet法とシンプレクティック積分](http://qiita.com/kaityo256/items/fd5a6ff3fcf0eb7bc860) Velocity Verlet法がシンプレクティック積分になることの確認等
-* [Lie-Trotter公式の打切り誤差を調べる](http://qiita.com/kaityo256/items/b7e0568cad8b86c5c8ea) シンプレクティック積分の構築に使われるLie-Trotter公式の打切り誤差を確認
-* [時間反転対称性とシンプレクティック積分](http://qiita.com/kaityo256/items/a4968a8de7ed636a2e79) 
-* [Lie-Trotter公式における二次の対称分解](http://qiita.com/kaityo256/items/1af80746913f1f17006d) 分子動力学法で、おそらく最も使われている二次のシンプレクティック積分(二次の対称分解)の精度の確認
-* [シンプレクティック変換と運動方程式の関係について](http://qiita.com/kaityo256/items/0d3af05b19d3f472ca98) 時間発展がシンプレクティックであることと、運動方程式が満たすべき条件の関係について
-* [ヤコビの公式とヤコビアンの性質と一般化リュービルの定理](https://qiita.com/kaityo256/items/8cdb2c8d2f86d7c34dd9)
+* [Velocity Verlet法とシンプレクティック積分](https://kaityo256.github.io/velocity_verlet) Velocity Verlet法がシンプレクティック積分になることの確認等
+* [Lie-Trotter公式の打切り誤差を調べる](https://kaityo256.github.io/lie_trotter_error) シンプレクティック積分の構築に使われるLie-Trotter公式の打切り誤差を確認
+* [時間反転対称性とシンプレクティック積分](https://kaityo256.github.io/time_reversal_symplectic) 
+* [Lie-Trotter公式における二次の対称分解](https://kaityo256.github.io/lie_trotter_sym2) 分子動力学法で、おそらく最も使われている二次のシンプレクティック積分(二次の対称分解)の精度の確認
+* [シンプレクティック変換と運動方程式の関係について](https://kaityo256.github.io/symplectic_transform) 時間発展がシンプレクティックであることと、運動方程式が満たすべき条件の関係について
+* [ヤコビの公式とヤコビアンの性質と一般化リュービルの定理](https://kaityo256.github.io/jacobi_formula)
 
 ## 解析力学の話
 
-* [解析力学の幾何学的側面](https://qiita.com/kaityo256/items/e9adf792210e8c022010) シンプレクティック積分と影のハミルトニアン
-* [解析力学の幾何学的側面 II](https://qiita.com/kaityo256/items/805243f7c4740a7937de) 解析力学に現れる様々な多様体とリュービル演算子のエルミート性の持つ意味について
-* [解析力学の幾何学的側面 III](https://qiita.com/kaityo256/items/c7dfa0776a465932a56c) 運動方程式のベクトル場のdivergenceとヤコビアンの関係、および非ハミルトン系の場合について
-* [解析力学の幾何学的側面 IV](https://qiita.com/kaityo256/items/5e5e6e08404cb91cf672) 微分形式を用いた運動方程式の幾何表現と、拡大空間について
-* [解析力学の幾何学的側面 V](https://qiita.com/kaityo256/items/0d426868aa5432028b6b) 解析力学における温度の幾何学的定義について
+* [解析力学の幾何学的側面](https://kaityo256.github.io/classical_mechanics1) シンプレクティック積分と影のハミルトニアン
+* [解析力学の幾何学的側面 II](https://kaityo256.github.io/classical_mechanics42) 解析力学に現れる様々な多様体とリュービル演算子のエルミート性の持つ意味について
+* [解析力学の幾何学的側面 III](https://kaityo256.github.io/classical_mechanics3) 運動方程式のベクトル場のdivergenceとヤコビアンの関係、および非ハミルトン系の場合について
+* [解析力学の幾何学的側面 IV](https://kaityo256.github.io/classical_mechanics) 微分形式を用いた運動方程式の幾何表現と、拡大空間について
+* [解析力学の幾何学的側面 V](https://kaityo256.github.io/classical_mechanics5) 解析力学における温度の幾何学的定義について
 
 
 ## その他の話題
 
-* [調和振動子に作用させた熱浴のエルゴード性](http://qiita.com/kaityo256/items/2b14d7093c43eb5f77d7)　調和振動子系をNose-Hooverで制御すると温度が正しく制御されない理由と回避方法
-* [分子動力学法における熱浴の保存量](http://qiita.com/kaityo256/items/dc2ab16af09f56767a6e) Nose-Hoover法や多変数熱浴における数値積分の保存量について
-* [MDループのソフトウェアパイプライニング：ステップ・バイ・ステップ](https://qiita.com/kaityo256/items/56136482b5cb95958a97) 力計算カーネルをソフトウェアパイプライニングすることでIPCの向上をはかる
+* [調和振動子に作用させた熱浴のエルゴード性](https://kaityo256.github.io/thermostat_ergodicity)　調和振動子系をNose-Hooverで制御すると温度が正しく制御されない理由と回避方法
+* [分子動力学法における熱浴の保存量](https://kaityo256.github.io/md_thermostat_conserved) Nose-Hoover法や多変数熱浴における数値積分の保存量について
+* [MDループのソフトウェアパイプライニング：ステップ・バイ・ステップ](https://kaityo256.github.io/md_pipeline) 力計算カーネルをソフトウェアパイプライニングすることでIPCの向上をはかる
 
 
 ## @kohnakagawa さんによるMD関連の記事

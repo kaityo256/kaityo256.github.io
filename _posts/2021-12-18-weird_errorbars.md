@@ -261,5 +261,5 @@ for j in range(10):
 
 ## 参考文献
 
-* この記事は以前[Qiitaに書いたもの](https://qiita.com/kaityo256/items/197a4811e5694dacfa04)をリファインしたものです。
-* [Jackknife法とサンプル数バイアス](https://qiita.com/kaityo256/items/174347b12717ba49263d) サンプル数に対してバイアスが乗る場合、それをどのように消すかという話。
+* この記事は以前[Qiitaに書いたもの](https://kaityo256.github.io/weird_errorbars)をリファインしたものです。
+* [Jackknife法とサンプル数バイアス](https://kaityo256.github.io/jackknife) サンプル数に対してバイアスが乗る場合、それをどのように消すかという話。

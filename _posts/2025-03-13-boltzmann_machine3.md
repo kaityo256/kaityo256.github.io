@@ -6,7 +6,7 @@ permalink: boltzmann_machine3
 ---
 ## はじめに
 
-機械学習で用いられるボルツマンマシン、特に制限ボルツマンマシン(Restricted Boltzmann Machine, RBM)の解説その3です。[その2](https://zenn.dev/kaityo256/articles/boltzmann_machine2)の続きなので、そちらを見てから読んでください。
+機械学習で用いられるボルツマンマシン、特に制限ボルツマンマシン(Restricted Boltzmann Machine, RBM)の解説その3です。[その2](https://kaityo256.github.io/boltzmann_machine2)の続きなので、そちらを見てから読んでください。
 
 ## 前回までのあらすじ
 

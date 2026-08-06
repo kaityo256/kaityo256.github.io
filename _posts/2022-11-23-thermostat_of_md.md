@@ -226,8 +226,8 @@ $$
 
 他にも能勢フーバー法でのエルゴード性の破れとか、それに対応する能勢フーバー法チェイン法とかいろいろマニアックな話題はありますが、それは例えば以下の記事参照。
 
-* [調和振動子に作用させた熱浴のエルゴード性](https://qiita.com/kaityo256/items/2b14d7093c43eb5f77d7)　調和振動子系をNose-Hooverで制御すると温度が正しく制御されない理由と回避方法
-* [分子動力学法における熱浴の保存量](https://qiita.com/kaityo256/items/dc2ab16af09f56767a6e) Nose-Hoover法や多変数熱浴における数値積分の保存量について
+* [調和振動子に作用させた熱浴のエルゴード性](https://kaityo256.github.io/thermostat_ergodicity)　調和振動子系をNose-Hooverで制御すると温度が正しく制御されない理由と回避方法
+* [分子動力学法における熱浴の保存量](https://kaityo256.github.io/md_thermostat_conserved) Nose-Hoover法や多変数熱浴における数値積分の保存量について
 
 [^vs]: L. V. Woodcock, Chem. Phys. Lett., vol. 10, p. 257 (1971).
 [^berendsen]: H. J. C. Berendsen et al., J. Chem. Phys., vol. 81,p. 3684 (1984).

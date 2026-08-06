@@ -217,9 +217,9 @@ tion of Liquids (Oxford University Press, 1989), ISBN
 Journal of Chemical Physics vol. 97, 2635 (1992).
 * 調和振動子でエルゴード性が破れる証明： H. Watanabe and H. Kobayashi, Phys. Rev. E vol. 75, 040102 (2007).
 
-[^nh]: Nose-Hoover法については[分子動力学法ステップ・バイ・ステップ その5](http://qiita.com/kaityo256/items/0b5579104761f8ea9410)も参照。
+[^nh]: Nose-Hoover法については[分子動力学法ステップ・バイ・ステップ その5](https://kaityo256.github.io/mdstep5)も参照。
 [^1]: $\zeta$に関して積分することで自由度を消去できる。これは$(p,q,\zeta)空間から$$(p,q)$平面に射影したことに対応する。
-[^cdf]: 累積分布関数の求め方については[累積分布関数をソートで求める](http://qiita.com/kaityo256/items/690a463b6b865da80de6)も参照。
+[^cdf]: 累積分布関数の求め方については[累積分布関数をソートで求める](https://kaityo256.github.io/cdf_sort)も参照。
 [^km]: 詳細についてはFokker–Planck方程式やKramers-Moyal展開について調べてください。
-[^functor]: 微分方程式と数値積分法を自由に組み合わせる方法については[Runge–Kutta法を関数オブジェクトで](http://qiita.com/kaityo256/items/8762834341345aa8e3f8)を参照。
+[^functor]: 微分方程式と数値積分法を自由に組み合わせる方法については[Runge–Kutta法を関数オブジェクトで](https://kaityo256.github.io/rk_functor)を参照。
 [^2]: ただし、ここでいうエルゴード性とは「系に非自明な保存量が構築されることで軌道が制限される」ことを指している。文脈によっては別の定義のエルゴード性を用いている場合もあるので注意。

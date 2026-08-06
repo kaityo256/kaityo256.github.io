@@ -245,7 +245,7 @@ def additive_euler_maruyama(N):
 
 `additive_euler_maruyama`は、先程の式をそのまま実装したものです。これで`data`に時系列が帰ってくるので、その定常分布を調べてみましょう。
 
-時系列から分布関数を作る関数`dist`はこんな感じになります。ソートして累積分布関数を求め、それを微分することで分布関数を求めています(参考：[累積分布関数をソートで求める](https://qiita.com/kaityo256/items/690a463b6b865da80de6))。ただし、きれいな分布にするために、部分的に平均をとっています。
+時系列から分布関数を作る関数`dist`はこんな感じになります。ソートして累積分布関数を求め、それを微分することで分布関数を求めています(参考：[累積分布関数をソートで求める](https://kaityo256.github.io/cdf_sort))。ただし、きれいな分布にするために、部分的に平均をとっています。
 
 ```py
 def dist(data):
@@ -456,4 +456,4 @@ Langevin方程式は揺動散逸定理の導出やFokker-Planck方程式の議�
 
 ## 参考文献
 
-* [Multiplicativeなノイズを持つLangevin方程式とIto/Stratonovich解釈](https://qiita.com/kaityo256/items/6e9957b0739f5a3690f2)
+* [Multiplicativeなノイズを持つLangevin方程式とIto/Stratonovich解釈](https://kaityo256.github.io/ito_stratonovich)

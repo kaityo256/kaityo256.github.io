@@ -11,7 +11,7 @@ permalink: fashion_mnist_dump
 
 機械学習、してますか？＞挨拶
 
-以前、[Chainerを使っていた](https://qiita.com/kaityo256/items/77bc0b40e3bb70d36f3d)のですが、なんやかんやあってPyTorchかKerasを使うことになりました。で、機械学習のチュートリアルといえば手書き数字のMNISTデータセットですが、[TensorFlow](https://www.tensorflow.org/tutorials/keras/classification)のチュートリアルでは少しひねってFashion-MNISTのデータを使っています。
+以前、[Chainerを使っていた](https://kaityo256.github.io/mnist_dump)のですが、なんやかんやあってPyTorchかKerasを使うことになりました。で、機械学習のチュートリアルといえば手書き数字のMNISTデータセットですが、[TensorFlow](https://www.tensorflow.org/tutorials/keras/classification)のチュートリアルでは少しひねってFashion-MNISTのデータを使っています。
 
 このチュートリアルは非常にわかりやすいのですが、とりあえず「どんなデータを学習させているのか」をざっと見てみるのは有益でしょう。というわけで、Fashion-MNIST、つまり衣類の分類問題に使うデータをダウンロード、仕分けして見ましょう。
 
