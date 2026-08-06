@@ -43,7 +43,7 @@ EagerプロトコルからRendezvousが切り替わるデータのサイズは�
 
 サンプルコードは以下に置いておく。
 
-https://github.com/kaityo256/deadlock
+[https://github.com/kaityo256/deadlock](https://github.com/kaityo256/deadlock)
 
 ## 試し方
 

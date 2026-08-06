@@ -55,7 +55,7 @@ SPAMも記事化されてしまうので、この投稿用メールアドレス�
 さて、Twitter連携をするためには、まず、witter APIキーを取得しなければならないのだが、これがわりと面倒くさい。どうも最近面倒になったらしい。詳細は適当なサイトを参照してもらうことにして、ざっと
 
 * 連携用のTwitterアカウントを作成し、ログインする
-* https://developer.twitter.com/ に行く
+* [https://developer.twitter.com/](https://developer.twitter.com/) に行く
 * 作成したアカウントでDeveloper Accountを申請(apply)する
 * 電話番号を設定していなければ設定する
 * 何のために使うか、英語で説明を書く(何文字**以上**かけとか制約がある)

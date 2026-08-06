@@ -97,7 +97,7 @@ LOOKUP_TABLE default
 
 フォーマットを理解するには、適当なVTKを吐くスクリプトを書いてみるのが早い。以下は、球の内部で、中心が1、表面が0となるような強度を持つようなスカラーデータを吐くスクリプト。
 
-https://github.com/kaityo256/paraview-sample/tree/master/simple
+[https://github.com/kaityo256/paraview-sample/tree/master/simple](https://github.com/kaityo256/paraview-sample/tree/master/simple)
 
 ```rb
 grid = 10
@@ -146,7 +146,7 @@ end
 
 単純な球ではつまらないので、波動関数(要するに球面調和関数)を表示してみよう。ソースはこんな感じ。
 
-https://github.com/kaityo256/paraview-sample/tree/master/wavefunction
+[https://github.com/kaityo256/paraview-sample/tree/master/wavefunction](https://github.com/kaityo256/paraview-sample/tree/master/wavefunction)
 
 ```rb
 def export_vtk(filename,p)

@@ -13,7 +13,7 @@ permalink: thermostat_ergodicity
 
 ここではなぜ、そしてどのようにNose-Hoover法ではエルゴード性が破れ、他の方法ではエルゴード性を回復するかを説明する。サンプルコードは
 
-https://github.com/kaityo256/thermostats
+[https://github.com/kaityo256/thermostats](https://github.com/kaityo256/thermostats)
 
 においてある。
 

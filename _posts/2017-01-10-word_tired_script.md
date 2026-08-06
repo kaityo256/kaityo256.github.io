@@ -11,7 +11,7 @@ permalink: word_tired_script
 
 [Wordさんは今日もおつかれです](https://kaityo256.github.io/word_tired)を書くのに使ったスクリプトを
 
-https://github.com/kaityo256/wordlookstired
+[https://github.com/kaityo256/wordlookstired](https://github.com/kaityo256/wordlookstired)
 
 に置いておきます。何かの参考になればと思って。
 

@@ -15,7 +15,7 @@ permalink: bandit_ruby
 
 コードはここに置いてあります。
 
-https://github.com/kaityo256/bandit
+[https://github.com/kaityo256/bandit](https://github.com/kaityo256/bandit)
 
 ## 多椀バンディット問題とは
 

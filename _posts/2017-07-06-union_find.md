@@ -14,7 +14,7 @@ permalink: union_find
 
 本稿ではSwendsen-Wangアルゴリズムを実装する前に、サイトパーコレーションを例としてUnion-Find木を使ったクラスタリングの説明をします。ソースコードは以下においておきます。
 
-https://github.com/kaityo256/uf-ruby
+[https://github.com/kaityo256/uf-ruby](https://github.com/kaityo256/uf-ruby)
 
 
 

@@ -66,7 +66,7 @@ $ make -j 4
 
 例として、double型のスカラー値をだらだら保存した.datファイルを作成し、それを読み込んで.vtkファイルにするスクリプトを作ってみる。ソースは
 
-https://github.com/kaityo256/paraview-sample/tree/master/makej
+[https://github.com/kaityo256/paraview-sample/tree/master/makej](https://github.com/kaityo256/paraview-sample/tree/master/makej)
 
 においてある。
 

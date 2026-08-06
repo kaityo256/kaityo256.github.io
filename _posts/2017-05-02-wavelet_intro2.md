@@ -15,7 +15,7 @@ permalink: wavelet_intro2
 
 コードは
 
-https://github.com/kaityo256/haar2d
+[https://github.com/kaityo256/haar2d](https://github.com/kaityo256/haar2d)
 
 に置いてある。ウェーブレットを全く知らない人は先に[一次元](https://kaityo256.github.io/wavelet_intro)の記事を読んでおいた方が理解しやすいかも。
 

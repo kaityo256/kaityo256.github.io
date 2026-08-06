@@ -14,7 +14,7 @@ permalink: markdown_docx
 * RubyでXMLをいじる練習には良いかもしれない
 
 ソースは以下の場所にある
-https://github.com/kaityo256/md2docx
+[https://github.com/kaityo256/md2docx](https://github.com/kaityo256/md2docx)
 
 ## はじめに
 

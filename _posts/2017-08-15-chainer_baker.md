@@ -14,7 +14,7 @@ permalink: chainer_baker
 というわけで、自分で適当にデータが用意できて、それなりに非自明な分類として、パイこね変換と擬似乱数の分類をやってみる。
 
 ソースはここにおいておく。
-https://github.com/kaityo256/chainer_bakermap
+[https://github.com/kaityo256/chainer_bakermap](https://github.com/kaityo256/chainer_bakermap)
 
 Chainerのバージョンは2.0.1。
 

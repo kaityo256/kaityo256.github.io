@@ -14,7 +14,7 @@ Thunderbirdデータのインポートは、Apple Mail 5.0 以前のバージョ
 ## EMLX to mbox Converterの取得
 
 以下よりダウンロードする。
-http://www.cosmicsoft.net/emlxconvert.html
+[http://www.cosmicsoft.net/emlxconvert.html](http://www.cosmicsoft.net/emlxconvert.html)
 
 ## emlxデータのコピー
 

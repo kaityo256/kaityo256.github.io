@@ -16,10 +16,10 @@ permalink: chainer_browser
 で、気を取り直して「せっかく手描き文字を学習させたのだから、自分の手描き文字を認識させたい」とか思ったとしますよね。さて、自分の手描き文字をどういう形にして何にどうやって渡せばいいのか、途方にくれたことはありませんか。僕はくれました。
 
 というわけで、ChainerでMNISTの学習をさせたモデルをJavaScriptで取り込んで、ブラウザ上で手描き文字認識をさせるサンプルを書いてみました。ソースコードは以下の場所においておきます。
-https://github.com/kaityo256/mnist_check
+[https://github.com/kaityo256/mnist_check](https://github.com/kaityo256/mnist_check)
 
 以下はオンラインで試せるデモです。
-https://kaityo256.github.io/mnist_check/
+[https://kaityo256.github.io/mnist_check/](https://kaityo256.github.io/mnist_check/)
 ロードが完了すると「Check」ボタンが押せるようになります。左側に数字を書いて「Check」を押すと、数字を認識します。
 
 (2018年9月19日追記)以下で認識精度が悪いのは、前処理を行っていなかったからでした。前処理付きバージョンの解説を以下に書きましたので、そちらも合わせてご参照ください。

@@ -38,7 +38,7 @@ permalink: rk_functor
 
 で、そういうのを書いた。コードは
 
-https://github.com/kaityo256/runge-kutta
+[https://github.com/kaityo256/runge-kutta](https://github.com/kaityo256/runge-kutta)
 
 においてある。
 

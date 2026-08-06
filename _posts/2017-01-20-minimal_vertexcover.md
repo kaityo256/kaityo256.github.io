@@ -12,7 +12,7 @@ permalink: minimal_vertexcover
 与えられた入力に対して、極小頂点被覆(minimal hitting set)を列挙したい。で、ネットなり参考文献なりを探したんだけど、なんかどれも妙に難しくて「もっと俺みたいなアホにもわかるように書いてくれ！」[^1] と思ったので、自分の理解の確認も含めて以下に雑にまとめる。
 
 出て来るコードは
-https://github.com/kaityo256/hs_ruby
+[https://github.com/kaityo256/hs_ruby](https://github.com/kaityo256/hs_ruby)
 においてある。
 
 なお、私はド素人なので、以下はいろいろ間違いや思い違いがあるかも(逃げ)。
@@ -275,5 +275,5 @@ end
 [^3]: 「消せるビットが一つしかない」というのは直感的には明らかだと思うが、ちゃんとした証明は参考文献を参照のこと。なお、消せるビットはk番目の要素とtの論理積で得られる。
 
 また、本稿のサンプルコードを
-https://github.com/kaityo256/hs_ruby
+[https://github.com/kaityo256/hs_ruby](https://github.com/kaityo256/hs_ruby)
 においておくので参考にされたい。

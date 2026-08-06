@@ -40,7 +40,7 @@ $$
 
 アニメーションもわりと面白いので、興味のある方は試して見られたい。ソースコードは以下に置いてある。
 
-https://github.com/kaityo256/python_gs
+[https://github.com/kaityo256/python_gs](https://github.com/kaityo256/python_gs)
 
 さて、ここまでが長い前振りである。
 

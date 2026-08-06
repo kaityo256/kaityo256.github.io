@@ -12,7 +12,7 @@ permalink: minimal_hittingset
 与えられた入力に対して、極小ヒッティングセット(minimal hitting set)[^1]を列挙するニーズがあった。一応[Rubyで書いてみた](http://qiita.com/kaityo256/items/98469a935074e2061220)が速度的にアレなので、C++で、かつビット演算を使い、枝刈りも工夫してみたい。
 
 本稿で書いたコードは
-https://github.com/kaityo256/mhs_cpp
+[https://github.com/kaityo256/mhs_cpp](https://github.com/kaityo256/mhs_cpp)
 にある。
 
 ## 用語のまとめ
@@ -204,7 +204,7 @@ shdというのは、参考にした論文の著者によるプログラム。`g
 ヒッティングセット、すなわち与えられたビット列全てと重なりを持つ(論理積をとって0でない)ビット列を列挙するプログラムを書いた。ビット演算を使うのが自然だと思うので、一応フルにビット演算で書いてみたら、まぁまぁ満足できる速度が出た。`int32_t`使ってるから32ビットまでしか対応できないが、昨今の環境なら128ビットまでは特に苦労なく拡張できるんじゃないかなぁ。
 
 本稿で書いたコードを
-https://github.com/kaityo256/mhs_cpp
+[https://github.com/kaityo256/mhs_cpp](https://github.com/kaityo256/mhs_cpp)
 においておくので、自由に高速化とか高速化とかしてください＞ビット演算系人外の皆様
 
 ## 参考文献

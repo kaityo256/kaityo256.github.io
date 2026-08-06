@@ -18,10 +18,10 @@ permalink: browser_mnist
 この話を機械学習に詳しい人にしたら「ちゃんと前処理した？」と言われて、「いやしてないけど、こんな簡単な認識、前処理の有無でそうそう変わらないでしょ・・・」と思って放置してたのですが、[自分の手書きデータをTensorFlowで予測する](https://qiita.com/takus69/items/dd904dfc62372310c46f)という記事を見て、「あぁ、やっぱり前処理って大事なんだ」と思って、ちゃんと前処理しました。
 
 ソースコードは以下の場所においておきます。
-https://github.com/kaityo256/mnist_check
+[https://github.com/kaityo256/mnist_check](https://github.com/kaityo256/mnist_check)
 
 オンラインで試すことができるデモはここです。
-https://kaityo256.github.io/mnist_check/
+[https://kaityo256.github.io/mnist_check/](https://kaityo256.github.io/mnist_check/)
 
 ## とりあえず結果
 

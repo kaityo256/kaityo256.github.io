@@ -217,5 +217,5 @@ GCC、インテルコンパイラともに、likely、unlikely指定は効果が
 
 しっかし、インテルコンパイラは頑張ってSIMD化するね・・・。並列比較した後の処理も手慣れた職人の仕事、という感じがする。
 
-[^1]: https://cpplover.blogspot.jp/2016/11/c-p0471r0-p0479r0.html
-[^amd]: http://repzret.org/p/repzret/
+[^1]: [https://cpplover.blogspot.jp/2016/11/c-p0471r0-p0479r0.html](https://cpplover.blogspot.jp/2016/11/c-p0471r0-p0479r0.html)
+[^amd]: [http://repzret.org/p/repzret/](http://repzret.org/p/repzret/)

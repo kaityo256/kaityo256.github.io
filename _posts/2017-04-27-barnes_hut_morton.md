@@ -12,7 +12,7 @@ permalink: barnes_hut_morton
 わけあって、[重力多体系の計算で使われるBarnes-Hut treeを構築することになったので覚書](https://kaityo256.github.io/barnes_hut)の[続き](https://kaityo256.github.io/barnes_hut_countsort)の続き。
 
 コードは
-https://github.com/kaityo256/barnes-hut
+[https://github.com/kaityo256/barnes-hut](https://github.com/kaityo256/barnes-hut)
 に置いてあるソースのうち[barnes-hut-morton.rb](https://github.com/kaityo256/barnes-hut/blob/master/barnes-hut-morton.rb)がそれ。
 
 ## BHツリーとモートンキー

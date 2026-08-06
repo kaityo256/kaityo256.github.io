@@ -13,7 +13,7 @@ permalink: makediff_latex
 
 サンプルファイルを以下に置いておく。
 
-https://github.com/kaityo256/makelatexdiff
+[https://github.com/kaityo256/makelatexdiff](https://github.com/kaityo256/makelatexdiff)
 
 ## 方針
 

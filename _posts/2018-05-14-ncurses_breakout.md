@@ -15,7 +15,7 @@ ncursesを使って、こんな感じのブロック崩しゲームを作りま�
 
 ソースは以下に置いておきます
 
-https://github.com/kaityo256/nc_breakout
+[https://github.com/kaityo256/nc_breakout](https://github.com/kaityo256/nc_breakout)
 
 以下のStepは、それぞれ上記リポジトリのディレクトリに対応しています。
 
@@ -332,7 +332,7 @@ main(void) {
 
 ここまでくればもう、ブロックを作って、ボールがぶつかったらブロックが消えてボールが跳ね返るコードにするのは簡単だと思います。ソースは以下です。
 
-https://github.com/kaityo256/nc_breakout/blob/master/step5/nc_breakout.cpp
+[https://github.com/kaityo256/nc_breakout/blob/master/step5/nc_breakout.cpp](https://github.com/kaityo256/nc_breakout/blob/master/step5/nc_breakout.cpp)
 
 ![image6.gif](/assets/images/ncurses_breakout/image6.gif)
 

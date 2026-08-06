@@ -185,7 +185,7 @@ Nose-Hoover法と同様な保存量を、Kinetic-Moments法やNose-Hoover-Chain�
 
 上記の計算に使ったソースを
 
-https://github.com/kaityo256/thermostats
+[https://github.com/kaityo256/thermostats](https://github.com/kaityo256/thermostats)
 
 においておく。
 

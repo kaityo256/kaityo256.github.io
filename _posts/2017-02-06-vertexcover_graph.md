@@ -13,7 +13,7 @@ permalink: vertexcover_graph
 
 さて、頂点被覆問題のソルバを作ったは良いが、それをセミナーとかで説明する際に適切なサンプルを作るのが結構面倒だったので、説明用のデータを作るRubyスクリプトを作った。
 
-https://github.com/kaityo256/mhs_graph
+[https://github.com/kaityo256/mhs_graph](https://github.com/kaityo256/mhs_graph)
 
 これを使うと、自動的に頂点被覆問題、その解答、そのグラフ可視化のセットを出力してくれるので、講義とかプログラム演習の課題とかに使うのに便利だと思われる。
 

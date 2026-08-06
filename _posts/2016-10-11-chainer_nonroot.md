@@ -29,7 +29,7 @@ Python 2.7.9、easy_install、pipをこの順番でインストールする。--
 
 まずやらなきゃいけないのが、Python 2.7.9以上のインストール。2.7.9未満だと、環境によってはSSL関連で問題を起こすことがある。具体的には以下のようなメッセージが出てインストールに失敗する。
 
-SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning.
+SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see [https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning](https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning).
   SNIMissingWarning
 
 これはPython 2.7.9未満がSNI (Server Name Indication)に対応していないため。というわけでPython 2.7.9を入れる。自分のhomeの~/local以下に入れることを想定。build用のディレクトリbuildを掘って、そこから作業する。

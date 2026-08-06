@@ -13,7 +13,7 @@ permalink: swendsen_wang
 スピン系をモンテカルロシミュレーションする際に広く使われる[Swendsen–Wangアルゴリズム](https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%B4%E3%82%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%83%BB%E3%83%AF%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0)を、イジングモデルに適用するサンプルコードの解説。
 
 コードは
-https://github.com/kaityo256/mc/tree/master/ising_sw
+[https://github.com/kaityo256/mc/tree/master/ising_sw](https://github.com/kaityo256/mc/tree/master/ising_sw)
 においてあります。
 
 

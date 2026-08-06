@@ -35,7 +35,7 @@ permalink: chopsticks_analysis
 
 ソースは以下においてある。
 
-https://github.com/kaityo256/waribashi
+[https://github.com/kaityo256/waribashi](https://github.com/kaityo256/waribashi)
 
 ## 状態遷移図
 

@@ -26,7 +26,7 @@ $$
 本稿は、この近似精度の向上を確認する。
 
 ソースは
-https://github.com/kaityo256/lie-trotter-sample
+[https://github.com/kaityo256/lie-trotter-sample](https://github.com/kaityo256/lie-trotter-sample)
 においてある。
 
 ## ソースの解説

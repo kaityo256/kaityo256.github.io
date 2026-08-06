@@ -20,7 +20,7 @@ $$
 ここで$h$はc数で、数値計算では時間刻みとして用いられることが多いので、以下は時間刻みと呼ぶ。$n$が分解数である。この打切り誤差をちゃんと確認してみよう、というのが本稿の趣旨。
 
 ソースは
-https://github.com/kaityo256/lie-trotter-sample
+[https://github.com/kaityo256/lie-trotter-sample](https://github.com/kaityo256/lie-trotter-sample)
 においてある。
 
 2017年7月14日追記：

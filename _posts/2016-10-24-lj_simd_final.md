@@ -29,7 +29,7 @@ permalink: lj_simd_final
 
 ## コード
 
-コードは長くなったのでhttps://github.com/kaityo256/lj_simd においておく。それぞれ
+コードは長くなったので[https://github.com/kaityo256/lj_simd](https://github.com/kaityo256/lj_simd) においておく。それぞれ
 
 * force_aos.cpp: AoSで、力の計算を何種類かと、シャッフル命令を使って手でSIMD化したコードを含む。
 * force_soa.cpp: 上記のSoA版。シャッフル命令を使わない馬鹿SIMD化を含む。

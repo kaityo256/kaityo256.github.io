@@ -15,7 +15,7 @@ permalink: openmp_imbalanced
 
 コードは
 
-https://gist.github.com/kaityo256/210f9abcd3cd7696e2d19ab32ca2aa28
+[https://gist.github.com/kaityo256/210f9abcd3cd7696e2d19ab32ca2aa28](https://gist.github.com/kaityo256/210f9abcd3cd7696e2d19ab32ca2aa28)
 
 においておく。
 
@@ -201,6 +201,6 @@ Elapsed time [ms]: 8822
 
 Twitterで「TLSをうまく使えば`Worker`クラスの配列が不要になる」という指摘をうけ、`thread_local`指定を組んでみた。
 
-https://gist.github.com/kaityo256/b369fe31beccee239f922cb0ff5589bd
+[https://gist.github.com/kaityo256/b369fe31beccee239f922cb0ff5589bd](https://gist.github.com/kaityo256/b369fe31beccee239f922cb0ff5589bd)
 
 実行結果は同じ。

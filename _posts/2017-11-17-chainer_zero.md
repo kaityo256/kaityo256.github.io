@@ -28,7 +28,7 @@ Chainer Advent Calendar 2017 4日目の記事です。
 
 ソースは以下に置いてあります。
 
-https://github.com/kaityo256/chainer_zero
+[https://github.com/kaityo256/chainer_zero](https://github.com/kaityo256/chainer_zero)
 
 ## Chainerのセットアップ
 

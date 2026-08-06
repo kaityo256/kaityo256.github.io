@@ -180,7 +180,7 @@ GCCのバージョンが違うが、この2つの違いは今回に関しては�
 
 今回使ったコードは
 
-https://gist.github.com/kaityo256/a8d6d0c974285e01fe6b04d6b1cccd0c
+[https://gist.github.com/kaityo256/a8d6d0c974285e01fe6b04d6b1cccd0c](https://gist.github.com/kaityo256/a8d6d0c974285e01fe6b04d6b1cccd0c)
 
 においておく。基本的には[LJの力計算のSIMD化ステップ・バイ・ステップ その6](https://kaityo256.github.io/lj_simd6)のコードを整理したもの。
 

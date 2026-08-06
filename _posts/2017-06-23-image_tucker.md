@@ -14,7 +14,7 @@ permalink: image_tucker
 今の職場、毎週あるミーティングでみんなが発表するんですが、だいたい「こんなものをSVDしました」という感じなので、[僕もSVDしてみた](https://kaityo256.github.io/image_svd)のですが、その続きです。
 
 ソースコードは
-https://github.com/kaityo256/image_svd
+[https://github.com/kaityo256/image_svd](https://github.com/kaityo256/image_svd)
 においてあります。
 
 はじめにお断りしておきますが、僕はテンソル、というか線形代数全般が苦手です[^denki]。なので以下の情報の正確性については保証できません。自分が「あれ？どの足をつぶすんだっけ？」とかごちゃごちゃになるので、その覚書のつもりです。
@@ -175,7 +175,7 @@ PILのImageでファイルをオープンし、それを`numpy.asarray`につっ
 
 ここでは、x座標の足とy座標の足だけつぶして、色の足はつぶしていません。以上のコードは、
 
-https://github.com/kaityo256/image_svd
+[https://github.com/kaityo256/image_svd](https://github.com/kaityo256/image_svd)
 
 の、[color_tucker](https://github.com/kaityo256/image_svd/blob/master/image_svd.py#L43)に実装しています。
 

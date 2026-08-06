@@ -284,6 +284,6 @@ inv_transform(data,M)
 
 本稿で利用したコードを
 
-https://github.com/kaityo256/haar_sample
+[https://github.com/kaityo256/haar_sample](https://github.com/kaityo256/haar_sample)
 
 に置いておく。

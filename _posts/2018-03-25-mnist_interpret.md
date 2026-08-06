@@ -25,7 +25,7 @@ permalink: mnist_interpret
 
 今回追加したコードは
 
-https://github.com/kaityo256/mnist_check/tree/master/idea
+[https://github.com/kaityo256/mnist_check/tree/master/idea](https://github.com/kaityo256/mnist_check/tree/master/idea)
 
 にあります。
 

@@ -13,7 +13,7 @@ Chainerは深層学習のフレームワークです。[Preffered Networks, PFN]
 
 [Re:ゼロから始めるChainer生活](https://kaityo256.github.io/chainer_zero)と内容がかなり重なってしまいますが、ご容赦ください。また、[Chainer Advent Calender 2017](https://qiita.com/advent-calendar/2017/chainer)の三日目の記事としてPFNの中の人が書いた[Chainer v3 ビギナー向けチュートリアル](https://qiita.com/mitmul/items/1e35fba085eb07a92560)が大変オススメです。この記事は、Chainerの中の人では無い人がChainerをどう思っているかを書いた記事だと思って参考程度に読んでいただければ幸いです。
 
-https://github.com/kaityo256/chainer_zero
+[https://github.com/kaityo256/chainer_zero](https://github.com/kaityo256/chainer_zero)
 にアップロードしたソースを例に説明します。
 
 ## 分類問題

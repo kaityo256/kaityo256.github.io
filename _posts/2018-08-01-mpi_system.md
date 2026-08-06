@@ -15,7 +15,7 @@ permalink: mpi_system
 
 しかし、この子プロセスとして呼び出されるコードが、普通のシリアルプログラムではなく、MPIがリンクされた並列コードだと問題を起こすため、それについて紹介します。サンプルコードは
 
-https://github.com/kaityo256/mpisystem
+[https://github.com/kaityo256/mpisystem](https://github.com/kaityo256/mpisystem)
 
 に置いておきます。
 

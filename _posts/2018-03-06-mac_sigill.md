@@ -13,7 +13,7 @@ Mac上でSIGSEGVが出そうなコードをg++でコンパイル、実行する�
 
 再現コードはここに置いてある。
 
-https://github.com/kaityo256/sigill_on_mac
+[https://github.com/kaityo256/sigill_on_mac](https://github.com/kaityo256/sigill_on_mac)
 
 ## 現象
 

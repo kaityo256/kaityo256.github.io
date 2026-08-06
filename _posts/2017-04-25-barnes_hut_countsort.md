@@ -12,7 +12,7 @@ permalink: barnes_hut_countsort
 [わけあって、重力多体系の計算で使われるBarnes-Hut treeを構築することになったので覚書](https://kaityo256.github.io/barnes_hut)の続き。前回はinsertion版だが、今回は分布数えソート(counting sort)版。
 
 コードは
-https://github.com/kaityo256/barnes-hut
+[https://github.com/kaityo256/barnes-hut](https://github.com/kaityo256/barnes-hut)
 に置いてあるソースのうち[barnes-hut-counting.rb](https://github.com/kaityo256/barnes-hut/blob/master/barnes-hut-counting.rb)がそれ。
 
 ## Barnes-Hut treeとは

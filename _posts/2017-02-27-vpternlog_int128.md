@@ -177,11 +177,10 @@ GCC拡張の128ビット整数型`__int128`に対して、AVX-512の三項論理
 
 上記のソースコードは以下においてある。
 
-https://gist.github.com/kaityo256/51e6dde4a94fdb411591193f6f6bbc31
+[https://gist.github.com/kaityo256/51e6dde4a94fdb411591193f6f6bbc31](https://gist.github.com/kaityo256/51e6dde4a94fdb411591193f6f6bbc31)
 
 ## 参考にしたサイト
 
 * [vpternlogd by tanakmura
 さん](http://qiita.com/tanakmura/items/5dce53ae3d68a89fa981)
-* [Intel Architecture Instruction Set Extensions Programming Reference (PDF)](
-https://software.intel.com/sites/default/files/managed/07/b7/319433-023.pdf)
+* [Intel Architecture Instruction Set Extensions Programming Reference (PDF)](https://software.intel.com/sites/default/files/managed/07/b7/319433-023.pdf)

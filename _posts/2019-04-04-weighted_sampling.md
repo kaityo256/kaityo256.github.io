@@ -263,6 +263,6 @@ public:
 
 実際、僕は二分木探索が必要になったことがある。詳細は以下の論文を見て欲しいが、時間があったら記事を書くかもしれない[^1]。
 
-* H. Watanabe, S. Yukawa, M. A. Novotny and N. Ito, [Phys. Rev. E, 74, 026707 (2006)(https://journals.aps.org/pre/abstract/10.1103/PhysRevE.74.026707)].
+* H. Watanabe, S. Yukawa, M. A. Novotny and N. Ito, [Phys. Rev. E, 74, 026707 (2006)](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.74.026707).
 
 [^1]: 部分更新を伴う二分木探索による重み付きサンプリングアルゴリズムは、一応僕のオリジナルのつもりなのだが、誰かが考えそうではあるので、もしかしたら先行研究があるかもしれない。

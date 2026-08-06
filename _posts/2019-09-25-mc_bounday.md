@@ -13,7 +13,7 @@ permalink: mc_bounday
 
 コードは以下に置いておく。
 
-https://github.com/kaityo256/mc/tree/master/pbc_test
+[https://github.com/kaityo256/mc/tree/master/pbc_test](https://github.com/kaityo256/mc/tree/master/pbc_test)
 
 ## 問題意識
 

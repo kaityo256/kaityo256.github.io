@@ -13,7 +13,7 @@ permalink: mnist_dump
 
 ソースはここです。
 
-https://github.com/kaityo256/mnist_dump
+[https://github.com/kaityo256/mnist_dump](https://github.com/kaityo256/mnist_dump)
 
 データの取得にChainerを使っているため、Chainerがimportできる環境で実行する必要があります。
 

@@ -22,7 +22,7 @@ permalink: ttt_fullsearch
 
 コードはここに置いてあります。
 
-https://github.com/kaityo256/tictactoe
+[https://github.com/kaityo256/tictactoe](https://github.com/kaityo256/tictactoe)
 
 ## 使い方
 

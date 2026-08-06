@@ -13,7 +13,7 @@ permalink: image_hosvd_hooi
 テンソルを、低いランクのテンソル(コアテンソル)と行列の組に分解することを[Tucker分解](https://en.wikipedia.org/wiki/Tucker_decomposition)と呼ぶ。その手法のうち、HOSVD (higher order singular value decomposition)と、HOOI (higher orthogonal iteration of tensors)を使って、画像の低ランク近似をしてみる。
 
 ソースコードは
-https://github.com/kaityo256/hooi_sample
+[https://github.com/kaityo256/hooi_sample](https://github.com/kaityo256/hooi_sample)
 においてある。
 
 ## テンソルのTucker分解

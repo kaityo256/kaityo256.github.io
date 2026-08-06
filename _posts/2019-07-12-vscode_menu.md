@@ -21,7 +21,7 @@ WindowsでVS Codeを使っていて、「いまエクスプローラで開いて
 
 既にVS Codeをインストール済みでも、上書き再インストールしてしまおう。
 
-https://code.visualstudio.com/
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 に行って、「Download for Windows」をクリックしてインストールを開始しよう。
 

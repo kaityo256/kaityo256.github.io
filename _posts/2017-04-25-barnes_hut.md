@@ -12,7 +12,7 @@ permalink: barnes_hut
 わけあって、重力多体系の計算で使われる[Barnes-Hut tree](http://arborjs.org/docs/barnes-hut)を構築することになったので覚書。
 
 コードは
-https://github.com/kaityo256/barnes-hut
+[https://github.com/kaityo256/barnes-hut](https://github.com/kaityo256/barnes-hut)
 に置いてある。
 
 ## Barnes-Hut treeとは

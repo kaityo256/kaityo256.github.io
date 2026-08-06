@@ -49,7 +49,7 @@ s3
 
 これもサンプルを見たほうが早いと思う。こんなスクリプトを用意する。
 
-https://github.com/kaityo256/paraview-sample/tree/master/glyph
+[https://github.com/kaityo256/paraview-sample/tree/master/glyph](https://github.com/kaityo256/paraview-sample/tree/master/glyph)
 
 ```rb
 grid = 21
@@ -136,7 +136,7 @@ x3 y3 z3
 
 簡単な例として、球表面に回転するようなベクトル場を描いてみる。単純なベクトル場だけだとつまらないので、z座標で色をつけることにしよう。スクリプトはこんな感じ。
 
-https://github.com/kaityo256/paraview-sample/tree/master/unstructured
+[https://github.com/kaityo256/paraview-sample/tree/master/unstructured](https://github.com/kaityo256/paraview-sample/tree/master/unstructured)
 
 ```rb
 Point = Struct.new(:x, :y, :z)

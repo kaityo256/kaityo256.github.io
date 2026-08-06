@@ -13,7 +13,7 @@ permalink: map_serialize
 
 というわけで車輪の再開発をする。書いたコードは
 
-https://gist.github.com/kaityo256/eb6a49cb40f99b97898f5e464c2c208f
+[https://gist.github.com/kaityo256/eb6a49cb40f99b97898f5e464c2c208f](https://gist.github.com/kaityo256/eb6a49cb40f99b97898f5e464c2c208f)
 
 においておく。
 
