@@ -9,7 +9,7 @@ permalink: minimal_hittingset
 
 ## はじめに
 
-与えられた入力に対して、極小ヒッティングセット(minimal hitting set)[^1]を列挙するニーズがあった。一応[Rubyで書いてみた](http://qiita.com/kaityo256/items/98469a935074e2061220)が速度的にアレなので、C++で、かつビット演算を使い、枝刈りも工夫してみたい。
+与えられた入力に対して、極小ヒッティングセット(minimal hitting set)[^1]を列挙するニーズがあった。一応[Rubyで書いてみた](https://kaityo256.github.io/minimal_vertexcover)が速度的にアレなので、C++で、かつビット演算を使い、枝刈りも工夫してみたい。
 
 本稿で書いたコードは
 [https://github.com/kaityo256/mhs_cpp](https://github.com/kaityo256/mhs_cpp)
@@ -19,7 +19,7 @@ permalink: minimal_hittingset
 
 ## 極小ヒッティングセット
 
-あるビット列の組が与えられたとする。このビット列の全てと論理積(AND)をとってゼロで無いようなビット列をヒッティングセット(hitting set, HS)と呼ぶ。また、他のヒッティングセットを真部分集合として含まないようなものを極小ヒッティングセット(minimal hitting set, 以下MHS)と呼ぶ。具体例については[以前の記事](http://qiita.com/kaityo256/items/98469a935074e2061220)を参照。
+あるビット列の組が与えられたとする。このビット列の全てと論理積(AND)をとってゼロで無いようなビット列をヒッティングセット(hitting set, HS)と呼ぶ。また、他のヒッティングセットを真部分集合として含まないようなものを極小ヒッティングセット(minimal hitting set, 以下MHS)と呼ぶ。具体例については[以前の記事](https://kaityo256.github.io/minimal_vertexcover)を参照。
 
 ## k-MHS
 

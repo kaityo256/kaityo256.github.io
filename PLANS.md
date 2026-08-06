@@ -299,14 +299,14 @@ bundle exec jekyll build
 
 Qiita見出しリンク `https://qiita.com/kaityo256/items/2977d53e70bbffd4d601#%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E6%8E%A2%E3%81%97%E6%96%B9` は、対応記事の見出しへ `https://kaityo256.github.io/ppt_grep#テキストの探し方` として置換した。
 
-### 残っている対象リンク
+### 残っていた対象リンクの解消
 
-承認済み作業後も、以下の2出現は意図的に残している。
+承認済み作業後も残っていた対象リンク2出現は、ユーザー確認により `_posts/2017-01-20-minimal_vertexcover.md` が対応記事であると判明したため、追加対応で解消済み。
 
-| No. | 参照元ファイル | 行番号 | URL | 判定 | 理由 |
-| --: | -------------- | -----: | --- | ---- | ---- |
-| 1 | `_posts/2017-01-26-minimal_hittingset.md` | 12 | `http://qiita.com/kaityo256/items/98469a935074e2061220` | 対応なし | Ruby版の極小ヒッティングセット記事で、現行 `_posts` のC++枝刈り版とは別記事 |
-| 2 | `_posts/2017-01-26-minimal_hittingset.md` | 22 | `http://qiita.com/kaityo256/items/98469a935074e2061220` | 対応なし | 同上 |
+| No. | 参照元ファイル | 行番号 | 変更後URL | 判定 |
+| --: | -------------- | -----: | --------- | ---- |
+| 1 | `_posts/2017-01-26-minimal_hittingset.md` | 12 | `https://kaityo256.github.io/minimal_vertexcover` | 解消済み |
+| 2 | `_posts/2017-01-26-minimal_hittingset.md` | 22 | `https://kaityo256.github.io/minimal_vertexcover` | 解消済み |
 
 ### 検証結果
 
@@ -319,11 +319,14 @@ Qiita見出しリンク `https://qiita.com/kaityo256/items/2977d53e70bbffd4d601#
 
 ### 今後の要確認事項
 
-残存する `対応なし` 2出現を解消するには、以下のいずれかが必要。
+残存していた `対応なし` 2出現は、2026-08-06 の追加対応で解消済み。
 
-- 対応する元記事を `_posts` に移植する。
-- 対応する既存記事が別名で存在するか、追加調査する。
-- 外部リンクのまま残す方針を確定する。
+### 2026-08-06 追加対応: 極小ヒッティングセット記事の対応先修正
+
+残っていた対象リンク No.1, No.2 について、ユーザー確認により対応記事は `_posts/2017-01-20-minimal_vertexcover.md` と判明した。
+
+- `_posts/2017-01-26-minimal_hittingset.md` 内の2出現を `https://kaityo256.github.io/minimal_vertexcover` へ置換した。
+- 内部アンカーは付与していない。
 
 ### 2026-08-06 追加対応: ParaView記事の取り違え修正
 
