@@ -2,14 +2,14 @@
 layout: post
 title: "大名行列をTucker分解してみる"
 tags: [programming, math, machine-learning, qiita]
-permalink: daimyo_tucker
+permalink: daimyo_tucker_article
 ---
 
 # 大名行列をTucker分解してみる
 
 ## はじめに
 
-線形代数には、特異値分解という操作があり、行列の近似に使われています。詳しくは前記事「[大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd)」を参照してください。
+線形代数には、特異値分解という操作があり、行列の近似に使われています。詳しくは前記事「[大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd_article)」を参照してください。
 
 さて、行列はプログラムで言えば二次元配列のようなものです。二次元配列はインデックスを二つ指定すれば値を得ることができます。同様に行列も行と列の二つのインデックスを指定することで要素を指定することができます。行列を多次元配列に拡張したものがテンソルです。真面目にテンソルを議論するといろいろ面倒ですが、本稿では単に「多次元配列のこと」と思っておいて問題ありません。
 

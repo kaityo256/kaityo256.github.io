@@ -13,7 +13,7 @@ permalink: ndarray_matrix
 
 ## はじめに
 
-少し前に「[大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd)」という記事を書いたところ、元同僚さんから「`numpy.matrix`はdeprecatedですよ」と言われて驚きました[^1]。
+少し前に「[大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd_article)」という記事を書いたところ、元同僚さんから「`numpy.matrix`はdeprecatedですよ」と言われて驚きました[^1]。
 
 [^1]: 現在は`matrix`を使わない形に修正してありますが、初出時は使っていました。
 

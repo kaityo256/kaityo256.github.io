@@ -2,7 +2,7 @@
 layout: post
 title: "大名行列を特異値分解してみる"
 tags: [programming, math, machine-learning, qiita]
-permalink: daimyo_svd
+permalink: daimyo_svd_article
 ---
 
 # 大名行列を特異値分解してみる

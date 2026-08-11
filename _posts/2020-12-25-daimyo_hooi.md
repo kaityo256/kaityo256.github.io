@@ -2,19 +2,19 @@
 layout: post
 title: "大名行列をHOOIでTucker分解してみる"
 tags: [programming, math, machine-learning, qiita]
-permalink: daimyo_hooi
+permalink: daimyo_hooi_article
 ---
 
 # 大名行列をHOOIでTucker分解してみる
 
 これまでの大名行列分解記事。
 
-* [大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd)
-* [大名行列をTucker分解してみる](https://kaityo256.github.io/daimyo_tucker)
+* [大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd_article)
+* [大名行列をTucker分解してみる](https://kaityo256.github.io/daimyo_tucker_article)
 
 ## はじめに
 
-線形代数には、特異値分解(Singular Value Decomposition, SVD)という操作があり、行列の近似に使われています。詳しくは「[大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd)」を参照してください。SVDによる行列の低ランク近似は、フロベニウスノルムの意味で最良近似になっています。さて、行列だけでなく、足がたくさんある高階のテンソルも近似したい、というニーズがあります。テンソルは、元のテンソルと同じ本数だが、次元が低い足を持つコアテンソルと、コアテンソルのそれぞれの足の次元を増やす復元行列の組み合わせで分解され、この分解をTucker分解と呼びます。テンソルをTucker分解した時、どのようにすれば最良近似となるかは不明瞭です。前記事「[大名行列をTucker分解してみる](https://kaityo256.github.io/daimyo_tucker)」では、SVDを素直にテンソルに適用したHigher Order SVD (HOSVD)を使ってTucker分解してみましたが、これは最良近似になっていないことが知られています。本稿では、イテレーションにより近似精度を改善するHigher Order Orthogonal Iteration of tensors (HOOI)を適用し、HOSVDの結果と比べてみましょう。
+線形代数には、特異値分解(Singular Value Decomposition, SVD)という操作があり、行列の近似に使われています。詳しくは「[大名行列を特異値分解してみる](https://kaityo256.github.io/daimyo_svd_article)」を参照してください。SVDによる行列の低ランク近似は、フロベニウスノルムの意味で最良近似になっています。さて、行列だけでなく、足がたくさんある高階のテンソルも近似したい、というニーズがあります。テンソルは、元のテンソルと同じ本数だが、次元が低い足を持つコアテンソルと、コアテンソルのそれぞれの足の次元を増やす復元行列の組み合わせで分解され、この分解をTucker分解と呼びます。テンソルをTucker分解した時、どのようにすれば最良近似となるかは不明瞭です。前記事「[大名行列をTucker分解してみる](https://kaityo256.github.io/daimyo_tucker_article)」では、SVDを素直にテンソルに適用したHigher Order SVD (HOSVD)を使ってTucker分解してみましたが、これは最良近似になっていないことが知られています。本稿では、イテレーションにより近似精度を改善するHigher Order Orthogonal Iteration of tensors (HOOI)を適用し、HOSVDの結果と比べてみましょう。
 
 コードは以下においておきます。
 
@@ -94,7 +94,7 @@ H、Wの次元を持つ足をrにつぶしています。色の足はそのま�
 
 ![image7.png](/assets/images/daimyo_hooi/image7.png)
 
-分解するカラー画像は、[前回の記事](https://kaityo256.github.io/daimyo_tucker)と同様に作りましょう。
+分解するカラー画像は、[前回の記事](https://kaityo256.github.io/daimyo_tucker_article)と同様に作りましょう。
 
 ```py
 from PIL import Image, ImageDraw, ImageFont
