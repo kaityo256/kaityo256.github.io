@@ -3,31 +3,74 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
+  <section class="article-search" aria-labelledby="article-search-heading">
+    <h2 id="article-search-heading" class="sr-only">記事を検索</h2>
 
-  {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading"> Articles</h2>
-  <ul class="post-list">
+    <form id="google-site-search" class="search-row" action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
+      <div class="search-input-group">
+        <label for="title-search">タイトルを検索</label>
+        <input id="title-search" type="search" placeholder="キーワードを入力" autocomplete="off">
+      </div>
+      <input id="google-query" type="hidden" name="q" value="">
+      <button id="google-search-button" class="google-search-button" type="submit" disabled>
+        本文をGoogleで検索
+      </button>
+    </form>
+
+    <details id="tag-filter" class="tag-filter">
+      <summary>タグで絞り込む <span id="selected-tag-count">（0件選択）</span></summary>
+      <div class="tag-filter-body">
+        <fieldset class="tag-options">
+          <legend class="sr-only">タグ</legend>
+          {%- assign sorted_tags = site.tags | sort -%}
+          {%- for site_tag in sorted_tags -%}
+          <label class="tag-checkbox">
+            <input type="checkbox" name="article-tag" value="{{ site_tag[0] | escape }}">
+            <span>{{ site_tag[0] | escape }}</span>
+            <small>{{ site_tag[1].size }}</small>
+          </label>
+          {%- endfor -%}
+        </fieldset>
+
+        <fieldset class="tag-match-mode">
+          <legend>複数タグの条件</legend>
+          <label><input type="radio" name="tag-mode" value="any" checked> いずれかを含む</label>
+          <label><input type="radio" name="tag-mode" value="all"> すべて含む</label>
+        </fieldset>
+      </div>
+    </details>
+
+    <div class="search-summary">
+      <p id="search-result-status" role="status" aria-live="polite">{{ site.posts.size }}件の記事</p>
+      <button id="clear-search" class="clear-search" type="button" disabled>条件をクリア</button>
+    </div>
+  </section>
+
+  <noscript><p class="search-note">絞り込み検索を使うにはJavaScriptを有効にしてください。全記事は以下から閲覧できます。</p></noscript>
+
+  <ul id="article-search-results" class="post-list search-results">
     {%- for post in site.posts -%}
-    <li>
+    <li data-search-result data-tags="{{ post.tags | join: '|' | escape }}">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
+      <h2>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+      {%- if post.tags -%}
+      <div class="search-result-tags" aria-label="タグ">
+        {%- for tag in post.tags -%}
+        {%- assign tag_class = tag | downcase | replace: "tag.", "" | replace: ".", "-" | replace: " ", "-" -%}
+        <a class="tag {{ tag_class }}" href="/tags/{{ tag_class | uri_escape }}/">[{{ tag }}]</a>
+        {%- endfor -%}
+      </div>
       {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
 
-  {%- endif -%}
-
+  <p id="no-search-results" class="no-search-results" hidden>条件に一致する記事がありません。キーワードやタグを変更してください。</p>
 </div>
+
+<script defer src="{{ '/assets/search.js' | relative_url }}"></script>

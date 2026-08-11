@@ -20,7 +20,8 @@ sass:
   quiet_deps: true
 
 header_pages:
-  - about.md  
+  - articles.md
+  - about.md
 
 ogp:
   title: "A Robot's Sigh"
