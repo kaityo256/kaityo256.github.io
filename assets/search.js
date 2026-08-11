@@ -18,7 +18,7 @@
   const normalize = (value) => value.normalize("NFKC").toLocaleLowerCase();
   const indexedResults = results.map((element) => ({
     element,
-    title: normalize(element.querySelector(".post-link").textContent),
+    title: normalize(element.querySelector(".search-result-title").textContent),
     tags: element.dataset.tags ? element.dataset.tags.split("|") : []
   }));
 
