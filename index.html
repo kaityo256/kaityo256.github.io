@@ -19,12 +19,46 @@ layout: default
 </ul>
 
 
-<div class="pagination">
+<nav class="pagination" aria-label="記事一覧のページネーション">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">← Prev</a>
+    <a class="pagination-button" href="{{ paginator.previous_page_path | relative_url }}" aria-label="前のページ">&lt;</a>
   {% endif %}
-  <span> Page {{ paginator.page }} / {{ paginator.total_pages }} </span>
+
+  {% assign first_page_after_gap = 4 %}
+  {% assign last_page_before_gap = paginator.total_pages | minus: 3 %}
+  {% assign current_page_before = paginator.page | minus: 1 %}
+  {% assign current_page_after = paginator.page | plus: 1 %}
+  {% assign previous_page_number = 0 %}
+
+  {% for page_number in (1..paginator.total_pages) %}
+    {% assign show_page = false %}
+    {% if page_number < first_page_after_gap or page_number > last_page_before_gap %}
+      {% assign show_page = true %}
+    {% elsif page_number >= current_page_before and page_number <= current_page_after %}
+      {% assign show_page = true %}
+    {% endif %}
+
+    {% if show_page %}
+      {% assign page_gap = page_number | minus: previous_page_number %}
+      {% if page_gap > 1 %}
+        <span class="pagination-ellipsis" aria-hidden="true">…</span>
+      {% endif %}
+
+      {% if page_number == paginator.page %}
+        <span class="pagination-button current" aria-current="page">{{ page_number }}</span>
+      {% else %}
+        {% if page_number == 1 %}
+          {% assign page_path = "/" %}
+        {% else %}
+          {% assign page_path = site.paginate_path | replace: ":num", page_number %}
+        {% endif %}
+        <a class="pagination-button" href="{{ page_path | relative_url }}" aria-label="{{ page_number }}ページ目">{{ page_number }}</a>
+      {% endif %}
+      {% assign previous_page_number = page_number %}
+    {% endif %}
+  {% endfor %}
+
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Next →</a>
+    <a class="pagination-button" href="{{ paginator.next_page_path | relative_url }}" aria-label="次のページ">&gt;</a>
   {% endif %}
-</div>
+</nav>
