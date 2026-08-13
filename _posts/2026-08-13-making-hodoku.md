@@ -1,15 +1,17 @@
 ---
 layout: post
-title: AIを使って2日でパズルゲームHodokuを作った
+title: AIを使ってパズルゲームHodokuを作った
 tags: [programming]
 permalink: making-hodoku
 ---
 
 ## はじめに
 
+※このエントリは、ゲーム制作用のPLANS.mdと他のエントリを読ませてAIに書かせたものです。
+
 パズルゲーム「Hodoku」を作った。
 
-* [Hodoku](https://kaityo256.github.io/hodoku/)
+- [Hodoku](https://kaityo256.github.io/hodoku/)
 
 ![Hodokuのタイトル画面](/assets/images/making-hodoku/gametitle.png)
 
