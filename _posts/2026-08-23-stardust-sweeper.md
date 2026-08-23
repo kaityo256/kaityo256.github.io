@@ -1,6 +1,6 @@
 ---
 layout: post
-title: stardust-sweeper
+title: AIを駆使して2日でパズルゲームを作った話
 tags: [programming]
 permalink: stardust-sweeper
 ---
