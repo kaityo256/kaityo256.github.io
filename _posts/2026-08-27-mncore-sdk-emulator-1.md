@@ -17,7 +17,9 @@ MNCoreの実機を触るには購入するか、[FOCUS](https://www.j-focus.or.j
 
 そこで、Macで動作するエミュレータ前提のミニマルなDocker環境を作った。Dockerfileとサンプルは以下に置いてある。
 
-[github.com/kaityo256/mncore-sdk-sample](https://github.com/kaityo256/mncore-sdk-sampl)
+[github.com/kaityo256/mncore-sdk-sample](https://github.com/kaityo256/mncore-sdk-sample)
+
+SDKのバージョンは0.7を使う。
 
 ## 使い方
 
@@ -64,7 +66,7 @@ c++ -std=c++23 main.cc -o add_host -lmncl
 
 ## サンプルの解説
 
-サンプルは4 _ 4 _ 16 _ 8 _ 2 \* 4 = 16384個の要素を持つベクトルに対して、z = x + yを実施するものである。簡単のため、`x[i] = 1`、`y[i] = 2`にしており、結果は`z[i] = 3`となる。
+サンプルは4 x 4 x 16 x 8 x 2 x 4 = 16384個の要素を持つベクトルに対して、z = x + yを実施するものである。簡単のため、`x[i] = 1`、`y[i] = 2`にしており、結果は`z[i] = 3`となる。
 
 動的にカーネルを読み込むので、実行前にカーネルをコンパイルしてバイナリを作っておく必要がある。今回は、`add.c`から`add.bin`を作る。
 
