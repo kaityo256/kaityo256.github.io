@@ -18,6 +18,8 @@ kramdown:
 
 sass:
   quiet_deps: true
+  silence_deprecations:
+    - import
 
 header_pages:
   - articles.md
