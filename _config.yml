@@ -23,6 +23,7 @@ sass:
 
 header_pages:
   - software.md
+  - document.md
   - articles.md
   - about.md
 
