@@ -13,7 +13,7 @@ permalink: /document/
 * [物理数学](https://kaityo256.github.io/physmath/) — 微分方程式、フーリエ変換、ラプラス変換、複素関数論などを問題と解説を通して学ぶ講義ノートです。
 * [分子動力学法の理論と実装](https://kaityo256.github.io/md2019/) — 分子動力学法の理論、数値積分、温度制御、実装と高速化などを扱う集中講義ノートです。
 * [数値シミュレーションの基礎](https://github.com/kaityo256/simulation_engineering) — モンテカルロ法と分子動力学法を中心に、数値計算の考え方から誤差解析、高速化までを扱う講義ノートです。
-* [Pythonを知っている人向けのC++入門](https://github.com/kaityo256/python2cpp) — Python経験者がC++特有の仕組みや注意点を学ぶための入門資料です。
+* [Pythonを知っている人向けのC++入門](https://github.com/kaityo256/python2cpp) — Python経験者がC++特有の仕組みや注意点を学ぶための入門資料です。未完成。
 
 ## ハンズオン・ガイド
 
