@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Document
-permalink: /document/
+title: Resources
+permalink: /resources/
 ---
 
 ## 講義ノート・オンライン教材
